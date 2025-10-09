@@ -1,0 +1,18 @@
+# Archivos temporales de GDevelop
+*.autosave
+*.backup
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Exportaciones / builds
+dist/
+build/
+export/
+*.zip
+
+# Archivos de sistema o de IDE
+.idea/
+.vscode/
+*.log
