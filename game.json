@@ -522,6 +522,62 @@
         "name": "assets/image/background_level1.jpg",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame7.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
