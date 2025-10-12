@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8361022491334091,
+    "zoomFactor": 0.8088282921440753,
     "windowMask": false
   },
   "objectsGroups": [
@@ -37,7 +37,18 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "squad_01",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "squad_02",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -60,14 +71,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 601,
+      "height": 576,
       "keepRatio": true,
       "layer": "background-layer",
       "name": "background",
       "persistentUuid": "a401c34a-09b0-4eef-ac4f-654435fc8495",
       "width": 3283,
-      "x": -1,
-      "y": -1,
+      "x": 0,
+      "y": 0,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -75,176 +86,85 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 608,
       "keepRatio": true,
       "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "793d0f56-6cfd-4ec8-a9f3-90ddaf0ec5fc",
-      "width": 0,
-      "x": 1093,
-      "y": 29,
-      "zOrder": 1,
+      "name": "background_border",
+      "persistentUuid": "8fdee471-260d-49c3-991d-e082e0c46c7a",
+      "width": 32,
+      "x": -32,
+      "y": 0,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
       "keepRatio": true,
       "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "3df0a2b1-43ad-426f-b2ca-f76912049aa1",
-      "width": 0,
-      "x": 1260,
-      "y": 29,
-      "zOrder": 1,
+      "name": "background_border",
+      "persistentUuid": "f4279fba-193d-4081-b8a6-ef7827b57388",
+      "width": 801,
+      "x": 0,
+      "y": 576,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
       "keepRatio": true,
       "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "5715a428-1d9f-4fb1-8207-bb17a2e9bd5b",
-      "width": 0,
-      "x": 1434,
-      "y": 28,
-      "zOrder": 1,
+      "name": "background_border",
+      "persistentUuid": "44f858ff-90ed-451d-90f5-96ef67d10eaf",
+      "width": 832,
+      "x": -32,
+      "y": -32,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 640,
       "keepRatio": true,
       "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "f2eaa157-5ef8-4ec9-8a30-3322b9ae3405",
-      "width": 0,
-      "x": 1093,
-      "y": 499,
-      "zOrder": 1,
+      "name": "background_border",
+      "persistentUuid": "c637f240-e3c0-4637-8f87-b42519505fd4",
+      "width": 32,
+      "x": 767,
+      "y": -34,
+      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 580,
       "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "37195fc3-8364-4228-a300-2e75dccb8f39",
-      "width": 0,
-      "x": 1260,
-      "y": 499,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_1",
-      "persistentUuid": "3b78f01e-f2c1-42a8-a748-f349c04896a0",
-      "width": 0,
-      "x": 1434,
-      "y": 498,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_2",
-      "persistentUuid": "f615ff83-eac6-4d13-b654-3e91b285c36f",
-      "width": 0,
-      "x": 1742,
-      "y": 262,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_3",
-      "persistentUuid": "dc625f4d-a1ad-4010-8d9f-a92a25159cc4",
-      "width": 0,
-      "x": 2194,
-      "y": 143,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_3",
-      "persistentUuid": "56fbfe50-e816-4f98-8076-3cfb4aa12732",
-      "width": 0,
-      "x": 2047,
-      "y": 258,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_3",
-      "persistentUuid": "87b82db0-c81b-44c8-87fd-b0b3eca02d0d",
-      "width": 0,
-      "x": 2197,
-      "y": 363,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "basic_enemy_3",
-      "persistentUuid": "1d1b24bc-7022-47c5-bb1f-fac14815f170",
-      "width": 0,
-      "x": 2332,
-      "y": 261,
-      "zOrder": 4,
+      "layer": "background-layer",
+      "name": "background_1",
+      "persistentUuid": "5e630e1a-6471-464f-a503-4c31e55e82b8",
+      "width": 3886,
+      "x": 0,
+      "y": 0,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -970,7 +890,7 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "background",
+      "name": "background_1",
       "texture": "assets/image/background_level1.jpg",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -996,7 +916,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 1.5,
+          "FireCooldown": 2,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -1022,6 +942,42 @@
           "ExponentialCoolingRate": 0.3,
           "BulletLayer": "",
           "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
         }
       ],
       "animations": [
@@ -1749,6 +1705,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "background_border",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/border.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1758,7 +1775,10 @@
         "objectName": "player"
       },
       {
-        "objectName": "background"
+        "objectName": "background_1"
+      },
+      {
+        "objectName": "background_border"
       },
       {
         "objectName": "basic_enemy_1"
@@ -1789,6 +1809,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2083,9 +2104,23 @@
                 "value": "TiledSpriteObject::XOffset"
               },
               "parameters": [
-                "background",
+                "background_1",
                 "+",
                 "100 * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "background_border"
               ]
             }
           ]
@@ -2152,6 +2187,397 @@
               "parameters": [
                 "",
                 "\"Nivel_1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_01\"",
+                "\"m805.01 111c-233.42-91.557-523.52-114.86-732.85-15.793-37.718 77.185-94.78 179.17 6.0132 317.7 236.48 87.572 535.52 47.042 608.33-9.0198 44.445-101.19 52.766-181.37-17.037-261.57-298.06-162.87-423.31 51.991-668.47 34.075\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_02\"",
+                "\"m780.94 148.11c-100.66 3.2347-313.55 0.85796-481.89 0.70865-125.89 111.67-83.306 161.17 4.9606 255.12l476.22-1.4173z\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_03\"",
+                "\"m773.86 166.54c-179.53 0.47244-359.06 0.94489-448.46 30.709-89.409 29.764-88.701 88.818-51.613 126.97s110.55 55.394 190.98 62.953c80.434 7.559 167.83 5.4331 210.83-25.158s41.575-89.645-17.718-141.38c-59.293-51.733-176.46-96.141-295.63-116.57-119.17-20.433-240.35-16.89-301.18-15.472-60.827 1.4173-61.299 0.70867-61.772 7e-6\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_04\"",
+                "\"m800.08 481.18-819.21 0.70866\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"x\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_01\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_02\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_01\"",
+                ">=",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "<",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "basic_enemy_1",
+                "800",
+                "110",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::TweenPathMovement::Move"
+              },
+              "parameters": [
+                "basic_enemy_1",
+                "TweenPathMovement",
+                "\"path_03\"",
+                "1",
+                "8",
+                "\"linear\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_01\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_02\"",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "<",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "basic_enemy_1",
+                "800",
+                "480",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::TweenPathMovement::Move"
+              },
+              "parameters": [
+                "basic_enemy_1",
+                "TweenPathMovement",
+                "\"path_04\"",
+                "1",
+                "4",
+                "\"linear\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_02\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_01\""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_02\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_01",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_01\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "squad_02",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"squad_02\""
               ]
             }
           ]
@@ -2246,11 +2672,13 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "",
-                "\"m\""
+                "basic_enemy_1",
+                "InOnScreen",
+                "0",
+                ""
               ]
             }
           ],
@@ -2286,7 +2714,7 @@
           "actions": [
             {
               "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
+                "value": "FireBullet::FireBullet::FireTowardPosition"
               },
               "parameters": [
                 "basic_enemy_1",
@@ -2294,7 +2722,8 @@
                 "basic_enemy_1.PointX(\"disparo\")",
                 "basic_enemy_1.PointY(\"disparo\")",
                 "enemy_shoot_2",
-                "player",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
                 "250",
                 ""
               ]
@@ -2502,6 +2931,148 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "background_border",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "background_border",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "enemy_group",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "enemy_group.PointX(\"Center\")",
+                "enemy_group.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "enemy_group.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "enemy_group",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"base\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "False",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2644,6 +3215,10 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
+      "name": "InOnScreen",
+      "type": "IsOnScreen::InOnScreen"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
@@ -2654,6 +3229,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "TweenPathMovement",
+      "type": "CurvedMovement::TweenPathMovement"
     }
   ]
 }
