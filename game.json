@@ -16,14 +16,14 @@
     "pixelsRounding": true,
     "projectUuid": "732012a3-845c-49b5-995d-21ac96705fac",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "shootem-up-demo",
     "description": "",
     "author": "",
     "windowWidth": 800,
-    "windowHeight": 600,
+    "windowHeight": 576,
     "latestCompilationDirectory": "/home/brann/Escritorio/game",
     "maxFPS": 60,
     "minFPS": 20,
@@ -578,6 +578,22 @@
         "name": "assets/image/explosion-1-g/Sprites/frame7.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/border.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "border",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/border.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -599,6 +615,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/curvedmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
     }
   ],
   "externalLayouts": []
