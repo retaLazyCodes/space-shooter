@@ -39,12 +39,12 @@
   ],
   "variables": [
     {
-      "name": "squad_01",
+      "name": "enemy_wave_01_count",
       "type": "number",
       "value": 0
     },
     {
-      "name": "squad_02",
+      "name": "enemy_wave_02_count",
       "type": "number",
       "value": 0
     }
@@ -880,6 +880,530 @@
                       }
                     ]
                   ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyup4.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyup5.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "volar_al_frente",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-vuelo-frente-0.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-vuelo-frente-1.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-vuelo-frente-2.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-vuelo-frente-3.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fly_idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-fly-idle0.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-fly-idle1.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-fly-idle2.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-fly-idle3.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -913,6 +1437,11 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "extraBorder": 10,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
+        },
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
@@ -1809,311 +2338,34 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "player",
+      "name": "⚙️ Configuración inicial",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Up\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "player",
-                "270",
-                "350",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"ascender\""
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Iniciar temporizadores y variables de escena"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "DepartScene"
               },
               "parameters": [
-                "",
-                "\"Down\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "player",
-                "90",
-                "350",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"descender\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "player",
-                "0",
-                "350",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "player",
-                "180",
-                "350",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"x\""
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"shoot_time\"",
-                ">",
-                "0.20"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "False",
                 ""
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "player_shoot",
-                "player.PointX(\"disparo\")",
-                "player.PointY(\"disparo\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "player_shoot",
-                "0",
-                "450",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"shoot_time\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Up\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Down\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Right\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"base\""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "escena",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "background_1",
-                "+",
-                "100 * TimeDelta()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
           "actions": [
             {
               "type": {
@@ -2122,74 +2374,67 @@
               "parameters": [
                 "background_border"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "ResetTimer"
               },
               "parameters": [
                 "",
-                "\"shoot_time\""
+                "\"player_shoot_timer\""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+            },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "ResetTimer"
               },
               "parameters": [
-                "enemy_shoot_2",
-                "Scale",
+                "",
+                "\"enemy_wave_01_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemy_wave_02_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_01_count",
                 "=",
-                "0.5"
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_02_count",
+                "=",
+                "0"
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"r\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Nivel_1\""
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Creación de caminos"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2204,26 +2449,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "squad_01",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "squad_02",
-                "=",
-                "0"
-              ]
-            },
             {
               "type": {
                 "value": "CurvedMovement::CreatePathFromSvg"
@@ -2275,37 +2500,62 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextJustPressed"
+                "value": "DepartScene"
               },
               "parameters": [
-                "",
-                "\"x\""
+                ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ResetTimer"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "",
-                "\"squad_01\""
+                "player",
+                "Animation",
+                "=",
+                "\"fly_idle\""
               ]
-            },
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "⌨️ Controles del jugador",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "ResetTimer"
+                "value": "KeyFromTextPressed"
               },
               "parameters": [
                 "",
-                "\"squad_02\""
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "270",
+                "250",
+                ""
               ]
             }
           ]
@@ -2315,13 +2565,462 @@
           "conditions": [
             {
               "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "270",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"ascender\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "90",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "90",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"descender\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "0",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Right\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "0",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"volar_al_frente\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "180",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "180",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"x\""
+              ]
+            },
+            {
+              "type": {
                 "value": "CompareTimer"
               },
               "parameters": [
                 "",
-                "\"squad_01\"",
+                "\"player_shoot_timer\"",
+                ">",
+                "0.20"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "player_shoot",
+                "player.PointX(\"disparo\")",
+                "player.PointY(\"disparo\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player_shoot",
+                "0",
+                "450",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"player_shoot_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"fly_idle\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "👾 Generación de enemigos",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemy_wave_01_timer\"",
                 ">=",
-                "0.5"
+                "1"
               ]
             },
             {
@@ -2329,10 +3028,16 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "squad_01",
+                "enemy_wave_01_count",
                 "<",
                 "8"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2368,7 +3073,7 @@
               },
               "parameters": [
                 "",
-                "\"squad_01\""
+                "\"enemy_wave_01_timer\""
               ]
             },
             {
@@ -2376,7 +3081,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "squad_01",
+                "enemy_wave_01_count",
                 "+",
                 "1"
               ]
@@ -2392,9 +3097,9 @@
               },
               "parameters": [
                 "",
-                "\"squad_02\"",
+                "\"enemy_wave_02_timer\"",
                 ">=",
-                "1"
+                "2"
               ]
             },
             {
@@ -2402,10 +3107,16 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "squad_02",
+                "enemy_wave_02_count",
                 "<",
                 "6"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2441,7 +3152,7 @@
               },
               "parameters": [
                 "",
-                "\"squad_02\""
+                "\"enemy_wave_02_timer\""
               ]
             },
             {
@@ -2449,12 +3160,149 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "squad_02",
+                "enemy_wave_02_count",
                 "+",
                 "1"
               ]
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "🔁 Reset de oleadas",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_01_count",
+                "=",
+                "8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_01_count",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_02_count",
+                "=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "enemy_wave_02_count",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "🎬 Escena",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "background_1",
+                "+",
+                "100 * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "enemy_shoot_2",
+                "Scale",
+                "=",
+                "0.5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"r\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Nivel_1\""
+              ]
+            }
+          ]
         },
         {
           "disabled": true,
@@ -2502,78 +3350,6 @@
             {
               "type": {
                 "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"squad_02\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "squad_01",
-                "=",
-                "8"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "squad_01",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"squad_01\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "squad_02",
-                "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "squad_02",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
               },
               "parameters": [
                 "",
@@ -2590,7 +3366,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "enemigos",
+      "name": "👾  Disparos de enemigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -2739,11 +3515,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "parameters": []
@@ -2753,10 +3524,39 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "colisiones",
+      "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "background_border",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "background_border",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2857,14 +3657,33 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "enemy_shoot_2",
-                "player",
-                "",
-                "",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "enemy_shoot_2",
+                    "player",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -2902,61 +3721,11 @@
             },
             {
               "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "ResetObjectTimer"
               },
               "parameters": [
                 "player",
-                "Animation",
-                "=",
-                "\"base\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "False",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "player",
-                "background_border",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "player",
-                "background_border",
-                ""
+                "\"damage_timer\""
               ]
             }
           ]
@@ -3044,12 +3813,50 @@
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "ResetObjectTimer"
               },
               "parameters": [
-                "1"
+                "player",
+                "\"damage_timer\""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"damage_timer\"",
+                    ">=",
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3058,7 +3865,7 @@
                 "player",
                 "Animation",
                 "=",
-                "\"base\""
+                "\"fly_idle\""
               ]
             },
             {
@@ -3070,6 +3877,15 @@
                 "player_is_hit",
                 "False",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
               ]
             }
           ]

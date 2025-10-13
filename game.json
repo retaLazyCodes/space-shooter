@@ -92,310 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/image/pixil-frame-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/Lucid_Origin_Create_a_seamless_tileable_pixel_art_background_o_2.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Lucid_Origin_Create_a_seamless_tileable_pixel_art_background_o_2.jpg",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-spritesheet.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-spritesheet.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "enemy_ship_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "enemy_ship_3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-sprite.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-sprite.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame7.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame8.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame9.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame10.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame11.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "../sprites/pixil/pixilart-frames (1)/pixil-frame-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "../sprites/pixil/pixilart-frames (1)/pixil-frame-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame12.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame13.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame14.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame15.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame16.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame16.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/background.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/image/background.jpg",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/image/enemy_ship_3.png",
         "kind": "image",
         "metadata": "",
@@ -580,18 +276,90 @@
         "userAdded": false
       },
       {
-        "file": "assets/border.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "border",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/image/border.png",
         "kind": "image",
         "metadata": "",
         "name": "assets/image/border.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyup4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyup4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyup5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyup5.png",
         "smoothed": false,
         "userAdded": false
       }
