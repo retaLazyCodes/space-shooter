@@ -55,18 +55,8 @@
       "value": 0
     },
     {
-      "name": "wave_string",
-      "type": "string",
-      "value": "{   \"waves\": [     {       \"path\": \"path_01\",       \"count\": 5,       \"spawn_pos\": { \"x\": 800, \"y\": 110 },       \"delay\": 0.5     },     {       \"path\": \"path_02\",       \"count\": 6,       \"spawn_pos\": { \"x\": 800, \"y\": 480 },       \"delay\": 0.4     }   ] }"
-    },
-    {
       "name": "wave_json",
       "type": "structure",
-      "children": []
-    },
-    {
-      "name": "wave_config",
-      "type": "array",
       "children": []
     },
     {
@@ -207,6 +197,22 @@
       "x": 86,
       "y": 76,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DebugText2",
+      "persistentUuid": "9f467378-07ec-4f89-9c34-e3f29d9714b6",
+      "width": 0,
+      "x": 87,
+      "y": 523,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1188,6 +1194,218 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/image/salem-vuelo-frente-3.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "volar_atras",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyback-0.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyback-1.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyback-2.png",
+                  "points": [
+                    {
+                      "name": "disparo",
+                      "x": 57,
+                      "y": 39.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 18,
+                        "y": 0.5
+                      },
+                      {
+                        "x": 44.5,
+                        "y": 1
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 47.5,
+                        "y": 64
+                      },
+                      {
+                        "x": 15,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flyback-3.png",
                   "points": [
                     {
                       "name": "disparo",
@@ -2349,6 +2567,49 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
+      "string": "asd",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 24,
+        "g": 24,
+        "r": 218
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "asd",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "218;24;24"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DebugText2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
       "string": "",
       "font": "",
       "textAlignment": "left",
@@ -2417,6 +2678,9 @@
       },
       {
         "objectName": "DebugText"
+      },
+      {
+        "objectName": "DebugText2"
       }
     ]
   },
@@ -2539,7 +2803,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Carga las oleadas del json"
+          "comment": "Carga el archivo waves.json"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2551,36 +2815,18 @@
               "parameters": [
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "is_desktop",
-                "=",
-                "1"
-              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "JSONToVariableStructure2"
+                "value": "JSONResourceLoader::LoadJSONToScene"
               },
               "parameters": [
-                "VariableString(wave_string)",
-                "wave_json"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "wave_config",
-                "=",
-                "VariableString(wave_json.waves[Variable(current_wave_index)].path)"
+                "",
+                "data/waves.json",
+                "wave_json",
+                ""
               ]
             }
           ]
@@ -2713,6 +2959,11 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     },
     {
       "colorB": 228,
@@ -3117,6 +3368,17 @@
                 "250",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"volar_atras\""
+              ]
             }
           ]
         },
@@ -3410,8 +3672,8 @@
                 "basic_enemy_1",
                 "TweenPathMovement",
                 "VariableString(wave_json.waves[Variable(current_wave_index)].path)",
-                "1",
-                "6",
+                "Variable(wave_json.waves[Variable(current_wave_index)].repeat)",
+                "Variable(wave_json.waves[Variable(current_wave_index)].move_time)",
                 "\"linear\"",
                 ""
               ]
@@ -3533,6 +3795,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  Disparos de enemigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3691,6 +3954,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

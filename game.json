@@ -365,14 +365,6 @@
       },
       {
         "disablePreload": false,
-        "file": "data/waves.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "data/waves.json",
-        "userAdded": false
-      },
-      {
-        "disablePreload": false,
         "file": "eventsFunctionsExtensions/curvedmovement.json",
         "kind": "json",
         "metadata": "",
@@ -410,6 +402,46 @@
         "metadata": "",
         "name": "layouts/nivel_1.json",
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data/waves.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-3.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -439,6 +471,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/jsonresourceloader"
     }
   ],
   "externalLayouts": []
