@@ -19,7 +19,8 @@
     "gridAlpha": 0.8,
     "snap": false,
     "zoomFactor": 0.8088282921440753,
-    "windowMask": false
+    "windowMask": false,
+    "selectedLayer": ""
   },
   "objectsGroups": [
     {
@@ -39,14 +40,39 @@
   ],
   "variables": [
     {
-      "name": "enemy_wave_01_count",
+      "name": "wave_in_progress",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "current_wave_index",
       "type": "number",
       "value": 0
     },
     {
-      "name": "enemy_wave_02_count",
+      "name": "enemy_wave_count",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "wave_string",
+      "type": "string",
+      "value": "{   \"waves\": [     {       \"path\": \"path_01\",       \"count\": 5,       \"spawn_pos\": { \"x\": 800, \"y\": 110 },       \"delay\": 0.5     },     {       \"path\": \"path_02\",       \"count\": 6,       \"spawn_pos\": { \"x\": 800, \"y\": 480 },       \"delay\": 0.4     }   ] }"
+    },
+    {
+      "name": "wave_json",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "wave_config",
+      "type": "array",
+      "children": []
+    },
+    {
+      "name": "is_desktop",
+      "type": "number",
+      "value": 2
     }
   ],
   "instances": [
@@ -165,6 +191,22 @@
       "x": 0,
       "y": 0,
       "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DebugText",
+      "persistentUuid": "6da0170c-5902-401f-80be-90e606d63993",
+      "width": 0,
+      "x": 86,
+      "y": 76,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1438,9 +1480,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 10,
           "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 10
         },
         {
           "name": "FireBullet",
@@ -2295,6 +2337,49 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DebugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 24,
+        "g": 24,
+        "r": 218
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "218;24;24"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2329,6 +2414,9 @@
       },
       {
         "objectName": "player_shoot"
+      },
+      {
+        "objectName": "DebugText"
       }
     ]
   },
@@ -2390,7 +2478,7 @@
               },
               "parameters": [
                 "",
-                "\"enemy_wave_01_timer\""
+                "\"wave_timer\""
               ]
             },
             {
@@ -2399,7 +2487,7 @@
               },
               "parameters": [
                 "",
-                "\"enemy_wave_02_timer\""
+                "\"enemy_spawn_timer\""
               ]
             },
             {
@@ -2407,19 +2495,92 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "enemy_wave_01_count",
+                "enemy_wave_count",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Guardar el entorno en donde se está ejecutando"
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Detectar si se está ejecutando como app de escritorio (Electron)",
+            "if (typeof require !== \"undefined\" && require(\"electron\")) {",
+            "  runtimeScene.getVariables().get(\"is_desktop\").setNumber(1);",
+            "} else {",
+            "  runtimeScene.getVariables().get(\"is_desktop\").setNumber(0);",
+            "}",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Carga las oleadas del json"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
               ]
             },
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "enemy_wave_02_count",
+                "is_desktop",
                 "=",
-                "0"
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "VariableString(wave_string)",
+                "wave_json"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "wave_config",
+                "=",
+                "VariableString(wave_json.waves[Variable(current_wave_index)].path)"
               ]
             }
           ]
@@ -2456,7 +2617,7 @@
               "parameters": [
                 "",
                 "\"path_01\"",
-                "\"m805.01 111c-233.42-91.557-523.52-114.86-732.85-15.793-37.718 77.185-94.78 179.17 6.0132 317.7 236.48 87.572 535.52 47.042 608.33-9.0198 44.445-101.19 52.766-181.37-17.037-261.57-298.06-162.87-423.31 51.991-668.47 34.075\"",
+                "\"m696 134.55-164.36 0.72728 1.4546 78.545-136-0.72727-293.82 85.091 593.45-5.0909z\"",
                 ""
               ]
             },
@@ -2467,7 +2628,7 @@
               "parameters": [
                 "",
                 "\"path_02\"",
-                "\"m780.94 148.11c-100.66 3.2347-313.55 0.85796-481.89 0.70865-125.89 111.67-83.306 161.17 4.9606 255.12l476.22-1.4173z\"",
+                "\"m764.37 477.82-166.18-0.72114 0.71939-87.98-143.88 0.72115-286.3-83.018 597.14 0.0796z\"",
                 ""
               ]
             },
@@ -2520,6 +2681,35 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Debug"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText",
+                "Text",
+                "=",
+                "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress))\n    + \" | is_desktop: \" + ToString(Variable(is_desktop))"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2529,6 +2719,78 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
+      "name": "🎬 Escena",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "background_1",
+                "+",
+                "100 * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "enemy_shoot_2",
+                "Scale",
+                "=",
+                "0.5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"r\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Nivel_1\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3005,88 +3267,21 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "👾 Generación de enemigos",
+      "name": "👾  1. Control general del tiempo entre oleadas",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"enemy_wave_01_timer\"",
-                ">=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_01_count",
-                "<",
-                "8"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "basic_enemy_1",
-                "800",
-                "110",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::TweenPathMovement::Move"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "TweenPathMovement",
-                "\"path_03\"",
-                "1",
-                "8",
-                "\"linear\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"enemy_wave_01_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_01_count",
-                "+",
-                "1"
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Este evento dispara la siguiente oleada después de un cierto tiempo"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3096,10 +3291,80 @@
                 "value": "CompareTimer"
               },
               "parameters": [
+                "wave_timer",
+                "\"wave_timer\"",
+                ">",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "wave_in_progress",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "wave_in_progress",
+                "True",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
                 "",
-                "\"enemy_wave_02_timer\"",
-                ">=",
-                "2"
+                "\"wave_timer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "👾  2. Spawner enemigos según el JSON",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Spawnear los enemigos de la oleada actual"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "wave_in_progress",
+                "True",
+                ""
               ]
             },
             {
@@ -3107,16 +3372,21 @@
                 "value": "NumberVariable"
               },
               "parameters": [
-                "enemy_wave_02_count",
+                "enemy_wave_count",
                 "<",
-                "6"
+                "Variable(wave_json.waves[Variable(current_wave_index)].count)"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "CompareTimer"
               },
-              "parameters": []
+              "parameters": [
+                "",
+                "\"enemy_spawn_timer\"",
+                ">",
+                "Variable(wave_json.waves[Variable(current_wave_index)].delay)"
+              ]
             }
           ],
           "actions": [
@@ -3127,8 +3397,8 @@
               "parameters": [
                 "",
                 "basic_enemy_1",
-                "800",
-                "480",
+                "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.x)",
+                "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.y)",
                 ""
               ]
             },
@@ -3139,9 +3409,9 @@
               "parameters": [
                 "basic_enemy_1",
                 "TweenPathMovement",
-                "\"path_04\"",
+                "VariableString(wave_json.waves[Variable(current_wave_index)].path)",
                 "1",
-                "4",
+                "6",
                 "\"linear\"",
                 ""
               ]
@@ -3152,7 +3422,7 @@
               },
               "parameters": [
                 "",
-                "\"enemy_wave_02_timer\""
+                "\"enemy_spawn_timer\""
               ]
             },
             {
@@ -3160,7 +3430,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "enemy_wave_02_count",
+                "enemy_wave_count",
                 "+",
                 "1"
               ]
@@ -3175,7 +3445,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "🔁 Reset de oleadas",
+      "name": "👾  3. Siguiente oleada",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3184,176 +3454,73 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "enemy_wave_01_count",
-                "=",
-                "8"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "current_wave_index",
+                    "<=",
+                    "wave_json.waves.length"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "enemy_wave_count",
+                    "=",
+                    "Variable(wave_json.waves[Variable(current_wave_index)].count)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "basic_enemy_1",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "enemy_wave_01_count",
-                "=",
-                "0"
+                "wave_in_progress",
+                "False",
+                ""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_02_count",
-                "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "enemy_wave_02_count",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "🎬 Escena",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "background_1",
+                "current_wave_index",
                 "+",
-                "100 * TimeDelta()"
+                "1"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+            },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "enemy_shoot_2",
-                "Scale",
+                "enemy_wave_count",
                 "=",
-                "0.5"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"r\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Nivel_1\""
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "squad_01",
-                "=",
-                "8"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"squad_01\""
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "squad_02",
-                "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"squad_02\""
+                "0"
               ]
             }
           ]
@@ -4045,6 +4212,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TweenPathMovement",

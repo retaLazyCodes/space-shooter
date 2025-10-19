@@ -1,0 +1,16 @@
+{
+  "waves": [
+    {
+      "path": "path_01",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 110 },
+      "delay": 0.5
+    },
+    {
+      "path": "path_02",
+      "count": 6,
+      "spawn_pos": { "x": 800, "y": 480 },
+      "delay": 0.4
+    }
+  ]
+}

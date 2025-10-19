@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 242,
+    "build": 243,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -361,6 +361,54 @@
         "metadata": "",
         "name": "assets/image/salem-flyup5.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data/waves.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/curvedmovement.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/curvedmovement.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/firebullet.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/firebullet.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/isonscreen.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/isonscreen.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "game.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "game.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "layouts/nivel_1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "layouts/nivel_1.json",
         "userAdded": false
       }
     ],
