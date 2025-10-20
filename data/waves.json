@@ -2,6 +2,7 @@
   "waves": [
     {
       "path": "path_01",
+      "object_type": "basic_enemy_1",
       "count": 5,
       "spawn_pos": { "x": 800, "y": 110 },
       "move_time": 5,
@@ -10,9 +11,100 @@
     },
     {
       "path": "path_02",
-      "count": 6,
+      "object_type": "basic_enemy_1",
+      "count": 5,
       "spawn_pos": { "x": 800, "y": 480 },
-      "move_time": 6,
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_03",
+      "object_type": "basic_enemy_3",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 120 },
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.3
+    },
+    {
+      "path": "path_01",
+      "object_type": "basic_enemy_1",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 110 },
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.5
+    },
+    {
+      "path": "path_02",
+      "object_type": "basic_enemy_1",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 480 },
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_07",
+      "object_type": "basic_enemy_2",
+      "count": 3,
+      "spawn_pos": { "x": 800, "y": 130 },
+      "move_time": 3,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_08",
+      "object_type": "basic_enemy_2",
+      "count": 3,
+      "spawn_pos": { "x": 800, "y": 440 },
+      "move_time": 3,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_06",
+      "object_type": "basic_enemy_2",
+      "count": 4,
+      "spawn_pos": { "x": 500, "y": 0 },
+      "move_time": 3,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_09",
+      "object_type": "basic_enemy_2",
+      "count": 4,
+      "spawn_pos": { "x": 500, "y": 590 },
+      "move_time": 3,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_03",
+      "object_type": "basic_enemy_3",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 120 },
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.3
+    },
+    {
+      "path": "path_01",
+      "object_type": "basic_enemy_1",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 110 },
+      "move_time": 5,
+      "repeat": 1,
+      "delay": 0.5
+    },
+    {
+      "path": "path_02",
+      "object_type": "basic_enemy_1",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 480 },
+      "move_time": 5,
       "repeat": 1,
       "delay": 0.4
     }

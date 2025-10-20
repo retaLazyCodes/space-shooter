@@ -58,11 +58,6 @@
       "name": "wave_json",
       "type": "structure",
       "children": []
-    },
-    {
-      "name": "is_desktop",
-      "type": "number",
-      "value": 2
     }
   ],
   "instances": [
@@ -1705,7 +1700,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 2,
+          "FireCooldown": 1.5,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -1786,6 +1781,11 @@
                       "name": "Destroy",
                       "x": 7,
                       "y": 40
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 45,
+                      "y": 22
                     }
                   ],
                   "originPoint": {
@@ -1835,22 +1835,34 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "basic_enemy_2",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
+          "extraBorder": 10,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "unseenGraceDistance": 0
+        },
+        {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.5,
+          "FireCooldown": 1,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
-          "BulletQuantity": 6,
+          "BulletQuantity": 3,
           "AngleVariance": 0,
           "BulletSpeedVariance": 0,
           "AmmoQuantity": 0,
@@ -1872,6 +1884,42 @@
           "ExponentialCoolingRate": 0.3,
           "BulletLayer": "",
           "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
         }
       ],
       "animations": [
@@ -1886,7 +1934,18 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/image/enemy-ship2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 8,
+                      "y": 42
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 21,
+                      "y": 44
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -1901,20 +1960,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 4,
-                        "y": 14
+                        "x": 57,
+                        "y": 18
                       },
                       {
-                        "x": 64,
-                        "y": 14
-                      },
-                      {
-                        "x": 64,
+                        "x": 56.5,
                         "y": 51
                       },
                       {
-                        "x": 4,
-                        "y": 51
+                        "x": 31,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 36
+                      },
+                      {
+                        "x": 26,
+                        "y": 14.5
                       }
                     ]
                   ]
@@ -2094,14 +2161,93 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "basic_enemy_3",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "extraBorder": 10,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "unseenGraceDistance": 0
+        },
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2114,7 +2260,18 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/image/enemy_ship_3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 5.5,
+                      "y": 39.5
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 15.5,
+                      "y": 45
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -2130,19 +2287,35 @@
                     [
                       {
                         "x": 4,
+                        "y": 37
+                      },
+                      {
+                        "x": 11,
+                        "y": 21
+                      },
+                      {
+                        "x": 17.5,
                         "y": 12
                       },
                       {
-                        "x": 61,
-                        "y": 12
+                        "x": 41,
+                        "y": 14.5
                       },
                       {
-                        "x": 61,
+                        "x": 50,
+                        "y": 35.5
+                      },
+                      {
+                        "x": 52,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 32.5,
                         "y": 55
                       },
                       {
-                        "x": 4,
-                        "y": 55
+                        "x": 7,
+                        "y": 50.5
                       }
                     ]
                   ]
@@ -2776,33 +2949,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Guardar el entorno en donde se está ejecutando"
-        },
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "// Detectar si se está ejecutando como app de escritorio (Electron)",
-            "if (typeof require !== \"undefined\" && require(\"electron\")) {",
-            "  runtimeScene.getVariables().get(\"is_desktop\").setNumber(1);",
-            "} else {",
-            "  runtimeScene.getVariables().get(\"is_desktop\").setNumber(0);",
-            "}",
-            ""
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "Carga el archivo waves.json"
         },
         {
@@ -2899,6 +3045,61 @@
                 "\"m800.08 481.18-819.21 0.70866\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_05\"",
+                "\"m805.01 111c-233.42-91.557-523.52-114.86-732.85-15.793-37.718 77.185-94.78 179.17 6.0132 317.7 236.48 87.572 535.52 47.042 608.33-9.0198 44.445-101.19 52.766-181.37-17.037-261.57-298.06-162.87-423.31 51.991-668.47 34.075\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_06\"",
+                "\"m591.27-1.4545 2.1818 581.09\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_07\"",
+                "\"m799.27 120.73c-217.45 4.3636-271.27 96-271.27 96-70.383 49.002-103.79 21.699-143.27 12.364-11.636-10.017-29.297-21.849-54.545-41.455-50.176-9.8174-78.092-6.393-112 5.0909-32.083 17.329-40.937 40.065-115.64 80-61.755 35.21-83.399 16.982-107.64 1.4546l-8 2.9091\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_08\"",
+                "\"m805.82 292.97c-217.45-4.3636-277.82-89.455-277.82-89.455-70.383-49.002-103.79-21.699-143.27-12.364-11.636 10.017-29.297 21.849-54.545 41.455-50.176 9.8174-78.092 6.393-112-5.0909-32.083-17.329-40.937-40.065-115.64-80-61.755-35.21-83.399-16.982-107.64-1.4546l-8-2.9091\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_09\"",
+                "\"m600.64 500 0.72728-580.36\"",
+                ""
+              ]
             }
           ]
         },
@@ -2952,7 +3153,7 @@
                 "DebugText",
                 "Text",
                 "=",
-                "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress))\n    + \" | is_desktop: \" + ToString(Variable(is_desktop))"
+                "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress)) \n + \" | TotalWaves: \" + ToString(VariableChildCount(wave_json.waves))"
               ]
             }
           ]
@@ -3556,7 +3757,7 @@
                 "wave_timer",
                 "\"wave_timer\"",
                 ">",
-                "5"
+                "3"
               ]
             },
             {
@@ -3654,11 +3855,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
+                "value": "CreateByName"
               },
               "parameters": [
                 "",
-                "basic_enemy_1",
+                "enemy_group",
+                "VariableString(wave_json.waves[Variable(current_wave_index)].object_type)",
                 "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.x)",
                 "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.y)",
                 ""
@@ -3669,7 +3871,7 @@
                 "value": "CurvedMovement::TweenPathMovement::Move"
               },
               "parameters": [
-                "basic_enemy_1",
+                "enemy_group",
                 "TweenPathMovement",
                 "VariableString(wave_json.waves[Variable(current_wave_index)].path)",
                 "Variable(wave_json.waves[Variable(current_wave_index)].repeat)",
@@ -3726,8 +3928,8 @@
                   },
                   "parameters": [
                     "current_wave_index",
-                    "<=",
-                    "wave_json.waves.length"
+                    "<",
+                    "VariableChildCount(wave_json.waves)"
                   ]
                 },
                 {
@@ -3746,10 +3948,16 @@
                   },
                   "parameters": [
                     "",
-                    "basic_enemy_1",
+                    "enemy_group",
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ]
             }
@@ -3795,7 +4003,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾  Disparos de enemigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3842,17 +4049,6 @@
                 "240",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "basic_enemy_2",
-                "Scale",
-                "=",
-                "1.5"
-              ]
             }
           ]
         },
@@ -3881,7 +4077,7 @@
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "basic_enemy_1",
+                "enemy_group",
                 "InOnScreen",
                 "0",
                 ""
@@ -3894,7 +4090,7 @@
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_1",
+                "enemy_group",
                 "can_shoot",
                 "True",
                 ""
@@ -3910,7 +4106,7 @@
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_1",
+                "enemy_group",
                 "can_shoot",
                 "True",
                 ""
@@ -3936,12 +4132,43 @@
             },
             {
               "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "basic_enemy_2",
+                "FireBullet",
+                "basic_enemy_2.PointX(\"disparo\")",
+                "basic_enemy_2.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "180",
+                "300",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardPosition"
+              },
+              "parameters": [
+                "basic_enemy_3",
+                "FireBullet",
+                "basic_enemy_3.PointX(\"disparo\")",
+                "basic_enemy_3.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
+                "230",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "enemy_shoot_2",
                 "=",
-                "basic_enemy_1.ZOrder()-1"
+                "enemy_group.ZOrder()-1"
               ]
             }
           ]
