@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4659614187057792,
+    "zoomFactor": 0.5685495294107188,
     "windowMask": false,
     "selectedLayer": "BOTONES"
   },
@@ -1151,67 +1151,6 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "cadro_negro",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite7",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1264,9 +1203,6 @@
       },
       {
         "objectName": "piedra_izq"
-      },
-      {
-        "objectName": "cadro_negro"
       }
     ]
   },
@@ -1451,45 +1387,12 @@
         },
         {
           "type": {
-            "value": "PosY"
-          },
-          "parameters": [
-            "piedra_der",
-            "!=",
-            "5"
-          ]
-        },
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "piedra_der",
-            "!=",
-            "434"
-          ]
-        },
-        {
-          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "AddForceVersPos"
-          },
-          "parameters": [
-            "piedra_der",
-            "piedra_der.X()",
-            "5",
-            "434",
-            "1"
-          ]
-        }
-      ]
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
