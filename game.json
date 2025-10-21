@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Historia_",
   "gdVersion": {
     "build": 243,
     "major": 5,
@@ -486,70 +486,6 @@
         }
       },
       {
-        "file": "salembgremove.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "salembgremove.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bg2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bg2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite5.png\"}",
-        "name": "NewSprite5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Silkscreen-Bold.ttf",
         "kind": "font",
         "metadata": "",
@@ -568,35 +504,66 @@
         "userAdded": false
       },
       {
-        "file": "Untitled-30.png",
+        "file": "assets/image/main-menu/bgMen2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Untitled-30.png",
+        "name": "assets/image/main-menu/bgMen2.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "Untitled-40.png",
+        "file": "assets/image/main-menu/salembgremove.png",
         "kind": "image",
         "metadata": "",
-        "name": "Untitled-40.png",
+        "name": "assets/image/main-menu/salembgremove.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite7.png",
+        "file": "assets/image/main-menu/NewSprite2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite7",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite2.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite8.png",
+        "file": "assets/image/main-menu/NewSprite6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite8",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite6.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-derecha.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-derecha.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-izq.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-izq.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/image/main-menu/BoldPixels.otf",
         "userAdded": false
       }
     ],

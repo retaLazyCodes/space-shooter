@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5685495294107188,
+    "zoomFactor": 0.6075393603116706,
     "windowMask": false,
     "selectedLayer": "BOTONES"
   },
@@ -289,7 +289,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
+      "depth": 0.9999999999999999,
       "height": 587,
       "keepRatio": true,
       "layer": "BOTONES",
@@ -326,7 +326,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "bg2.png",
+                  "image": "assets/image/main-menu/bgMen2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -378,7 +378,7 @@
       "effects": [],
       "behaviors": [],
       "string": "SALEM, EL REGRESO",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 64,
       "color": {
@@ -401,7 +401,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "SALEM, EL REGRESO",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 64,
@@ -429,7 +429,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "salembgremove.png",
+                  "image": "assets/image/main-menu/salembgremove.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -481,7 +481,7 @@
       "effects": [],
       "behaviors": [],
       "string": "JUGAR",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 36,
       "color": {
@@ -504,7 +504,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "JUGAR",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 36,
@@ -533,7 +533,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets/image/main-menu/NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -594,7 +594,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets/image/main-menu/NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -655,7 +655,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets/image/main-menu/NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -716,7 +716,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets/image/main-menu/NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -777,7 +777,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite6",
+                  "image": "assets/image/main-menu/NewSprite6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -829,7 +829,7 @@
       "effects": [],
       "behaviors": [],
       "string": "¿COMO JUGAR?",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 28,
       "color": {
@@ -852,7 +852,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "¿COMO JUGAR?",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 28,
@@ -872,7 +872,7 @@
       "effects": [],
       "behaviors": [],
       "string": "HISTORIA",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 28,
       "color": {
@@ -895,7 +895,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "HISTORIA",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 28,
@@ -915,7 +915,7 @@
       "effects": [],
       "behaviors": [],
       "string": "CREDITOS",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 28,
       "color": {
@@ -938,7 +938,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "CREDITOS",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 28,
@@ -958,7 +958,7 @@
       "effects": [],
       "behaviors": [],
       "string": "CONFIGURACIÓN",
-      "font": "BoldPixels.otf",
+      "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "left",
       "characterSize": 28,
       "color": {
@@ -981,7 +981,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "CONFIGURACIÓN",
-        "font": "BoldPixels.otf",
+        "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 28,
@@ -1010,7 +1010,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets/image/main-menu/NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1070,7 +1070,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Untitled-30.png",
+                  "image": "assets/image/main-menu/piedra-derecha.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1130,7 +1130,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Untitled-40.png",
+                  "image": "assets/image/main-menu/piedra-izq.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1196,7 +1196,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite8",
+                  "image": "assets/image/main-menu/NewSprite8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
