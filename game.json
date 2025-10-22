@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Historia_",
+  "firstLayout": "Menu_",
   "gdVersion": {
     "build": 243,
     "major": 5,
@@ -538,7 +538,7 @@
       {
         "file": "assets/image/main-menu/NewSprite8.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/image/main-menu/NewSprite8.png\",\"extension\":\".png\"}",
         "name": "assets/image/main-menu/NewSprite8.png",
         "smoothed": false,
         "userAdded": false
@@ -565,6 +565,146 @@
         "metadata": "",
         "name": "assets/image/main-menu/BoldPixels.otf",
         "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BGExtend.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\BGExtend.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/bgMen2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\bgMen2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/fondo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\fondo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../that-game-arcade-236111.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\that-game-arcade-236111.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/loser-222456.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\loser-222456.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/sprite-64px-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\sprite-64px-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/unwer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\unwer.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -574,7 +714,13 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "musica",
+      "type": "boolean",
+      "value": true
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -582,27 +728,19 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/comojuegar"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/historia_"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/config_"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/credits"
+      "referenceTo": "/layouts/credits_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/history_"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_1"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/transiciom"
     }
   ],
   "externalEvents": [],
