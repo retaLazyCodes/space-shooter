@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Menu_",
   "gdVersion": {
     "build": 243,
     "major": 5,
@@ -60,7 +60,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "bgMen.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
@@ -442,6 +442,269 @@
         "name": "assets/image/salem-flyback-3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+          "name": "8BitOperatorPlus8Regular_Edited.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "bgMen2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bgMen2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Silkscreen-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/bgMen2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/bgMen2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/salembgremove.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/salembgremove.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/main-menu/NewSprite8.png\",\"extension\":\".png\"}",
+        "name": "assets/image/main-menu/NewSprite8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-derecha.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-derecha.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-izq.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-izq.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/image/main-menu/BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BGExtend.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\BGExtend.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/bgMen2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\bgMen2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/fondo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\fondo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../that-game-arcade-236111.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\that-game-arcade-236111.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/loser-222456.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\loser-222456.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/sprite-64px-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\sprite-64px-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\dogoh\\8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/unwer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\unwer.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -451,8 +714,30 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "musica",
+      "type": "boolean",
+      "value": true
+    }
+  ],
   "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/config_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/history_"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_1"
@@ -475,6 +760,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/jsonresourceloader"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
     }
   ],
   "externalLayouts": []
