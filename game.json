@@ -444,18 +444,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
-          "name": "8BitOperatorPlus8Regular_Edited.png"
-        }
-      },
-      {
         "file": "assets/CantoraOne-Regular.ttf",
         "kind": "font",
         "metadata": "",
@@ -465,14 +453,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
           "name": "CantoraOne-Regular.ttf"
         }
-      },
-      {
-        "file": "bgMen2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bgMen2.png",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "file": "assets/Kenney Pixel.ttf",
@@ -501,14 +481,6 @@
         "kind": "font",
         "metadata": "",
         "name": "BoldPixels.otf",
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/main-menu/bgMen2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/image/main-menu/bgMen2.png",
-        "smoothed": false,
         "userAdded": false
       },
       {
@@ -583,127 +555,254 @@
         "userAdded": false
       },
       {
-        "file": "assets/image/main-menu/fondo.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\main-menu\\fondo.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "../that-game-arcade-236111.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "..\\that-game-arcade-236111.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sounds/loser-222456.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\sounds\\loser-222456.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/sprite-64px-9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\sprite-64px-9.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\7.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/dogoh/8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\image\\dogoh\\8.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/image/unwer.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\image\\unwer.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/Nulshock Bd.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/Nulshock Bd.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/heart2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/loser-222456.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/loser-222456.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/flying-to-the-blue-reflection.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/flying-to-the-blue-reflection.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/laser-gun.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/laser-gun.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/explosion.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/explosion.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/death.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/death.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/hurt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/hurt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
@@ -719,6 +818,11 @@
       "name": "musica",
       "type": "boolean",
       "value": true
+    },
+    {
+      "name": "last_score",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
