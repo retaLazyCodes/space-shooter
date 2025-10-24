@@ -107,6 +107,267 @@
       "move_time": 5,
       "repeat": 1,
       "delay": 0.4
+    },
+    {
+      "path": "path_04",
+      "object_type": "basic_enemy_1",
+      "count": 6,
+      "spawn_pos": { "x": 800, "y": 120 },
+      "move_time": 4.8,
+      "repeat": 1,
+      "delay": 0.45
+    },
+    {
+      "path": "path_05",
+      "object_type": "basic_enemy_1",
+      "count": 6,
+      "spawn_pos": { "x": 800, "y": 460 },
+      "move_time": 4.7,
+      "repeat": 1,
+      "delay": 0.44
+    },
+    {
+      "path": "path_03",
+      "object_type": "basic_enemy_1",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 110 },
+      "move_time": 4.5,
+      "repeat": 1,
+      "delay": 0.43
+    },
+    {
+      "path": "path_06",
+      "object_type": "basic_enemy_2",
+      "count": 4,
+      "spawn_pos": { "x": 600, "y": 0 },
+      "move_time": 4.4,
+      "repeat": 1,
+      "delay": 0.42
+    },
+    {
+      "path": "path_07",
+      "object_type": "basic_enemy_2",
+      "count": 4,
+      "spawn_pos": { "x": 720, "y": 350 },
+      "move_time": 4.2,
+      "repeat": 1,
+      "delay": 0.4
+    },
+    {
+      "path": "path_08",
+      "object_type": "basic_enemy_2",
+      "count": 5,
+      "spawn_pos": { "x": 800, "y": 180 },
+      "move_time": 4.1,
+      "repeat": 1,
+      "delay": 0.38
+    },
+    {
+      "path": "path_09",
+      "object_type": "basic_enemy_2",
+      "count": 5,
+      "spawn_pos": { "x": 300, "y": 420 },
+      "move_time": 3.0,
+      "repeat": 1,
+      "delay": 0.37
+    },
+    {
+      "path": "path_10",
+      "object_type": "basic_enemy_2",
+      "count": 6,
+      "spawn_pos": { "x": 800, "y": 100 },
+      "move_time": 3.9,
+      "repeat": 1,
+      "delay": 0.36
+    },
+    {
+      "path": "path_11",
+      "object_type": "basic_enemy_2",
+      "count": 6,
+      "spawn_pos": { "x": 700, "y": 50 },
+      "move_time": 3.8,
+      "repeat": 1,
+      "delay": 0.35
+    },
+    {
+      "path": "path_12",
+      "object_type": "basic_enemy_3",
+      "count": 3,
+      "spawn_pos": { "x": 800, "y": 80 },
+      "move_time": 3.7,
+      "repeat": 1,
+      "delay": 0.34
+    },
+    {
+      "path": "path_13",
+      "object_type": "basic_enemy_3",
+      "count": 3,
+      "spawn_pos": { "x": 800, "y": 500 },
+      "move_time": 3.6,
+      "repeat": 1,
+      "delay": 0.33
+    },
+    {
+      "path": "path_14",
+      "object_type": "basic_enemy_2",
+      "count": 7,
+      "spawn_pos": { "x": 800, "y": 250 },
+      "move_time": 3.5,
+      "repeat": 2,
+      "delay": 0.32
+    },
+    {
+      "path": "path_04",
+      "object_type": "basic_enemy_2",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 130 },
+      "move_time": 3.4,
+      "repeat": 1,
+      "delay": 0.31
+    },
+    {
+      "path": "path_05",
+      "object_type": "basic_enemy_3",
+      "count": 4,
+      "spawn_pos": { "x": 800, "y": 460 },
+      "move_time": 3.3,
+      "repeat": 1,
+      "delay": 0.3
+    },
+    {
+      "path": "path_06",
+      "object_type": "basic_enemy_3",
+      "count": 5,
+      "spawn_pos": { "x": 500, "y": 0 },
+      "move_time": 3.2,
+      "repeat": 1,
+      "delay": 0.3
+    },
+    {
+      "path": "path_07",
+      "object_type": "basic_enemy_3",
+      "count": 5,
+      "spawn_pos": { "x": 500, "y": 580 },
+      "move_time": 3.1,
+      "repeat": 1,
+      "delay": 0.29
+    },
+    {
+      "path": "path_10",
+      "object_type": "basic_enemy_2",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 100 },
+      "move_time": 3.0,
+      "repeat": 2,
+      "delay": 0.28
+    },
+    {
+      "path": "path_11",
+      "object_type": "basic_enemy_3",
+      "count": 6,
+      "spawn_pos": { "x": 700, "y": 50 },
+      "move_time": 2.9,
+      "repeat": 2,
+      "delay": 0.28
+    },
+    {
+      "path": "path_12",
+      "object_type": "basic_enemy_3",
+      "count": 7,
+      "spawn_pos": { "x": 800, "y": 80 },
+      "move_time": 2.8,
+      "repeat": 2,
+      "delay": 0.27
+    },
+    {
+      "path": "path_13",
+      "object_type": "basic_enemy_3",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 500 },
+      "move_time": 2.7,
+      "repeat": 2,
+      "delay": 0.26
+    },
+    {
+      "path": "path_14",
+      "object_type": "basic_enemy_3",
+      "count": 8,
+      "spawn_pos": { "x": 800, "y": 250 },
+      "move_time": 2.6,
+      "repeat": 2,
+      "delay": 0.26
+    },
+    {
+      "path": "path_08",
+      "object_type": "basic_enemy_3",
+      "count": 9,
+      "spawn_pos": { "x": 800, "y": 160 },
+      "move_time": 2.5,
+      "repeat": 3,
+      "delay": 0.25
+    },
+    {
+      "path": "path_09",
+      "object_type": "basic_enemy_3",
+      "count": 9,
+      "spawn_pos": { "x": 800, "y": 440 },
+      "move_time": 2.4,
+      "repeat": 3,
+      "delay": 0.25
+    },
+    {
+      "path": "path_10",
+      "object_type": "basic_enemy_3",
+      "count": 10,
+      "spawn_pos": { "x": 800, "y": 100 },
+      "move_time": 2.4,
+      "repeat": 3,
+      "delay": 0.25
+    },
+    {
+      "path": "path_11",
+      "object_type": "basic_enemy_3",
+      "count": 10,
+      "spawn_pos": { "x": 700, "y": 50 },
+      "move_time": 2.3,
+      "repeat": 3,
+      "delay": 0.25
+    },
+    {
+      "path": "path_12",
+      "object_type": "basic_enemy_3",
+      "count": 10,
+      "spawn_pos": { "x": 800, "y": 80 },
+      "move_time": 2.3,
+      "repeat": 3,
+      "delay": 0.25
+    },
+    {
+      "path": "path_13",
+      "object_type": "basic_enemy_3",
+      "count": 12,
+      "spawn_pos": { "x": 800, "y": 500 },
+      "move_time": 2.2,
+      "repeat": 3,
+      "delay": 0.24
+    },
+    {
+      "path": "path_14",
+      "object_type": "basic_enemy_3",
+      "count": 12,
+      "spawn_pos": { "x": 800, "y": 250 },
+      "move_time": 2.2,
+      "repeat": 3,
+      "delay": 0.24
+    },
+    {
+      "path": "path_4",
+      "object_type": "basic_enemy_2b",
+      "count": 1,
+      "spawn_pos": { "x": 800, "y": 300 },
+      "move_time": 2.2,
+      "repeat": 3,
+      "delay": 0.24
     }
   ]
 }

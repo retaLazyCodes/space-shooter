@@ -34,6 +34,9 @@
         },
         {
           "name": "basic_enemy_3"
+        },
+        {
+          "name": "basic_enemy_2b"
         }
       ]
     },
@@ -4417,6 +4420,164 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "basic_enemy_2b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 10,
+          "unseenGraceDistance": 0
+        },
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 5,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/enemy-ship2.png",
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 8,
+                      "y": 42
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 21,
+                      "y": 44
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 18
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 51
+                      },
+                      {
+                        "x": 31,
+                        "y": 50.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 36
+                      },
+                      {
+                        "x": 26,
+                        "y": 14.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4436,6 +4597,9 @@
       },
       {
         "objectName": "basic_enemy_2"
+      },
+      {
+        "objectName": "basic_enemy_2b"
       },
       {
         "objectName": "basic_enemy_3"
@@ -4629,6 +4793,263 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "Simular Checkpoints"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "14"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "24"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "35"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "14"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/checkpoint.mp3",
+                "2",
+                "no",
+                "volume+200",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "24"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/checkpoint.mp3",
+                "2",
+                "no",
+                "volume+200",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "35"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/checkpoint.mp3",
+                "2",
+                "no",
+                "volume+200",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "Creación de caminos"
         },
         {
@@ -4740,6 +5161,61 @@
                 "",
                 "\"path_09\"",
                 "\"m600.64 500 0.72728-580.36\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_10\"",
+                "\"m800 100 c-150 50 -150 150 -300 200 c150 50 150 150 300 200\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_11\"",
+                "\"m700 50 c50 100 -50 200 50 300 c-50 100 50 200 -50 300\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_12\"",
+                "\"m800 50 c-200 150 -400 300 -600 500\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_13\"",
+                "\"m800 550 c-200 -150 -400 -300 -600 -500\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_14\"",
+                "\"m800 300 c-200 -150 -200 150 -400 0 c200 150 200 -150 400 0\"",
                 ""
               ]
             }
@@ -5038,6 +5514,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5876,7 +6353,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾  1. Control general del tiempo entre oleadas",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5948,7 +6424,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾  2. Spawner enemigos según el JSON",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6152,7 +6627,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾  Disparos de enemigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6198,6 +6672,28 @@
                 "180",
                 "240",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "180",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "Scale",
+                "=",
+                "3"
               ]
             }
           ]
@@ -6309,6 +6805,21 @@
                 "player.PointY(\"Center\")",
                 "230",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "FireBullet",
+                "basic_enemy_2b.PointX(\"disparo\")",
+                "basic_enemy_2b.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "180",
+                "300",
+                "300"
               ]
             },
             {

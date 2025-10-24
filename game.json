@@ -860,6 +860,16 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/7f9d3fcd723e6cd77452d818e3cba9775f63acdbf98378e7276cc95bf1213e86_Square Green Slider Thumb.png",
           "name": "Square Green Slider Thumb.png"
         }
+      },
+      {
+        "file": "assets/sounds/checkpoint.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/checkpoint.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -884,6 +894,21 @@
       "name": "volume",
       "type": "number",
       "value": 60
+    },
+    {
+      "name": "checkpoint_1",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_2",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_3",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
