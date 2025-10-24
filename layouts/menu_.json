@@ -23,7 +23,13 @@
     "selectedLayer": "escena"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "fade_started",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -301,23 +307,6 @@
       "x": 17,
       "y": 30,
       "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 597,
-      "keepRatio": true,
-      "layer": "fundidos",
-      "name": "negro",
-      "persistentUuid": "68df714f-d350-42a3-8061-36e55e7c7db6",
-      "width": 824,
-      "x": -13,
-      "y": -10,
-      "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1357,16 +1346,35 @@
       "actions": [
         {
           "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "negro",
+            "0",
+            "0",
+            "\"fundidos\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
           },
           "parameters": [
             "negro",
-            "Tween",
-            "\"fundido\"",
-            "0",
-            "\"linear\"",
-            "2",
-            ""
+            "Resizable",
+            "800",
+            "600"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "fade_started",
+            "True",
+            "\"fundido\""
           ]
         },
         {
@@ -1407,6 +1415,47 @@
           },
           "parameters": [
             "slot5"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "fade_started",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "negro",
+            "Tween",
+            "\"fundido\"",
+            "0",
+            "\"linear\"",
+            "2",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "fade_started",
+            "False",
+            "\"fundido\""
           ]
         }
       ]
@@ -1459,7 +1508,7 @@
             "assets/music/loser-222456.mp3",
             "1",
             "",
-            "50",
+            "volume",
             "1"
           ]
         }
@@ -1667,16 +1716,6 @@
         },
         {
           "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "musica",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1777,16 +1816,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "musica",
-            "False",
-            ""
-          ]
-        },
         {
           "type": {
             "value": "Tween::TweenBehavior::AddObjectOpacityTween2"

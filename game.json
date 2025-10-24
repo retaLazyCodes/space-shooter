@@ -1,7 +1,7 @@
 {
   "firstLayout": "Menu_",
   "gdVersion": {
-    "build": 243,
+    "build": 244,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -804,6 +804,62 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/volume-slider/Transparent.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/998e0aec3ae57e2bafb3d52e26ab64b10153d411f90c62198effb90b18ecd603_Transparent.png",
+          "name": "Transparent.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/b20061f94d8b7288702975d6bd15d1a750a6b5ba429c22cb695b19210d0da8b9_Square Green Slider Border.png",
+          "name": "Square Green Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/553dd6c98bc6b7c3539f936e1c0815fef2796c9aa3468ae90d288bdb5931076b_Square Green Slider Fill Bar.png",
+          "name": "Square Green Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/7f9d3fcd723e6cd77452d818e3cba9775f63acdbf98378e7276cc95bf1213e86_Square Green Slider Thumb.png",
+          "name": "Square Green Slider Thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -823,6 +879,11 @@
       "name": "last_score",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "volume",
+      "type": "number",
+      "value": 60
     }
   ],
   "layouts": [
@@ -872,6 +933,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
     }
   ],
   "externalLayouts": []

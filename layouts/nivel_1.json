@@ -4808,7 +4808,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "🎬 Escena",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4835,7 +4834,7 @@
                 "negro",
                 "0",
                 "0",
-                ""
+                "\"fundido\""
               ]
             },
             {
@@ -4897,6 +4896,16 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -4916,7 +4925,7 @@
                 "",
                 "assets/music/flying-to-the-blue-reflection.ogg",
                 "yes",
-                "50",
+                "volume",
                 "1"
               ]
             }
@@ -5029,13 +5038,11 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5073,7 +5080,7 @@
                   "parameters": [
                     "player",
                     "270",
-                    "250",
+                    "230",
                     ""
                   ]
                 }
@@ -5119,7 +5126,7 @@
                   "parameters": [
                     "player",
                     "270",
-                    "250",
+                    "230",
                     ""
                   ]
                 },
@@ -5157,7 +5164,7 @@
                   "parameters": [
                     "player",
                     "90",
-                    "250",
+                    "230",
                     ""
                   ]
                 }
@@ -5203,7 +5210,7 @@
                   "parameters": [
                     "player",
                     "90",
-                    "250",
+                    "230",
                     ""
                   ]
                 },
@@ -5241,7 +5248,7 @@
                   "parameters": [
                     "player",
                     "0",
-                    "250",
+                    "230",
                     ""
                   ]
                 }
@@ -5287,7 +5294,7 @@
                   "parameters": [
                     "player",
                     "0",
-                    "250",
+                    "230",
                     ""
                   ]
                 },
@@ -5325,7 +5332,7 @@
                   "parameters": [
                     "player",
                     "180",
-                    "250",
+                    "230",
                     ""
                   ]
                 }
@@ -5371,7 +5378,7 @@
                   "parameters": [
                     "player",
                     "180",
-                    "250",
+                    "230",
                     ""
                   ]
                 },
@@ -5464,7 +5471,7 @@
                     "",
                     "assets/sounds/laser-gun.mp3",
                     "",
-                    "20",
+                    "volume/4",
                     "1"
                   ]
                 }
@@ -5549,7 +5556,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5595,7 +5601,7 @@
                 "",
                 "assets/sounds/hurt.wav",
                 "",
-                "100",
+                "volume",
                 "1"
               ]
             }
@@ -5762,7 +5768,7 @@
                 "",
                 "assets/sounds/death.mp3",
                 "",
-                "60",
+                "volume/2",
                 "1"
               ]
             },
@@ -5794,7 +5800,7 @@
                 "negro",
                 "0",
                 "0",
-                ""
+                "\"fundido\""
               ]
             },
             {
@@ -6363,7 +6369,7 @@
                 "",
                 "assets/sounds/explosion.mp3",
                 "enemy_group.PointX(\"Center\")",
-                "60",
+                "volume/2",
                 "1"
               ]
             },
@@ -6622,7 +6628,7 @@
                 "",
                 "assets/sounds/explosion.mp3",
                 "enemy_group.PointX(\"Center\")",
-                "60",
+                "volume/2",
                 "1"
               ]
             },
@@ -6864,6 +6870,59 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "fundido",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
