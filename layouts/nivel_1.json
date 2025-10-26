@@ -90,6 +90,11 @@
       "name": "is_paused",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "checkpoint_visible",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -234,22 +239,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "DebugText2",
-      "persistentUuid": "9f467378-07ec-4f89-9c34-e3f29d9714b6",
-      "width": 0,
-      "x": 87,
-      "y": 523,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
       "name": "stage_text",
       "persistentUuid": "e51f43a0-816d-4f40-85a9-7cf1f33ef044",
       "width": 0,
@@ -341,6 +330,38 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ReadyGo_text",
+      "persistentUuid": "7dfc3b28-bf7e-4db8-9e7d-b4f51d75e91f",
+      "width": 0,
+      "x": 290,
+      "y": 260,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "checkpoint_text",
+      "persistentUuid": "e39dd16d-cfeb-4e91-b241-3fcb26599e29",
+      "width": 0,
+      "x": 591,
+      "y": 538,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -363,6 +384,11 @@
         },
         {
           "name": "is_alive",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "player_is_respawning",
           "type": "boolean",
           "value": true
         }
@@ -1814,356 +1840,6 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-0.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-1.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-2.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-3.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-4.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-5.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-6.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
                   "image": "assets/image/salem-fly-death/salem-fly-death-7.png",
                   "points": [
                     {
@@ -2315,456 +1991,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/image/salem-fly-death/salem-fly-death-10.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-11.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-12.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-13.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-14.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-15.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-16.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-17.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-18.png",
-                  "points": [
-                    {
-                      "name": "disparo",
-                      "x": 57,
-                      "y": 39.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15,
-                        "y": 32
-                      },
-                      {
-                        "x": 18,
-                        "y": 0.5
-                      },
-                      {
-                        "x": 44.5,
-                        "y": 1
-                      },
-                      {
-                        "x": 49.5,
-                        "y": 19.5
-                      },
-                      {
-                        "x": 47.5,
-                        "y": 64
-                      },
-                      {
-                        "x": 15,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/salem-fly-death/salem-fly-death-19.png",
                   "points": [
                     {
                       "name": "disparo",
@@ -3336,7 +2562,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 1.6,
+          "FireCooldown": 1.5,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -3925,49 +3151,6 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "DebugText2",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 15,
-      "color": {
-        "b": 24,
-        "g": 24,
-        "r": 218
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 15,
-        "lineHeight": 0,
-        "color": "218;24;24"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "negro",
@@ -4466,7 +3649,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 1,
+          "FireCooldown": 1.2,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -4642,6 +3825,102 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ReadyGo_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "checkpoint_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "CHECKPOINT!",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 129,
+        "smoothed": true,
+        "underlined": false,
+        "text": "CHECKPOINT!",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4693,9 +3972,6 @@
         "objectName": "DebugText"
       },
       {
-        "objectName": "DebugText2"
-      },
-      {
         "objectName": "negro"
       },
       {
@@ -4706,6 +3982,12 @@
       },
       {
         "objectName": "pause_text"
+      },
+      {
+        "objectName": "ReadyGo_text"
+      },
+      {
+        "objectName": "checkpoint_text"
       }
     ]
   },
@@ -4762,29 +4044,10 @@
             },
             {
               "type": {
-                "value": "ResetTimer"
+                "value": "Cache"
               },
               "parameters": [
-                "",
-                "\"player_shoot_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"wave_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"enemy_spawn_timer\""
+                "checkpoint_text"
               ]
             },
             {
@@ -4816,6 +4079,253 @@
                 "Text",
                 "=",
                 "\"Score: \" + ToString(Variable(player_score))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"wave_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"player_shoot_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemy_spawn_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Animacion de entrada"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "-35",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"descender\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
+                "65",
+                "120",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Text",
+                "=",
+                "\"READY?\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Scale",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Tween",
+                "\"ready_zoom\"",
+                "1",
+                "\"easeOutCubic\"",
+                "1",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "player"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Text",
+                "=",
+                "\"GO!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "=",
+                "330",
+                "=",
+                "260"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Tween",
+                "\"ready_zoomIn\"",
+                "3",
+                "\"easeInBack\"",
+                "0.8",
+                "no",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Tween",
+                "\"readyOpacity\"",
+                "0",
+                "\"linear\"",
+                "1.2",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "False",
+                ""
               ]
             }
           ]
@@ -4990,7 +4500,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "35"
+                "34"
               ]
             }
           ]
@@ -5005,7 +4515,17 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "14"
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "=",
+                ""
               ]
             }
           ],
@@ -5032,6 +4552,16 @@
                 "volume+200",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
             }
           ]
         },
@@ -5045,7 +4575,17 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "24"
+                "25"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "=",
+                ""
               ]
             }
           ],
@@ -5072,6 +4612,16 @@
                 "volume+200",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
             }
           ]
         },
@@ -5086,6 +4636,16 @@
                 "current_wave_index",
                 "=",
                 "35"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "=",
+                ""
               ]
             }
           ],
@@ -5111,6 +4671,199 @@
                 "no",
                 "volume+200",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Opacity",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "checkpoint_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkOut\"",
+                "0",
+                "\"linear\"",
+                "0.4",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkOut\"",
+                "0",
+                "\"linear\"",
+                "0.4",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkOut\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkIn\"",
+                "255",
+                "\"linear\"",
+                "0.4",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkIn\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "checkpoint_text",
+                "Tween",
+                "\"blinkOut\"",
+                "0",
+                "\"linear\"",
+                "0.4",
+                "no"
               ]
             }
           ]
@@ -5297,32 +5050,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"fly_idle\""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -5353,6 +5080,118 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Subir dificultad"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "True",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "basic_enemy_1",
+            "FireBullet",
+            "=",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "basic_enemy_2",
+            "FireBullet",
+            "=",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "basic_enemy_3",
+            "FireBullet",
+            "=",
+            "1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "checkpoint_3",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "basic_enemy_3",
+            "FireBullet",
+            "=",
+            "0.6",
+            ""
+          ]
+        }
+      ]
     },
     {
       "colorB": 228,
@@ -5465,18 +5304,19 @@
                 "value": "Wait"
               },
               "parameters": [
-                "1"
+                "0.2"
               ]
             },
             {
               "type": {
-                "value": "PlaySound"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
                 "assets/music/flying-to-the-blue-reflection.ogg",
+                "1",
                 "yes",
-                "volume",
+                "volume/2",
                 "1"
               ]
             }
@@ -5590,6 +5430,33 @@
               },
               "parameters": [
                 "",
+                "\"m\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
                 "\"Escape\""
               ]
             }
@@ -5639,6 +5506,15 @@
                 "pause_text",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PauseSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
             }
           ]
         },
@@ -5672,6 +5548,15 @@
               },
               "parameters": [
                 "pause_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "RePlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "1"
               ]
             }
           ]
@@ -5709,6 +5594,17 @@
               "parameters": [
                 "is_paused",
                 "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
                 ""
               ]
             }
@@ -6186,6 +6082,17 @@
                     "=",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_respawning",
+                    "=",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -6434,8 +6341,35 @@
               },
               "parameters": [
                 "player",
+                "270",
+                "900",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "player"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player",
                 "90",
-                "350",
+                "500",
                 "1"
               ]
             },
@@ -6936,6 +6870,26 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "=",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -6999,6 +6953,186 @@
                 "180",
                 "300",
                 "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "enemy_shoot_2",
+                "=",
+                "enemy_group.ZOrder()-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "enemy_group",
+                "can_shoot",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardPosition"
+              },
+              "parameters": [
+                "basic_enemy_1",
+                "FireBullet",
+                "basic_enemy_1.PointX(\"disparo\")",
+                "basic_enemy_1.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "basic_enemy_2",
+                "FireBullet",
+                "basic_enemy_2.PointX(\"disparo\")",
+                "basic_enemy_2.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "180",
+                "350",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardPosition"
+              },
+              "parameters": [
+                "basic_enemy_3",
+                "FireBullet",
+                "basic_enemy_3.PointX(\"disparo\")",
+                "basic_enemy_3.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
+                "280",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "enemy_shoot_2",
+                "=",
+                "enemy_group.ZOrder()-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "enemy_group",
+                "can_shoot",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardPosition"
+              },
+              "parameters": [
+                "basic_enemy_1",
+                "FireBullet",
+                "basic_enemy_1.PointX(\"disparo\")",
+                "basic_enemy_1.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "basic_enemy_2",
+                "FireBullet",
+                "basic_enemy_2.PointX(\"disparo\")",
+                "basic_enemy_2.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "180",
+                "350",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardPosition"
+              },
+              "parameters": [
+                "basic_enemy_3",
+                "FireBullet",
+                "basic_enemy_3.PointX(\"disparo\")",
+                "basic_enemy_3.PointY(\"disparo\")",
+                "enemy_shoot_2",
+                "player.PointX(\"Center\")",
+                "player.PointY(\"Center\")",
+                "320",
+                ""
               ]
             },
             {
@@ -7151,6 +7285,17 @@
                 "player",
                 "is_alive",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
                 ""
               ]
             }
@@ -7307,6 +7452,17 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -7414,7 +7570,7 @@
                     "player",
                     "\"damage_timer\"",
                     ">=",
-                    "1"
+                    "1.5"
                   ]
                 },
                 {
