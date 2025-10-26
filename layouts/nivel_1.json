@@ -97,9 +97,9 @@
       "value": false
     },
     {
-      "name": "offsetMusic",
-      "type": "number",
-      "value": 0
+      "name": "checkpoint_anim_playing",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -4927,6 +4927,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_anim_playing",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -4968,7 +4978,15 @@
                 "0",
                 "\"linear\"",
                 "0.4",
-                "yes"
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "checkpoint_text"
               ]
             }
           ]
@@ -6663,6 +6681,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  1. Control general del tiempo entre oleadas",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6734,6 +6753,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  2. Spawner enemigos según el JSON",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6937,6 +6957,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  Disparos de enemigos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
