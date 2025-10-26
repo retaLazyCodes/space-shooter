@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Nivel_951",
-  "name": "Nivel_1",
+  "mangledName": "Nivel_952",
+  "name": "Nivel_2",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -95,11 +95,6 @@
       "name": "checkpoint_visible",
       "type": "boolean",
       "value": false
-    },
-    {
-      "name": "offsetMusic",
-      "type": "number",
-      "value": 0
     }
   ],
   "instances": [
@@ -209,14 +204,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 580,
+      "height": 771,
       "keepRatio": true,
       "layer": "background-layer",
       "name": "background_1",
       "persistentUuid": "5e630e1a-6471-464f-a503-4c31e55e82b8",
-      "width": 3886,
-      "x": 0,
-      "y": 0,
+      "width": 3878,
+      "x": -1,
+      "y": -1,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -374,11 +369,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "DebugText2",
-      "persistentUuid": "da560862-e7e8-43f5-8e85-438fd782a975",
+      "name": "life",
+      "persistentUuid": "359b8080-0395-46dc-9d56-3aaa646326ce",
       "width": 0,
-      "x": 596,
-      "y": 497,
+      "x": 550,
+      "y": 113,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -2069,7 +2064,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "background_1",
-      "texture": "assets/image/background_level1.jpg",
+      "texture": "assets/image/background_lvl2.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -3944,47 +3939,244 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "DebugText2",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "life",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "asd",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 15,
-      "color": {
-        "b": 24,
-        "g": 24,
-        "r": 218
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "asd",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 15,
-        "lineHeight": 0,
-        "color": "218;24;24"
-      }
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3995,6 +4187,9 @@
       },
       {
         "objectName": "background_1"
+      },
+      {
+        "objectName": "life"
       },
       {
         "objectName": "background_border"
@@ -4034,9 +4229,6 @@
       },
       {
         "objectName": "DebugText"
-      },
-      {
-        "objectName": "DebugText2"
       },
       {
         "objectName": "negro"
@@ -4115,14 +4307,6 @@
               },
               "parameters": [
                 "checkpoint_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "DebugText2"
               ]
             },
             {
@@ -4714,7 +4898,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "15"
+                "1"
               ]
             },
             {
@@ -4760,6 +4944,17 @@
                 "checkpoint_visible",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_1",
+                "270",
+                "50",
+                "1"
               ]
             }
           ]
@@ -5274,17 +5469,6 @@
                 "=",
                 "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress)) \n + \" | TotalWaves: \" + ToString(VariableChildCount(wave_json.waves))"
               ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "DebugText2",
-                "Text",
-                "=",
-                "\"Sound offset: \" + ToString(SoundChannelPlayingOffset(1))"
-              ]
             }
           ]
         }
@@ -5300,18 +5484,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Crear fade-in"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -5391,6 +5563,52 @@
           "conditions": [
             {
               "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/flying-to-the-blue-reflection.ogg",
+                "1",
+                "yes",
+                "volume/2",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
@@ -5428,127 +5646,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Loop \"pefecto\" de musica de fondo"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "musica",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/music/stg1_full.ogg",
-                "1",
-                "no",
-                "volume/2",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "musica",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SoundChannelPlayingOffset"
-              },
-              "parameters": [
-                "",
-                "1",
-                ">=",
-                "92.92"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModPlayingOffsetSoundChannel"
-              },
-              "parameters": [
-                "",
-                "1",
-                "=",
-                "8.6"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "config extra de escena"
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -5561,7 +5658,13 @@
                 "+",
                 "100 * TimeDelta()"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
               "type": {
                 "value": "ScalableCapability::ScalableBehavior::SetValue"
@@ -5595,7 +5698,7 @@
               },
               "parameters": [
                 "",
-                "\"Nivel_1\""
+                "\"Nivel_2\""
               ]
             }
           ]
@@ -5736,6 +5839,31 @@
               "parameters": [
                 "",
                 "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "background_1",
+                "<=",
+                "-190"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "background_1"
               ]
             }
           ]
@@ -6460,35 +6588,6 @@
                 "=",
                 "0"
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "heart_group",
-                "Animation",
-                "=",
-                "\"empty\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "health",
-                "<",
-                "0"
-              ]
             },
             {
               "type": {
@@ -6507,6 +6606,17 @@
                 "is_alive",
                 "False",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_group",
+                "Animation",
+                "=",
+                "\"empty\""
               ]
             },
             {
@@ -6650,7 +6760,7 @@
               },
               "parameters": [
                 "",
-                "\"Nivel_1\""
+                "\"Nivel_2\""
               ]
             }
           ]

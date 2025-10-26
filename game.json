@@ -756,16 +756,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/music/flying-to-the-blue-reflection.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/music/flying-to-the-blue-reflection.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/sounds/laser-gun.mp3",
         "kind": "audio",
         "metadata": "",
@@ -870,6 +860,72 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/background_lvl2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/background_lvl2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/stg1_full.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/stg1_full.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -931,6 +987,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/nivel_2"
     }
   ],
   "externalEvents": [],
