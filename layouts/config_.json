@@ -28,6 +28,11 @@
       "name": "fade_started",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "music_enabled",
+      "type": "boolean",
+      "value": true
     }
   ],
   "instances": [
@@ -57,8 +62,8 @@
       "name": "volver",
       "persistentUuid": "a87f0483-5830-4182-a391-6fe99bccd804",
       "width": 0,
-      "x": 414,
-      "y": 407,
+      "x": 571,
+      "y": 512,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -73,8 +78,8 @@
       "name": "slot5",
       "persistentUuid": "73d629c0-67c9-47a1-b539-1419ef35f286",
       "width": 0,
-      "x": 383,
-      "y": 385,
+      "x": 540,
+      "y": 490,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -93,22 +98,6 @@
       "x": 20,
       "y": 32,
       "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1.0291595197255574,
-      "height": 600,
-      "layer": "fundidos",
-      "name": "negro",
-      "persistentUuid": "2aa06577-af27-4e8d-889f-7555e1481b72",
-      "width": 800,
-      "x": 0,
-      "y": 0,
-      "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -185,43 +174,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "BOTONES",
-      "name": "activars",
-      "persistentUuid": "946d3241-68a8-4785-ba41-ebf3b8906da5",
-      "width": 0,
-      "x": 376,
-      "y": 323,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "BOTONES",
-      "name": "slot7",
-      "persistentUuid": "026c50b5-e390-4abb-92bf-8e9c93da94e0",
-      "width": 0,
-      "x": 384,
-      "y": 304,
-      "zOrder": 31,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "BOTONES",
       "name": "item1",
       "persistentUuid": "411fc94e-80f5-4d28-9283-a97f71e8ebd9",
       "width": 0,
-      "x": 56,
-      "y": 323,
+      "x": 360,
+      "y": 343,
       "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
@@ -252,8 +209,8 @@
       "name": "SquareGreenSlider",
       "persistentUuid": "57ef3592-cc6c-41d7-a557-05c5c726a0d2",
       "width": 0,
-      "x": 69,
-      "y": 377,
+      "x": 373,
+      "y": 397,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -1608,74 +1565,8 @@
           },
           "parameters": [
             "musica",
-            "False",
+            "Toggle",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PauseSoundCanal"
-          },
-          "parameters": [
-            "",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "cursor",
-            "slot7",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyFromTextJustPressed"
-          },
-          "parameters": [
-            "",
-            "\"Space\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "musica",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySoundCanal"
-          },
-          "parameters": [
-            "",
-            "assets/music/loser-222456.mp3",
-            "1",
-            "",
-            "volume",
-            "1"
           ]
         }
       ]
@@ -1717,9 +1608,9 @@
           "parameters": [
             "cursor",
             "=",
-            "cursor.X()",
+            "slot6.X()-60",
             "=",
-            "cursor.Y()-83"
+            "slot6.Y()"
           ]
         }
       ]
@@ -1761,9 +1652,9 @@
           "parameters": [
             "cursor",
             "=",
-            "cursor.X()",
+            "slot5.X()-60",
             "=",
-            "cursor.Y()+83"
+            "slot5.Y()+5"
           ]
         }
       ]
@@ -1818,6 +1709,106 @@
             "Text",
             "=",
             "\"Volumen: \" + ToString( GlobalVariable(volume))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "musica",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PauseSoundCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SONIDO_DESACTIVAR",
+            "Text",
+            "=",
+            "\"  ACTIVAR MÚSICA\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "musica",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "SoundPlaying"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets/music/loser-222456.mp3",
+            "1",
+            "",
+            "volume",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SONIDO_DESACTIVAR",
+            "Text",
+            "=",
+            "\"DESACTIVAR MÚSICA\""
           ]
         }
       ]

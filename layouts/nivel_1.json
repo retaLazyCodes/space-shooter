@@ -4927,16 +4927,6 @@
             },
             {
               "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_anim_playing",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -4959,16 +4949,6 @@
             },
             {
               "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -4979,6 +4959,16 @@
                 "\"linear\"",
                 "0.4",
                 "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "False",
+                ""
               ]
             },
             {
@@ -6276,17 +6266,6 @@
                   "parameters": [
                     "player",
                     "player_is_hit",
-                    "=",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "player_is_respawning",
                     "=",
                     ""
                   ]
