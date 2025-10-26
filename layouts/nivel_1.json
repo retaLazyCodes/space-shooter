@@ -100,6 +100,11 @@
       "name": "checkpoint_anim_playing",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "ready_go_played",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -4275,7 +4280,7 @@
               "parameters": [
                 "player",
                 "65",
-                "120",
+                "100",
                 "1"
               ]
             },
@@ -4285,6 +4290,19 @@
               },
               "parameters": [
                 "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/ready-go.mp3",
+                "3",
+                "no",
+                "volume",
+                "1"
               ]
             },
             {
@@ -4329,7 +4347,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2.5"
+                "3"
               ]
             },
             {
@@ -4400,6 +4418,16 @@
                 "player",
                 "player_is_respawning",
                 "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ready_go_played",
+                "True",
                 ""
               ]
             }
@@ -5673,6 +5701,12 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -5702,6 +5736,15 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PauseSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
             }
           ]
         },
@@ -5717,6 +5760,99 @@
                 "False",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SoundPaused"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "ready_go_played",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "pause_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "RePlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "RePlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ready_go_played",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "is_paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [

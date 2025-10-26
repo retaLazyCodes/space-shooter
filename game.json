@@ -926,6 +926,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sounds/ready-go.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/ready-go.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
