@@ -936,6 +936,46 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/bgLVL2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\bgLVL2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/piso64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\piso64.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/pisoHigth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\pisoHigth.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/piso-01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\piso-01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/fondo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\fondo.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1001,6 +1041,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/nivel_3"
     }
   ],
   "externalEvents": [],
