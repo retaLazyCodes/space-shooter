@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Nivel_952",
-  "name": "Nivel_2",
+  "mangledName": "Nivel_953",
+  "name": "Nivel_3",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4602611891004551,
+    "zoomFactor": 0.34148909283607554,
     "windowMask": false,
     "selectedLayer": "piso"
   },
@@ -95,11 +95,6 @@
       "name": "checkpoint_visible",
       "type": "boolean",
       "value": false
-    },
-    {
-      "name": "ready_go_played",
-      "type": "boolean",
-      "value": false
     }
   ],
   "instances": [
@@ -113,8 +108,8 @@
       "name": "player",
       "persistentUuid": "ce2e6e5b-616f-4938-a9bb-a9c61efc93ea",
       "width": 64,
-      "x": 124,
-      "y": 303,
+      "x": -96,
+      "y": 398,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -164,8 +159,8 @@
       "name": "background_border",
       "persistentUuid": "f4279fba-193d-4081-b8a6-ef7827b57388",
       "width": 801,
-      "x": 0,
-      "y": 576,
+      "x": -6,
+      "y": 462,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -198,26 +193,9 @@
       "name": "background_border",
       "persistentUuid": "c637f240-e3c0-4637-8f87-b42519505fd4",
       "width": 32,
-      "x": 767,
-      "y": -34,
+      "x": 780,
+      "y": -54,
       "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 875,
-      "keepRatio": true,
-      "layer": "background-layer",
-      "name": "background_1",
-      "persistentUuid": "5e630e1a-6471-464f-a503-4c31e55e82b8",
-      "width": 3882,
-      "x": -1,
-      "y": -3,
-      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -370,16 +348,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 857,
       "keepRatio": true,
-      "layer": "",
-      "name": "life",
-      "persistentUuid": "359b8080-0395-46dc-9d56-3aaa646326ce",
-      "width": 0,
-      "x": 550,
-      "y": 113,
-      "zOrder": 20,
+      "layer": "background-layer",
+      "name": "bg3",
+      "persistentUuid": "b7859c7f-5f29-44cc-b0c8-78e13fde95d9",
+      "width": 1813,
+      "x": -20,
+      "y": -20,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -392,28 +371,11 @@
       "keepRatio": true,
       "layer": "piso",
       "name": "floor1",
-      "persistentUuid": "88ab7f4d-8e21-468c-8305-7b16be1622db",
-      "width": 3876,
-      "x": -2,
-      "y": 757,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 32,
-      "keepRatio": true,
-      "layer": "",
-      "name": "background_border2",
-      "persistentUuid": "226385f6-eb51-48fc-8ae5-10c57df6ef33",
-      "width": 832,
-      "x": -39,
-      "y": 576,
-      "zOrder": 33,
+      "persistentUuid": "13113a7f-fe2e-4eba-a18d-bcac1d70fde5",
+      "width": 1812,
+      "x": -22,
+      "y": 461,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2098,17 +2060,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "background_1",
-      "texture": "assets\\image\\bgLVL2.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     },
     {
       "adaptCollisionMaskAutomatically": false,
@@ -4239,7 +4190,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "background_border2",
+      "name": "bg3",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4252,12 +4203,11 @@
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/image/border.png",
+                  "image": "assets\\image\\main-menu\\fondo.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4277,16 +4227,16 @@
                         "y": 0
                       },
                       {
-                        "x": 32,
+                        "x": 1472,
                         "y": 0
                       },
                       {
-                        "x": 32,
-                        "y": 32
+                        "x": 1472,
+                        "y": 704
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 704
                       }
                     ]
                   ]
@@ -4305,9 +4255,6 @@
         "objectName": "player"
       },
       {
-        "objectName": "background_1"
-      },
-      {
         "objectName": "floor1"
       },
       {
@@ -4315,9 +4262,6 @@
       },
       {
         "objectName": "background_border"
-      },
-      {
-        "objectName": "background_border2"
       },
       {
         "objectName": "basic_enemy_1"
@@ -4372,6 +4316,9 @@
       },
       {
         "objectName": "checkpoint_text"
+      },
+      {
+        "objectName": "bg3"
       }
     ]
   },
@@ -4423,14 +4370,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "background_border2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "pause_text"
               ]
             },
@@ -4440,16 +4379,6 @@
               },
               "parameters": [
                 "checkpoint_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_count",
-                "=",
-                "0"
               ]
             },
             {
@@ -4569,9 +4498,9 @@
               "parameters": [
                 "player",
                 "=",
-                "-35",
+                "-96",
                 "=",
-                "0"
+                "398"
               ]
             },
             {
@@ -4591,8 +4520,8 @@
               },
               "parameters": [
                 "player",
-                "65",
-                "120",
+                "0",
+                "80",
                 "1"
               ]
             },
@@ -4602,19 +4531,6 @@
               },
               "parameters": [
                 "0.8"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/ready-go.mp3",
-                "3",
-                "no",
-                "volume",
-                "1"
               ]
             },
             {
@@ -4659,7 +4575,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "2.5"
               ]
             },
             {
@@ -4730,16 +4646,6 @@
                 "player",
                 "player_is_respawning",
                 "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "ready_go_played",
-                "True",
                 ""
               ]
             }
@@ -4917,720 +4823,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Simular Checkpoints"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_1",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "14"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "24"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "34"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_1",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_1",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/checkpoint.mp3",
-                "2",
-                "no",
-                "volume+200",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "background_1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "floor1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "background_border2",
-                "270",
-                "50",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "25"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/checkpoint.mp3",
-                "2",
-                "no",
-                "volume+200",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "35"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/checkpoint.mp3",
-                "2",
-                "no",
-                "volume+200",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "checkpoint_text",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkOut\"",
-                "0",
-                "\"linear\"",
-                "0.4",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkOut\"",
-                "0",
-                "\"linear\"",
-                "0.4",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Tween::HasFinished"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkOut\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkIn\"",
-                "255",
-                "\"linear\"",
-                "0.4",
-                "no"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Tween::HasFinished"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkIn\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "checkpoint_text",
-                "Tween",
-                "\"blinkOut\"",
-                "0",
-                "\"linear\"",
-                "0.4",
-                "no"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Creación de caminos"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_01\"",
-                "\"m696 134.55-164.36 0.72728 1.4546 78.545-136-0.72727-293.82 85.091 593.45-5.0909z\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_02\"",
-                "\"m764.37 477.82-166.18-0.72114 0.71939-87.98-143.88 0.72115-286.3-83.018 597.14 0.0796z\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_03\"",
-                "\"m773.86 166.54c-179.53 0.47244-359.06 0.94489-448.46 30.709-89.409 29.764-88.701 88.818-51.613 126.97s110.55 55.394 190.98 62.953c80.434 7.559 167.83 5.4331 210.83-25.158s41.575-89.645-17.718-141.38c-59.293-51.733-176.46-96.141-295.63-116.57-119.17-20.433-240.35-16.89-301.18-15.472-60.827 1.4173-61.299 0.70867-61.772 7e-6\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_04\"",
-                "\"m800.08 481.18-819.21 0.70866\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_05\"",
-                "\"m805.01 111c-233.42-91.557-523.52-114.86-732.85-15.793-37.718 77.185-94.78 179.17 6.0132 317.7 236.48 87.572 535.52 47.042 608.33-9.0198 44.445-101.19 52.766-181.37-17.037-261.57-298.06-162.87-423.31 51.991-668.47 34.075\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_06\"",
-                "\"m591.27-1.4545 2.1818 581.09\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_07\"",
-                "\"m799.27 120.73c-217.45 4.3636-271.27 96-271.27 96-70.383 49.002-103.79 21.699-143.27 12.364-11.636-10.017-29.297-21.849-54.545-41.455-50.176-9.8174-78.092-6.393-112 5.0909-32.083 17.329-40.937 40.065-115.64 80-61.755 35.21-83.399 16.982-107.64 1.4546l-8 2.9091\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_08\"",
-                "\"m805.82 292.97c-217.45-4.3636-277.82-89.455-277.82-89.455-70.383-49.002-103.79-21.699-143.27-12.364-11.636 10.017-29.297 21.849-54.545 41.455-50.176 9.8174-78.092 6.393-112-5.0909-32.083-17.329-40.937-40.065-115.64-80-61.755-35.21-83.399-16.982-107.64-1.4546l-8-2.9091\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_09\"",
-                "\"m600.64 500 0.72728-580.36\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_10\"",
-                "\"m800 100 c-150 50 -150 150 -300 200 c150 50 150 150 300 200\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_11\"",
-                "\"m700 50 c50 100 -50 200 50 300 c-50 100 50 200 -50 300\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_12\"",
-                "\"m800 50 c-200 150 -400 300 -600 500\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_13\"",
-                "\"m800 550 c-200 -150 -400 -300 -600 -500\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::CreatePathFromSvg"
-              },
-              "parameters": [
-                "",
-                "\"path_14\"",
-                "\"m800 300 c-200 -150 -200 150 -400 0 c200 150 200 -150 400 0\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "Debug"
         },
         {
@@ -5773,7 +4965,7 @@
               },
               "parameters": [
                 "",
-                "assets/music/stg2_full.ogg",
+                "assets/music/flying-to-the-blue-reflection.ogg",
                 "1",
                 "yes",
                 "volume/2",
@@ -5829,32 +5021,6 @@
           "actions": [
             {
               "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "background_1",
-                "+",
-                "100 * TimeDelta()"
-              ]
-            },
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "floor1",
-                "+",
-                "100 * TimeDelta()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
                 "value": "ScalableCapability::ScalableBehavior::SetValue"
               },
               "parameters": [
@@ -5886,7 +5052,7 @@
               },
               "parameters": [
                 "",
-                "\"Nivel_2\""
+                "\"Nivel_3\""
               ]
             }
           ]
@@ -6027,81 +5193,6 @@
               "parameters": [
                 "",
                 "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "background_1",
-                "<=",
-                "-230"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "background_1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "floor1",
-                "<=",
-                "520"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "floor1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "background_border2",
-                "<=",
-                "515"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "background_border2"
               ]
             }
           ]
@@ -7011,695 +6102,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "👾  1. Control general del tiempo entre oleadas",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Este evento dispara la siguiente oleada después de un cierto tiempo"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "wave_timer",
-                "\"wave_timer\"",
-                ">",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "wave_in_progress",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "wave_in_progress",
-                "True",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"wave_timer\""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "👾  2. Spawner enemigos según el JSON",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Spawnear los enemigos de la oleada actual"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "wave_in_progress",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_count",
-                "<",
-                "Variable(wave_json.waves[Variable(current_wave_index)].count)"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"enemy_spawn_timer\"",
-                ">",
-                "Variable(wave_json.waves[Variable(current_wave_index)].delay)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "CreateByName"
-              },
-              "parameters": [
-                "",
-                "enemy_group",
-                "VariableString(wave_json.waves[Variable(current_wave_index)].object_type)",
-                "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.x)",
-                "Variable(wave_json.waves[Variable(current_wave_index)].spawn_pos.y)",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CurvedMovement::TweenPathMovement::Move"
-              },
-              "parameters": [
-                "enemy_group",
-                "TweenPathMovement",
-                "VariableString(wave_json.waves[Variable(current_wave_index)].path)",
-                "Variable(wave_json.waves[Variable(current_wave_index)].repeat)",
-                "Variable(wave_json.waves[Variable(current_wave_index)].move_time)",
-                "\"linear\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"enemy_spawn_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_count",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "folded": true,
-      "name": "👾  3. Siguiente oleada",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "current_wave_index",
-                    "<",
-                    "VariableChildCount(wave_json.waves)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "enemy_wave_count",
-                    "=",
-                    "Variable(wave_json.waves[Variable(current_wave_index)].count)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneInstancesCount"
-                  },
-                  "parameters": [
-                    "",
-                    "enemy_group",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "wave_in_progress",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "enemy_wave_count",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "👾  Disparos de enemigos",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "180",
-                "200",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "Scale",
-                "=",
-                "0.75"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_2",
-                "180",
-                "240",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "180",
-                "10",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "Scale",
-                "=",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_3",
-                "180",
-                "220",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsOnScreen::InOnScreen::IsOnScreen"
-              },
-              "parameters": [
-                "enemy_group",
-                "InOnScreen",
-                "0",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "enemy_group",
-                "can_shoot",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "enemy_group",
-                "can_shoot",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "FireBullet",
-                "basic_enemy_1.PointX(\"disparo\")",
-                "basic_enemy_1.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "250",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2",
-                "FireBullet",
-                "basic_enemy_2.PointX(\"disparo\")",
-                "basic_enemy_2.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "300",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_3",
-                "FireBullet",
-                "basic_enemy_3.PointX(\"disparo\")",
-                "basic_enemy_3.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "230",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "FireBullet",
-                "basic_enemy_2b.PointX(\"disparo\")",
-                "basic_enemy_2b.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "300",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "enemy_shoot_2",
-                "=",
-                "enemy_group.ZOrder()-1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "enemy_group",
-                "can_shoot",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_2",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "FireBullet",
-                "basic_enemy_1.PointX(\"disparo\")",
-                "basic_enemy_1.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "300",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2",
-                "FireBullet",
-                "basic_enemy_2.PointX(\"disparo\")",
-                "basic_enemy_2.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "350",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_3",
-                "FireBullet",
-                "basic_enemy_3.PointX(\"disparo\")",
-                "basic_enemy_3.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "280",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "enemy_shoot_2",
-                "=",
-                "enemy_group.ZOrder()-1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "enemy_group",
-                "can_shoot",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_3",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_1",
-                "FireBullet",
-                "basic_enemy_1.PointX(\"disparo\")",
-                "basic_enemy_1.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "300",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2",
-                "FireBullet",
-                "basic_enemy_2.PointX(\"disparo\")",
-                "basic_enemy_2.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "350",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "basic_enemy_3",
-                "FireBullet",
-                "basic_enemy_3.PointX(\"disparo\")",
-                "basic_enemy_3.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "player.PointX(\"Center\")",
-                "player.PointY(\"Center\")",
-                "320",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "enemy_shoot_2",
-                "=",
-                "enemy_group.ZOrder()-1"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
       "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7712,134 +6114,11 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "player_shoot",
-                "enemy_group",
+                "player",
+                "background_border",
                 "",
                 "",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "player_shoot",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/explosion.mp3",
-                "enemy_group.PointX(\"Center\")",
-                "volume/2",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "explosion_1",
-                "enemy_group.PointX(\"Center\")",
-                "enemy_group.PointY(\"Center\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "explosion_1",
-                "=",
-                "enemy_group.ZOrder()+1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "explosion_1",
-                "Scale",
-                "=",
-                "enemy_group.Width() / explosion_1.Width()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "player_score",
-                "+",
-                "100"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "score_text",
-                "Text",
-                "=",
-                "\"Score: \" + ToString(Variable(player_score))"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "enemy_group",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "player",
-                    "background_border",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "player",
-                    "background_border2",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
               ]
             },
             {
@@ -7875,337 +6154,13 @@
                 "background_border",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "player",
-                "background_border2",
-                ""
-              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-              },
-              "parameters": [
-                "explosion_1",
-                "Animation"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "explosion_1",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "enemy_shoot_2",
-                    "player",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "player_is_hit",
-                    "=",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "is_alive",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "enemy_shoot_2",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"recibir_daño\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "player",
-                "\"damage_timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "player",
-                "enemy_group",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "is_alive",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/explosion.mp3",
-                "enemy_group.PointX(\"Center\")",
-                "volume/2",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "explosion_1",
-                "enemy_group.PointX(\"Center\")",
-                "enemy_group.PointY(\"Center\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "explosion_1",
-                "=",
-                "enemy_group.ZOrder()+1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "explosion_1",
-                "Scale",
-                "=",
-                "enemy_group.Width() / explosion_1.Width()"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "enemy_group",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"recibir_daño\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "player",
-                "\"damage_timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "\"damage_timer\"",
-                    ">=",
-                    "1.5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "player_is_hit",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "is_alive",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "player",
-                "Animation",
-                "=",
-                "\"fly_idle\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "player_is_hit",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "player",
-                "\"damage_timer\""
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
