@@ -95,6 +95,11 @@
       "name": "checkpoint_visible",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "ready_go_played",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -159,8 +164,8 @@
       "name": "background_border",
       "persistentUuid": "f4279fba-193d-4081-b8a6-ef7827b57388",
       "width": 801,
-      "x": -7,
-      "y": 468,
+      "x": 0,
+      "y": 576,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -204,14 +209,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 771,
+      "height": 875,
       "keepRatio": true,
       "layer": "background-layer",
       "name": "background_1",
       "persistentUuid": "5e630e1a-6471-464f-a503-4c31e55e82b8",
-      "width": 3878,
+      "width": 3882,
       "x": -1,
-      "y": -1,
+      "y": -3,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -389,9 +394,26 @@
       "name": "floor1",
       "persistentUuid": "88ab7f4d-8e21-468c-8305-7b16be1622db",
       "width": 3876,
-      "x": -8,
-      "y": 468,
+      "x": -2,
+      "y": 757,
       "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "background_border2",
+      "persistentUuid": "226385f6-eb51-48fc-8ae5-10c57df6ef33",
+      "width": 832,
+      "x": -39,
+      "y": 576,
+      "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4206,11 +4228,72 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "background_border2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/border.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4232,6 +4315,9 @@
       },
       {
         "objectName": "background_border"
+      },
+      {
+        "objectName": "background_border2"
       },
       {
         "objectName": "basic_enemy_1"
@@ -4330,6 +4416,14 @@
               },
               "parameters": [
                 "background_border"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "background_border2"
               ]
             },
             {
@@ -4512,6 +4606,19 @@
             },
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/ready-go.mp3",
+                "3",
+                "no",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -4552,7 +4659,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2.5"
+                "3"
               ]
             },
             {
@@ -4623,6 +4730,16 @@
                 "player",
                 "player_is_respawning",
                 "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ready_go_played",
+                "True",
                 ""
               ]
             }
@@ -4991,6 +5108,28 @@
               },
               "parameters": [
                 "background_1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "floor1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_border2",
                 "270",
                 "50",
                 "1"
@@ -5634,7 +5773,7 @@
               },
               "parameters": [
                 "",
-                "assets/music/flying-to-the-blue-reflection.ogg",
+                "assets/music/stg2_full.ogg",
                 "1",
                 "yes",
                 "volume/2",
@@ -5902,7 +6041,7 @@
               "parameters": [
                 "background_1",
                 "<=",
-                "-190"
+                "-230"
               ]
             }
           ],
@@ -5913,6 +6052,56 @@
               },
               "parameters": [
                 "background_1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "floor1",
+                "<=",
+                "520"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "floor1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "background_border2",
+                "<=",
+                "515"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "background_border2"
               ]
             }
           ]
@@ -7623,14 +7812,34 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "player",
-                "background_border",
-                "",
-                "",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player",
+                    "background_border",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player",
+                    "background_border2",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
               ]
             },
             {
@@ -7664,6 +7873,16 @@
               "parameters": [
                 "player",
                 "background_border",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "background_border2",
                 ""
               ]
             }
