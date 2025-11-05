@@ -105,6 +105,16 @@
       "name": "ready_go_played",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "key_item_exists",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "salem_lifes",
+      "type": "number",
+      "value": 1
     }
   ],
   "instances": [
@@ -382,9 +392,58 @@
       "name": "DebugText2",
       "persistentUuid": "da560862-e7e8-43f5-8e85-438fd782a975",
       "width": 0,
-      "x": 596,
-      "y": 497,
+      "x": 417,
+      "y": 485,
       "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 38,
+      "keepRatio": true,
+      "layer": "",
+      "name": "white",
+      "persistentUuid": "86121c1c-6de5-434c-b531-0c0fcfe9de27",
+      "width": 40,
+      "x": 117,
+      "y": 35,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "static_life",
+      "persistentUuid": "1f513f29-1f41-4cd8-898c-7659696ef946",
+      "width": 0,
+      "x": 120,
+      "y": 37,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "life_text",
+      "persistentUuid": "8828d707-8cb3-4a2a-b588-7f8a39d59e58",
+      "width": 0,
+      "x": 159,
+      "y": 45,
+      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3990,6 +4049,781 @@
         "lineHeight": 0,
         "color": "218;24;24"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "meteorito",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "extraBorder": 200,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "unseenGraceDistance": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "base",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.09,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-0.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "destroy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-0.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-1.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-2.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-3.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-4.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-5.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/meteorito/meteorito-6.png",
+                  "points": [
+                    {
+                      "name": "destroy",
+                      "x": 16,
+                      "y": 28.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.5,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 23
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 15
+                      },
+                      {
+                        "x": 9,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 19.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 15
+                      },
+                      {
+                        "x": 28,
+                        "y": 20
+                      },
+                      {
+                        "x": 23,
+                        "y": 27
+                      },
+                      {
+                        "x": 18,
+                        "y": 28.5
+                      },
+                      {
+                        "x": 13.5,
+                        "y": 28.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "white",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/main-menu/NewSprite4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "life_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4047,7 +4881,16 @@
         "objectName": "negro"
       },
       {
+        "objectName": "white"
+      },
+      {
+        "objectName": "meteorito"
+      },
+      {
         "objectName": "stage_text"
+      },
+      {
+        "objectName": "life_text"
       },
       {
         "objectName": "score_text"
@@ -4124,14 +4967,6 @@
             },
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "DebugText2"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -4152,6 +4987,16 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(last_lifes)"
+              ]
+            },
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -4159,6 +5004,17 @@
                 "Text",
                 "=",
                 "\"Score: \" + ToString(Variable(player_score))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "\"x\" + ToString(GlobalVariable(last_lifes))"
               ]
             }
           ]
@@ -4210,6 +5066,15 @@
               "parameters": [
                 "",
                 "\"enemy_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"meteorite_spawn_timer\""
               ]
             }
           ]
@@ -4789,6 +5654,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_lifes",
+                "=",
+                "Variable(salem_lifes)"
+              ]
             }
           ]
         },
@@ -4849,6 +5724,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_lifes",
+                "=",
+                "Variable(salem_lifes)"
+              ]
             }
           ]
         },
@@ -4908,6 +5793,16 @@
                 "checkpoint_visible",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_lifes",
+                "=",
+                "Variable(salem_lifes)"
               ]
             }
           ]
@@ -5320,6 +6215,17 @@
                 "Text",
                 "=",
                 "\"Sound offset: \" + ToString(SoundChannelPlayingOffset(1))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText2",
+                "Text",
+                "=",
+                "\"item1 \" + ToString(GlobalVariable(item1_collected))\n    + \" | item2: \" + \nToString(GlobalVariable(item2_collected))\n+ \" | item3: \" + \nToString(GlobalVariable(item3_collected))\n+ \" | key_item_exists: \" + ToString(Variable(key_item_exists))\n"
               ]
             }
           ]
@@ -5892,6 +6798,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6431,6 +7338,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7651,6 +8559,349 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player_shoot",
+                "meteorito",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "meteorito",
+                "\"background-layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation",
+                "=",
+                "\"destroy\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "meteorito"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item1_collected",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "\"x\" + ToString(Variable(salem_lifes))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item1_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item2_collected",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item1_collected",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "\"x\" + ToString(Variable(salem_lifes))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item2_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item3_collected",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item1_collected",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item2_collected",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "\"x\" + ToString(Variable(salem_lifes))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item3_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
               },
               "parameters": [
@@ -7666,6 +8917,136 @@
               },
               "parameters": [
                 "explosion_1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "25"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item1_collected",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item2_collected",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item3_collected",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "life",
+                "meteorito.PointX(\"center\")",
+                "meteorito.PointY(\"center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "meteorito",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "meteorito",
                 ""
               ]
             }
@@ -7891,6 +9272,147 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "meteorito",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation",
+                "=",
+                "\"base\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation",
+                "=",
+                "\"destroy\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "meteorito",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "meteorito"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "meteorito",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::And"
               },
               "parameters": [],
@@ -7967,6 +9489,110 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "☄️ Spawnear meteoritos",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "player",
+            "is_alive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "is_paused",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "player",
+            "player_is_respawning",
+            "=",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"meteorite_spawn_timer\"",
+            ">",
+            "RandomInRange(6, 12)"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "meteorito",
+            "RandomInRange(600, SceneWindowWidth())",
+            "-100",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "meteorito",
+            "Scale",
+            "=",
+            "RandomInRange(2, 3)"
+          ]
+        },
+        {
+          "type": {
+            "value": "AddForceAL"
+          },
+          "parameters": [
+            "meteorito",
+            "AngleBetweenPositions(meteorito.X(), meteorito.Y(), player.X(), player.Y()) ",
+            "RandomInRange(350, 400)",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"meteorite_spawn_timer\""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
