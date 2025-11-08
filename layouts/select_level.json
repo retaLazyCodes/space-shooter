@@ -365,17 +365,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bg3",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "bg3",
+                  "image": "assets\\image\\bg3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -436,7 +435,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "assets\\image\\NewSprite2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -787,7 +786,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nESTA BATALLA FINAL. ",
+      "string": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nVENCERLO.",
       "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "center",
       "characterSize": 28,
@@ -810,7 +809,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nESTA BATALLA FINAL. ",
+        "text": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nVENCERLO.",
         "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",

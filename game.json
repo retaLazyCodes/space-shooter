@@ -1106,6 +1106,30 @@
         "name": "assets\\image\\main-menu\\NewSprite2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\towers\\tower2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\bg3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\NewSprite2.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
