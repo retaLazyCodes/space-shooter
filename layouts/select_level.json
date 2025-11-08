@@ -1387,10 +1387,18 @@
       "conditions": [
         {
           "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "cursor"
+          ]
+        },
+        {
+          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
-            "bric",
+            "cursor",
             "block4",
             "",
             "",
