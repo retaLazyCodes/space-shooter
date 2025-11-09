@@ -34,9 +34,6 @@
         },
         {
           "name": "basic_enemy_3"
-        },
-        {
-          "name": "basic_enemy_2b"
         }
       ]
     },
@@ -434,16 +431,33 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
       "keepRatio": true,
       "layer": "",
       "name": "life_text",
       "persistentUuid": "8828d707-8cb3-4a2a-b588-7f8a39d59e58",
-      "width": 0,
-      "x": 159,
+      "width": 58,
+      "x": 160,
       "y": 45,
       "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DebugText3",
+      "persistentUuid": "4074190f-4e04-4971-8ccf-d500f7adfea1",
+      "width": 0,
+      "x": 484,
+      "y": 38,
+      "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3721,16 +3735,40 @@
           "name": "can_shoot",
           "type": "boolean",
           "value": true
+        },
+        {
+          "name": "boss_hp",
+          "type": "number",
+          "value": 250
+        },
+        {
+          "name": "boss_dir",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "name": "boss_minY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "boss_maxY",
+          "type": "number",
+          "value": 420
+        },
+        {
+          "name": "boss_speed",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "can_be_damaged",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
       "behaviors": [
-        {
-          "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside",
-          "extraBorder": 10,
-          "unseenGraceDistance": 0
-        },
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
@@ -3836,16 +3874,32 @@
                   "customCollisionMask": [
                     [
                       {
+                        "x": 27,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 14
+                      },
+                      {
                         "x": 57,
                         "y": 18
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
                       },
                       {
                         "x": 56.5,
                         "y": 51
                       },
                       {
+                        "x": 46.5,
+                        "y": 52
+                      },
+                      {
                         "x": 31,
-                        "y": 50.5
+                        "y": 51.5
                       },
                       {
                         "x": 5.5,
@@ -3853,11 +3907,7 @@
                       },
                       {
                         "x": 4.5,
-                        "y": 36
-                      },
-                      {
-                        "x": 26,
-                        "y": 14.5
+                        "y": 35
                       }
                     ]
                   ]
@@ -4060,9 +4110,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 200,
           "name": "DestroyOutside",
           "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 200,
           "unseenGraceDistance": 0
         }
       ],
@@ -4824,6 +4874,49 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DebugText3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "asd",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 24,
+        "g": 24,
+        "r": 218
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "asd",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "218;24;24"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4878,6 +4971,9 @@
         "objectName": "DebugText2"
       },
       {
+        "objectName": "DebugText3"
+      },
+      {
         "objectName": "negro"
       },
       {
@@ -4912,6 +5008,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "⚙️ Configuración inicial",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5014,7 +5111,17 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(GlobalVariable(last_lifes))"
+                "ToString(GlobalVariable(last_lifes)) + \"/4\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "39"
               ]
             }
           ]
@@ -5075,6 +5182,15 @@
               "parameters": [
                 "",
                 "\"meteorite_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"salem_life_spawn_timer\""
               ]
             }
           ]
@@ -6176,6 +6292,17 @@
                 "\"m800 300 c-200 -150 -200 150 -400 0 c200 150 200 -150 400 0\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_15\"",
+                "\"m800.08 481.18 1819.21 0.70866\"",
+                ""
+              ]
             }
           ]
         },
@@ -6238,6 +6365,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "🎬 Escena",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7679,6 +7807,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -7692,6 +7830,228 @@
               "parameters": [
                 "",
                 "\"Nivel_1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_1",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_2",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_group",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
               ]
             }
           ]
@@ -8027,28 +8387,6 @@
                 "240",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "180",
-                "10",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "Scale",
-                "=",
-                "3"
-              ]
             }
           ]
         },
@@ -8179,21 +8517,6 @@
                 "player.PointY(\"Center\")",
                 "230",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "FireBullet",
-                "basic_enemy_2b.PointX(\"disparo\")",
-                "basic_enemy_2b.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "300",
-                "300"
               ]
             },
             {
@@ -8684,7 +9007,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8773,7 +9096,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8872,7 +9195,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8956,6 +9279,17 @@
             },
             {
               "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "player",
+                "\"salem_life_spawn_timer\"",
+                ">=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
@@ -9022,6 +9356,73 @@
               "parameters": [
                 "key_item_exists",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"salem_life_spawn_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "<",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "atun",
+                "meteorito.PointX(\"center\")",
+                "meteorito.PointY(\"center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "meteorito",
                 ""
               ]
             }
@@ -9495,7 +9896,113 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "☄️ Spawnear meteoritos",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "is_paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"meteorite_spawn_timer\"",
+                ">",
+                "RandomInRange(6, 12)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "meteorito",
+                "RandomInRange(600, SceneWindowWidth())",
+                "-100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "meteorito",
+                "Scale",
+                "=",
+                "RandomInRange(2, 3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "meteorito",
+                "AngleBetweenPositions(meteorito.X(), meteorito.Y(), player.X(), player.Y()) ",
+                "RandomInRange(350, 400)",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"meteorite_spawn_timer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "👾 Boss Fight",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [],
@@ -9506,33 +10013,100 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "player",
-            "is_alive",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "is_paused",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "player",
-            "player_is_respawning",
+            "current_wave_index",
             "=",
+            "40"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "basic_enemy_2b",
+            "-800",
+            "450",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "Scale",
+            "=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "CurvedMovement::TweenPathMovement::Move"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "TweenPathMovement",
+            "\"path_15\"",
+            "1",
+            "5",
+            "\"linear\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"boss_fire_timer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsOnScreen::InOnScreen::IsOnScreen"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "InOnScreen",
+            "0",
             ""
           ]
         },
@@ -9542,34 +10116,39 @@
           },
           "parameters": [
             "",
-            "\"meteorite_spawn_timer\"",
-            ">",
-            "RandomInRange(6, 12)"
+            "\"boss_fire_timer\"",
+            ">=",
+            "6"
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "MettreXY"
           },
           "parameters": [
-            "",
-            "meteorito",
-            "RandomInRange(600, SceneWindowWidth())",
-            "-100",
-            ""
+            "basic_enemy_2b",
+            "=",
+            "900",
+            "=",
+            "250"
           ]
         },
         {
           "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
           },
           "parameters": [
-            "meteorito",
-            "Scale",
-            "=",
-            "RandomInRange(2, 3)"
+            "basic_enemy_2b",
+            "Flippable",
+            "no"
           ]
         },
         {
@@ -9577,19 +10156,347 @@
             "value": "AddForceAL"
           },
           "parameters": [
-            "meteorito",
-            "AngleBetweenPositions(meteorito.X(), meteorito.Y(), player.X(), player.Y()) ",
-            "RandomInRange(350, 400)",
+            "basic_enemy_2b",
+            "180",
+            "20",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"boss_fire_timer\"",
+            ">=",
+            "21"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::Fire"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "FireBullet",
+            "basic_enemy_2b.PointX(\"disparo\")",
+            "basic_enemy_2b.PointY(\"disparo\")",
+            "enemy_shoot_2",
+            "180",
+            "250",
+            "300"
+          ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "basic_enemy_2b"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "can_be_damaged",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "basic_enemy_2b.Y()",
+            "<",
+            "basic_enemy_2b.Variable(boss_minY)"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "boss_dir",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "basic_enemy_2b.Y()",
+            ">",
+            "basic_enemy_2b.Variable(boss_maxY)"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "boss_dir",
+            "=",
+            "-1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"boss_fire_timer\"",
+            ">=",
+            "26"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "can_be_damaged",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "+",
+            "basic_enemy_2b.Variable(boss_dir) * basic_enemy_2b.Variable(boss_speed) * TimeDelta()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "can_be_damaged",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "RemoveTimer"
+          },
+          "parameters": [
+            "",
+            "\"meteorite_spawn_timer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "can_be_damaged",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "player_shoot",
+            "basic_enemy_2b",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "player_shoot",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "boss_hp",
+            "-",
             "1"
           ]
         },
         {
           "type": {
-            "value": "ResetTimer"
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "DebugText3",
+            "Text",
+            "=",
+            "\"hp: \" + ToString(basic_enemy_2b.Variable(boss_hp))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            "boss_hp",
+            "<=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "player_shoot",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
           },
           "parameters": [
             "",
-            "\"meteorite_spawn_timer\""
+            "assets/sounds/explosion.mp3",
+            "enemy_group.PointX(\"Center\")",
+            "volume/2",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "explosion_1",
+            "basic_enemy_2b.PointX(\"Center\")",
+            "basic_enemy_2b.PointY(\"Center\")",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "explosion_1",
+            "=",
+            "basic_enemy_2b.ZOrder()+1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "explosion_1",
+            "Scale",
+            "=",
+            "basic_enemy_2b.Width() / explosion_1.Width()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "player_score",
+            "+",
+            "20000"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "score_text",
+            "Text",
+            "=",
+            "\"Score: \" + ToString(Variable(player_score))"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "basic_enemy_2b",
+            ""
           ]
         }
       ]
