@@ -434,14 +434,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
       "keepRatio": true,
       "layer": "",
       "name": "life_text",
       "persistentUuid": "8828d707-8cb3-4a2a-b588-7f8a39d59e58",
-      "width": 0,
-      "x": 159,
+      "width": 58,
+      "x": 160,
       "y": 45,
       "zOrder": 24,
       "numberProperties": [],
@@ -5014,7 +5015,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(GlobalVariable(last_lifes))"
+                "ToString(GlobalVariable(last_lifes)) + \"/4\""
               ]
             }
           ]
@@ -5075,6 +5076,15 @@
               "parameters": [
                 "",
                 "\"meteorite_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"salem_life_spawn_timer\""
               ]
             }
           ]
@@ -6238,6 +6248,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "🎬 Escena",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7338,7 +7349,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7679,6 +7689,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -7692,6 +7712,228 @@
               "parameters": [
                 "",
                 "\"Nivel_1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_1",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_2",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_group",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
               ]
             }
           ]
@@ -8684,7 +8926,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8773,7 +9015,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8872,7 +9114,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "\"x\" + ToString(Variable(salem_lifes))"
+                "ToString(Variable(salem_lifes)) + \"/4\""
               ]
             },
             {
@@ -8956,6 +9198,17 @@
             },
             {
               "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "player",
+                "\"salem_life_spawn_timer\"",
+                ">=",
+                "15"
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
@@ -9022,6 +9275,73 @@
               "parameters": [
                 "key_item_exists",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"salem_life_spawn_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "meteorito",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "<",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "atun",
+                "meteorito.PointX(\"center\")",
+                "meteorito.PointY(\"center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "meteorito",
                 ""
               ]
             }
