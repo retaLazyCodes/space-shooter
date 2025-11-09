@@ -5008,7 +5008,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "⚙️ Configuración inicial",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5112,16 +5111,6 @@
                 "Text",
                 "=",
                 "ToString(GlobalVariable(last_lifes)) + \"/4\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "39"
               ]
             }
           ]
