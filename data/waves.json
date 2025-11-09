@@ -219,7 +219,7 @@
     {
       "path": "path_04",
       "object_type": "basic_enemy_2",
-      "count": 8,
+      "count": 6,
       "spawn_pos": { "x": 800, "y": 130 },
       "move_time": 2.5,
       "repeat": 1,
@@ -255,7 +255,7 @@
     {
       "path": "path_10",
       "object_type": "basic_enemy_1",
-      "count": 8,
+      "count": 6,
       "spawn_pos": { "x": 800, "y": 100 },
       "move_time": 5.0,
       "repeat": 2,
@@ -264,7 +264,7 @@
     {
       "path": "path_11",
       "object_type": "basic_enemy_2",
-      "count": 6,
+      "count": 4,
       "spawn_pos": { "x": 700, "y": 50 },
       "move_time": 3.9,
       "repeat": 2,
@@ -309,7 +309,7 @@
     {
       "path": "path_09",
       "object_type": "basic_enemy_2",
-      "count": 9,
+      "count": 6,
       "spawn_pos": { "x": 700, "y": 440 },
       "move_time": 3.4,
       "repeat": 2,
@@ -318,7 +318,7 @@
     {
       "path": "path_10",
       "object_type": "basic_enemy_2",
-      "count": 5,
+      "count": 4,
       "spawn_pos": { "x": 650, "y": 100 },
       "move_time": 3.4,
       "repeat": 1,
