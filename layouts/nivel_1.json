@@ -471,70 +471,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "atun",
-      "persistentUuid": "0dc0d416-820a-4972-a7ba-a74ca1611cc4",
-      "width": 0,
-      "x": 560,
-      "y": 162,
-      "zOrder": 26,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "atun",
-      "persistentUuid": "d2ed5196-166b-4128-96e9-45348fda5a46",
-      "width": 0,
-      "x": 610,
-      "y": 329,
-      "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "life",
-      "persistentUuid": "23356c16-87ee-4b59-9fe1-edadc7f7c84a",
-      "width": 0,
-      "x": 353,
-      "y": 383,
-      "zOrder": 28,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "life",
-      "persistentUuid": "e9ea0954-20c1-4a53-bd51-ace39fbfe047",
-      "width": 0,
-      "x": 375,
-      "y": 191,
-      "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -3813,7 +3749,7 @@
         {
           "name": "boss_hp",
           "type": "number",
-          "value": 5
+          "value": 250
         },
         {
           "name": "boss_dir",
@@ -5145,16 +5081,6 @@
                 "Text",
                 "=",
                 "ToString(GlobalVariable(last_lifes)) + \"/4\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
-                "=",
-                "39"
               ]
             }
           ]
