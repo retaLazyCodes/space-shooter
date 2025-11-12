@@ -1162,6 +1162,34 @@
         "name": "assets/image/atun-3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/risa.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\risa.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/level_select_msci.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\level_select_msci.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
