@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4602611891004553,
+    "zoomFactor": 0.9547103308103165,
     "windowMask": false,
     "selectedLayer": "piso"
   },
@@ -100,6 +100,16 @@
       "name": "ready_go_played",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "floor_visible",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "salem_lifes",
+      "type": "number",
+      "value": 1
     }
   ],
   "instances": [
@@ -420,15 +430,31 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 38,
+      "layer": "",
+      "name": "white",
+      "persistentUuid": "ae9f31cf-2168-42b6-812f-e09e6ec6535c",
+      "width": 40,
+      "x": 117,
+      "y": 35,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
       "layer": "piso",
-      "name": "torre",
-      "persistentUuid": "66928373-9043-4748-9046-72fddb255f0f",
+      "name": "static_life",
+      "persistentUuid": "1cdeb233-37fb-43b1-bd51-157cc5c9a1fd",
       "width": 0,
-      "x": 2091,
-      "y": 464,
+      "x": 122,
+      "y": 37,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -4074,14 +4100,49 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "torre",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 3,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 90,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -4092,8 +4153,95 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\image\\towers\\tower2.png",
+                  "points": [
+                    {
+                      "name": "disparo1",
+                      "x": 55,
+                      "y": 97
+                    },
+                    {
+                      "name": "disparo2",
+                      "x": 223.5,
+                      "y": 98
+                    },
+                    {
+                      "name": "item",
+                      "x": 236,
+                      "y": 221.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 88
+                      },
+                      {
+                        "x": 247,
+                        "y": 87
+                      },
+                      {
+                        "x": 256,
+                        "y": 150
+                      },
+                      {
+                        "x": 256,
+                        "y": 300
+                      },
+                      {
+                        "x": 0,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "misil",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "extraBorder": 100,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "unseenGraceDistance": 100
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/misil-2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4106,7 +4254,38 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 24.5,
+                        "y": 11.5
+                      },
+                      {
+                        "x": 29,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 29.5,
+                        "y": 17
+                      },
+                      {
+                        "x": 29,
+                        "y": 19.5
+                      },
+                      {
+                        "x": 26,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 4,
+                        "y": 24
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -4189,6 +4368,9 @@
       },
       {
         "objectName": "torre"
+      },
+      {
+        "objectName": "misil"
       }
     ]
   },
@@ -4281,6 +4463,16 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(last_lifes)"
+              ]
+            },
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -4288,6 +4480,17 @@
                 "Text",
                 "=",
                 "\"Score: \" + ToString(Variable(player_score))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "ToString(GlobalVariable(last_lifes)) + \"/4\""
               ]
             }
           ]
@@ -4950,6 +5153,145 @@
                 "270",
                 "50",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "torre",
+                "2000",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/checkpoint.mp3",
+                "2",
+                "no",
+                "volume+200",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "floor1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_border2",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "torre",
+                "2000",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "life",
+                "torre.PointX(\"item\")",
+                "torre.PointY(\"item\")",
+                ""
               ]
             }
           ]
@@ -5688,6 +6030,42 @@
           "conditions": [
             {
               "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "life",
+                "torre.PointX(\"item\") + 20",
+                "torre.PointY(\"item\")",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "KeyFromTextJustPressed"
               },
               "parameters": [
@@ -5931,6 +6309,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6481,6 +6860,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6828,6 +7208,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  1. Control general del tiempo entre oleadas",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6899,6 +7280,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "👾  2. Spawner enemigos según el JSON",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7148,28 +7530,6 @@
                 "240",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "180",
-                "10",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "Scale",
-                "=",
-                "3"
-              ]
             }
           ]
         },
@@ -7185,6 +7545,34 @@
                 "basic_enemy_3",
                 "180",
                 "220",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "torre",
+                "180",
+                "100",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "life",
+                "180",
+                "100",
                 "0"
               ]
             }
@@ -7429,15 +7817,91 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanObjectVariable"
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "enemy_group",
-                "can_shoot",
-                "True",
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre",
+                "FireBullet",
+                "torre.PointX(\"disparo1\")",
+                "torre.PointY(\"disparo1\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre",
+                "FireBullet",
+                "torre.PointX(\"disparo2\")",
+                "torre.PointY(\"disparo2\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "misil",
+                "=",
+                "enemy_group.ZOrder()-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "misil",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardObject"
+              },
+              "parameters": [
+                "misil",
+                "player",
+                "90",
                 ""
               ]
             },
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "misil",
+                "player",
+                "3",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
                 "value": "BooleanVariable"
@@ -7619,6 +8083,88 @@
               },
               "parameters": [
                 "enemy_group",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player_shoot",
+                "misil",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "misil.PointX(\"Center\")",
+                "misil.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "misil.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "misil.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "misil",
                 ""
               ]
             }
@@ -7909,6 +8455,132 @@
               },
               "parameters": [
                 "enemy_group",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "misil",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "misil.PointX(\"Center\")",
+                "misil.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "misil.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "misil",
                 ""
               ]
             },
