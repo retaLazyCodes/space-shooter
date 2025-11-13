@@ -1164,50 +1164,28 @@
         "userAdded": false
       },
       {
-        "file": "assets/music/boss-fight.ogg",
+        "file": "assets/image/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/risa.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets/music/boss-fight.ogg",
+        "name": "assets\\sounds\\risa.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
       },
       {
-        "file": "assets/sounds/bullet-impact.mp3",
+        "file": "assets/sounds/level_select_msci.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets/sounds/bullet-impact.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sounds/got-heart.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/sounds/got-heart.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sounds/got-life.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/sounds/got-life.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sounds/boss-gunshot.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/sounds/boss-gunshot.mp3",
+        "name": "assets\\sounds\\level_select_msci.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
