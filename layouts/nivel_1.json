@@ -5693,6 +5693,16 @@
                 "=",
                 "Variable(salem_lifes)"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "Variable(player_score)"
+              ]
             }
           ]
         },
@@ -5763,6 +5773,16 @@
                 "=",
                 "Variable(salem_lifes)"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "Variable(player_score)"
+              ]
             }
           ]
         },
@@ -5832,6 +5852,16 @@
                 "last_lifes",
                 "=",
                 "Variable(salem_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "Variable(player_score)"
               ]
             }
           ]
@@ -11434,9 +11464,9 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "player_score",
+                "last_score",
                 "=",
-                "GlobalVariable(last_score)"
+                "player_score"
               ]
             },
             {
