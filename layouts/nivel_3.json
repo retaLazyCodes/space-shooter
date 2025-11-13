@@ -34,9 +34,6 @@
         },
         {
           "name": "basic_enemy_3"
-        },
-        {
-          "name": "basic_enemy_2b"
         }
       ]
     },
@@ -3632,164 +3629,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "basic_enemy_2b",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "can_shoot",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside",
-          "extraBorder": 10,
-          "unseenGraceDistance": 0
-        },
-        {
-          "name": "FireBullet",
-          "type": "FireBullet::FireBullet",
-          "FireCooldown": 1.2,
-          "HasJustFired": false,
-          "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 5,
-          "AngleVariance": 0,
-          "BulletSpeedVariance": 0,
-          "AmmoQuantity": 0,
-          "ShotsPerReload": 0,
-          "ReloadDuration": 1,
-          "MaxAmmo": 0,
-          "ShotsBeforeNextReload": 0,
-          "TotalShotsFired": 0,
-          "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
-          "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
-          "ReloadInProgress": false,
-          "HeatIncreasePerShot": 0,
-          "HeatLevel": 0,
-          "AutomaticReloading": true,
-          "OverheatDuration": 0,
-          "LinearCoolingRate": 0.1,
-          "ExponentialCoolingRate": 0.3,
-          "BulletLayer": "",
-          "RandomizedAngle": 0
-        },
-        {
-          "name": "InOnScreen",
-          "type": "IsOnScreen::InOnScreen"
-        },
-        {
-          "name": "TweenPathMovement",
-          "type": "CurvedMovement::TweenPathMovement",
-          "Flippable": "Flippable",
-          "Rotation": false,
-          "RotationOffset": 0,
-          "FlipXToGoBack": false,
-          "FlipYToGoBack": false,
-          "SpeedScale": 1,
-          "PathOriginX": 1.00000000000091,
-          "PathOriginY": 1.00000000000091,
-          "Target": 1.00000000000091,
-          "Origin": 1.00000000000091,
-          "PathName": "",
-          "Duration": 1.00000000000091,
-          "Easing": "",
-          "DrawingElementIndex": 0,
-          "X": 2.0247e-320,
-          "Y": 2.0247e-320,
-          "PathAngle": 2.0247e-320,
-          "PathScale": 2.0247e-320,
-          "RepetitionCount": 2.0247e-320,
-          "ShouldGoBack": false,
-          "ShouldLoop": false,
-          "RepetitionDoneCount": 2.0247e-320,
-          "IsGoingBack": false,
-          "PauseDurationBeforeGoingBack": 0,
-          "DrawingPathOriginX": 2.0247e-320,
-          "DrawingPathOriginY": 2.0247e-320,
-          "DebugLineStrokeWidth": 2.0247e-320,
-          "Viewpoint": "Top-Down"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/enemy-ship2.png",
-                  "points": [
-                    {
-                      "name": "Destroy",
-                      "x": 8,
-                      "y": 42
-                    },
-                    {
-                      "name": "disparo",
-                      "x": 21,
-                      "y": 44
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 57,
-                        "y": 18
-                      },
-                      {
-                        "x": 56.5,
-                        "y": 51
-                      },
-                      {
-                        "x": 31,
-                        "y": 50.5
-                      },
-                      {
-                        "x": 5.5,
-                        "y": 46.5
-                      },
-                      {
-                        "x": 4.5,
-                        "y": 36
-                      },
-                      {
-                        "x": 26,
-                        "y": 14.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -4025,9 +3864,6 @@
       },
       {
         "objectName": "basic_enemy_2"
-      },
-      {
-        "objectName": "basic_enemy_2b"
       },
       {
         "objectName": "basic_enemy_3"
@@ -6160,6 +5996,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",

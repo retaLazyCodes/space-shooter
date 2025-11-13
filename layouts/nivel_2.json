@@ -34,9 +34,6 @@
         },
         {
           "name": "basic_enemy_3"
-        },
-        {
-          "name": "basic_enemy_2b"
         }
       ]
     },
@@ -102,14 +99,19 @@
       "value": false
     },
     {
-      "name": "floor_visible",
+      "name": "salem_lifes",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "key_item_exists",
       "type": "boolean",
       "value": false
     },
     {
-      "name": "salem_lifes",
-      "type": "number",
-      "value": 1
+      "name": "defeated_boss",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -456,6 +458,54 @@
       "x": 122,
       "y": 37,
       "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "DebugText2",
+      "persistentUuid": "6ad8c760-b273-4fbe-8f20-894362761dd4",
+      "width": 0,
+      "x": 342,
+      "y": 478,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "life_text",
+      "persistentUuid": "dff01832-2526-42a8-b8c9-bcde3b1499ad",
+      "width": 0,
+      "x": 160,
+      "y": 45,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "DebugText3",
+      "persistentUuid": "355a519d-c44a-4dc0-8403-628ae9a8da35",
+      "width": 0,
+      "x": 560,
+      "y": 30,
+      "zOrder": 37,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3723,164 +3773,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "basic_enemy_2b",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "can_shoot",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "DestroyOutside",
-          "type": "DestroyOutsideBehavior::DestroyOutside",
-          "extraBorder": 10,
-          "unseenGraceDistance": 0
-        },
-        {
-          "name": "FireBullet",
-          "type": "FireBullet::FireBullet",
-          "FireCooldown": 1.2,
-          "HasJustFired": false,
-          "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 5,
-          "AngleVariance": 0,
-          "BulletSpeedVariance": 0,
-          "AmmoQuantity": 0,
-          "ShotsPerReload": 0,
-          "ReloadDuration": 1,
-          "MaxAmmo": 0,
-          "ShotsBeforeNextReload": 0,
-          "TotalShotsFired": 0,
-          "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
-          "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
-          "ReloadInProgress": false,
-          "HeatIncreasePerShot": 0,
-          "HeatLevel": 0,
-          "AutomaticReloading": true,
-          "OverheatDuration": 0,
-          "LinearCoolingRate": 0.1,
-          "ExponentialCoolingRate": 0.3,
-          "BulletLayer": "",
-          "RandomizedAngle": 0
-        },
-        {
-          "name": "InOnScreen",
-          "type": "IsOnScreen::InOnScreen"
-        },
-        {
-          "name": "TweenPathMovement",
-          "type": "CurvedMovement::TweenPathMovement",
-          "Flippable": "Flippable",
-          "Rotation": false,
-          "RotationOffset": 0,
-          "FlipXToGoBack": false,
-          "FlipYToGoBack": false,
-          "SpeedScale": 1,
-          "PathOriginX": 1.00000000000091,
-          "PathOriginY": 1.00000000000091,
-          "Target": 1.00000000000091,
-          "Origin": 1.00000000000091,
-          "PathName": "",
-          "Duration": 1.00000000000091,
-          "Easing": "",
-          "DrawingElementIndex": 0,
-          "X": 2.0247e-320,
-          "Y": 2.0247e-320,
-          "PathAngle": 2.0247e-320,
-          "PathScale": 2.0247e-320,
-          "RepetitionCount": 2.0247e-320,
-          "ShouldGoBack": false,
-          "ShouldLoop": false,
-          "RepetitionDoneCount": 2.0247e-320,
-          "IsGoingBack": false,
-          "PauseDurationBeforeGoingBack": 0,
-          "DrawingPathOriginX": 2.0247e-320,
-          "DrawingPathOriginY": 2.0247e-320,
-          "DebugLineStrokeWidth": 2.0247e-320,
-          "Viewpoint": "Top-Down"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/image/enemy-ship2.png",
-                  "points": [
-                    {
-                      "name": "Destroy",
-                      "x": 8,
-                      "y": 42
-                    },
-                    {
-                      "name": "disparo",
-                      "x": 21,
-                      "y": 44
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 57,
-                        "y": 18
-                      },
-                      {
-                        "x": 56.5,
-                        "y": 51
-                      },
-                      {
-                        "x": 31,
-                        "y": 50.5
-                      },
-                      {
-                        "x": 5.5,
-                        "y": 46.5
-                      },
-                      {
-                        "x": 4.5,
-                        "y": 36
-                      },
-                      {
-                        "x": 26,
-                        "y": 14.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -4113,7 +4005,7 @@
           "type": "FireBullet::FireBullet",
           "FireCooldown": 3,
           "HasJustFired": false,
-          "RotateBullet": true,
+          "RotateBullet": false,
           "FiringArc": 90,
           "BulletQuantity": 1,
           "AngleVariance": 0,
@@ -4292,6 +4184,92 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DebugText2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "asd",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 24,
+        "g": 24,
+        "r": 218
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "asd",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "218;24;24"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DebugText3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "asd",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 15,
+      "color": {
+        "b": 24,
+        "g": 24,
+        "r": 218
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "asd",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "218;24;24"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4319,9 +4297,6 @@
         "objectName": "basic_enemy_2"
       },
       {
-        "objectName": "basic_enemy_2b"
-      },
-      {
         "objectName": "basic_enemy_3"
       },
       {
@@ -4347,6 +4322,12 @@
       },
       {
         "objectName": "DebugText"
+      },
+      {
+        "objectName": "DebugText2"
+      },
+      {
+        "objectName": "DebugText3"
       },
       {
         "objectName": "negro"
@@ -4490,7 +4471,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(GlobalVariable(last_lifes)) + \"/4\""
+                "ToString(GlobalVariable(last_lifes)) + \"/7\""
               ]
             }
           ]
@@ -4542,6 +4523,15 @@
               "parameters": [
                 "",
                 "\"enemy_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\""
               ]
             }
           ]
@@ -4612,7 +4602,7 @@
               "parameters": [
                 "player",
                 "65",
-                "120",
+                "100",
                 "1"
               ]
             },
@@ -4796,7 +4786,7 @@
               },
               "parameters": [
                 "",
-                "data/waves.json",
+                "data/waves_2.json",
                 "wave_json",
                 ""
               ]
@@ -4829,7 +4819,7 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "checkpoint_1",
+                    "checkpoint_4",
                     "True",
                     ""
                   ]
@@ -4839,7 +4829,7 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "checkpoint_2",
+                    "checkpoint_5",
                     "True",
                     ""
                   ]
@@ -4894,7 +4884,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "True",
                 ""
               ]
@@ -4955,7 +4945,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_1",
+                "checkpoint_4",
                 "True",
                 ""
               ]
@@ -4965,7 +4955,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "=",
                 ""
               ]
@@ -5000,7 +4990,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "True",
                 ""
               ]
@@ -5010,7 +5000,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "False",
                 ""
               ]
@@ -5045,7 +5035,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "True",
                 ""
               ]
@@ -5082,7 +5072,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_1",
+                "checkpoint_4",
                 "=",
                 ""
               ]
@@ -5094,7 +5084,7 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "checkpoint_1",
+                "checkpoint_4",
                 "True",
                 ""
               ]
@@ -5124,174 +5114,22 @@
             },
             {
               "type": {
-                "value": "AddForceAL"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "background_1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "floor1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "background_border2",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "torre",
-                "2000",
-                "250",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "current_wave_index",
+                "last_lifes",
                 "=",
-                "1"
+                "Variable(salem_lifes)"
               ]
             },
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "checkpoint_1",
+                "last_score",
                 "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "floor_visible",
-                "=",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "floor_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/checkpoint.mp3",
-                "2",
-                "no",
-                "volume+200",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "checkpoint_visible",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "background_1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "floor1",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "background_border2",
-                "270",
-                "50",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "torre",
-                "2000",
-                "250",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "life",
-                "torre.PointX(\"item\")",
-                "torre.PointY(\"item\")",
-                ""
+                "Variable(player_score)"
               ]
             }
           ]
@@ -5314,7 +5152,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "=",
                 ""
               ]
@@ -5326,7 +5164,7 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "True",
                 ""
               ]
@@ -5352,6 +5190,26 @@
                 "checkpoint_visible",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_lifes",
+                "=",
+                "Variable(salem_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "Variable(player_score)"
               ]
             }
           ]
@@ -5374,7 +5232,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "=",
                 ""
               ]
@@ -5386,7 +5244,7 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "True",
                 ""
               ]
@@ -5412,6 +5270,26 @@
                 "checkpoint_visible",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_lifes",
+                "=",
+                "Variable(salem_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "Variable(player_score)"
               ]
             }
           ]
@@ -5500,7 +5378,7 @@
                 "0",
                 "\"linear\"",
                 "0.4",
-                "yes"
+                "no"
               ]
             }
           ]
@@ -5595,6 +5473,159 @@
                 "\"linear\"",
                 "0.4",
                 "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Mover camara y elevar el suelo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_4",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "floor1",
+                "270",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "background_border2",
+                "270",
+                "50",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "background_1",
+                "=",
+                "-230"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "floor1",
+                "=",
+                "520"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "background_border2",
+                "=",
+                "515"
               ]
             }
           ]
@@ -5777,6 +5808,17 @@
                 "\"m800 300 c-200 -150 -200 150 -400 0 c200 150 200 -150 400 0\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_15\"",
+                "\"m800.08 481.18 1819.21 0.70866\"",
+                ""
+              ]
             }
           ]
         },
@@ -5806,6 +5848,17 @@
                 "=",
                 "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress)) \n + \" | TotalWaves: \" + ToString(VariableChildCount(wave_json.waves))"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText2",
+                "Text",
+                "=",
+                "\"item1 \" + ToString(GlobalVariable(item4_collected))\n    + \" | item2: \" + \nToString(GlobalVariable(item5_collected))\n+ \" | item3: \" + \nToString(GlobalVariable(item6_collected))\n+ \" | key_item_exists: \" + ToString(Variable(key_item_exists))\n"
+              ]
             }
           ]
         }
@@ -5821,6 +5874,18 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Crear fade-in"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -5900,52 +5965,6 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "musica",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/music/stg2_full.ogg",
-                "1",
-                "yes",
-                "volume/2",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
@@ -5983,6 +6002,127 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Loop \"pefecto\" de musica de fondo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/stg2_full.ogg",
+                "1",
+                "yes",
+                "volume/2",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SoundChannelPlayingOffset"
+              },
+              "parameters": [
+                "",
+                "1",
+                ">=",
+                "92.92"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "8.6"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "config extra de escena"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -6005,13 +6145,7 @@
                 "+",
                 "100 * TimeDelta()"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+            },
             {
               "type": {
                 "value": "ScalableCapability::ScalableBehavior::SetValue"
@@ -6030,6 +6164,81 @@
           "conditions": [
             {
               "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "background_1",
+                "<=",
+                "-230"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "background_1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "floor1",
+                "<=",
+                "520"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "floor1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "background_border2",
+                "<=",
+                "515"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "background_border2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
@@ -6037,6 +6246,44 @@
                 "InOnScreen",
                 "0",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item4_collected",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item5_collected",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item6_collected",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             },
             {
@@ -6151,6 +6398,12 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -6180,6 +6433,15 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PauseSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
             }
           ]
         },
@@ -6195,6 +6457,31 @@
                 "False",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SoundPaused"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "ready_go_played",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -6223,30 +6510,24 @@
                 "",
                 "1"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "PosY"
+                "value": "RePlaySoundCanal"
               },
               "parameters": [
-                "background_1",
-                "<=",
-                "-230"
+                "",
+                "3"
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "Arreter"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "background_1"
+                "ready_go_played",
+                "True",
+                ""
               ]
             }
           ]
@@ -6256,47 +6537,46 @@
           "conditions": [
             {
               "type": {
-                "value": "PosY"
+                "value": "BooleanVariable"
               },
               "parameters": [
-                "floor1",
-                "<=",
-                "520"
+                "is_paused",
+                "False",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Arreter"
+                "value": "ChangeTimeScale"
               },
               "parameters": [
-                "floor1"
+                "",
+                "1"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "PosY"
+                "value": "Cache"
               },
               "parameters": [
-                "background_border2",
-                "<=",
-                "515"
+                "pause_text"
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "Arreter"
+                "value": "RePlaySoundCanal"
               },
               "parameters": [
-                "background_border2"
+                "",
+                "1"
               ]
             }
           ]
@@ -6352,6 +6632,32 @@
           ],
           "actions": [],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"t\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Select_Level\"",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -6823,17 +7129,6 @@
                     "=",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "player",
-                    "player_is_respawning",
-                    "=",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -7023,6 +7318,35 @@
                 "=",
                 "0"
               ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_group",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "<",
+                "0"
+              ]
             },
             {
               "type": {
@@ -7041,17 +7365,6 @@
                 "is_alive",
                 "False",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "heart_group",
-                "Animation",
-                "=",
-                "\"empty\""
               ]
             },
             {
@@ -7196,6 +7509,276 @@
               "parameters": [
                 "",
                 "\"Nivel_2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_1",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_2",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "heart_group",
+                "Animation",
+                "=",
+                "\"full\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "atun",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "atun",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
               ]
             }
           ]
@@ -7586,6 +8169,93 @@
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre",
+                "FireBullet",
+                "torre.PointX(\"disparo1\")",
+                "torre.PointY(\"disparo1\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre",
+                "FireBullet",
+                "torre.PointX(\"disparo2\")",
+                "torre.PointY(\"disparo2\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "misil",
+                "=",
+                "enemy_group.ZOrder()-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "misil",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardObject"
+              },
+              "parameters": [
+                "misil",
+                "player",
+                "180",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "misil",
+                "player",
+                "5",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
                 "enemy_group",
                 "InOnScreen",
                 "0",
@@ -7626,7 +8296,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "=",
                 ""
               ]
@@ -7636,7 +8306,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "=",
                 ""
               ]
@@ -7692,21 +8362,6 @@
             },
             {
               "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "basic_enemy_2b",
-                "FireBullet",
-                "basic_enemy_2b.PointX(\"disparo\")",
-                "basic_enemy_2b.PointY(\"disparo\")",
-                "enemy_shoot_2",
-                "180",
-                "300",
-                "300"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
@@ -7736,7 +8391,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_2",
+                "checkpoint_5",
                 "True",
                 ""
               ]
@@ -7746,7 +8401,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "=",
                 ""
               ]
@@ -7817,97 +8472,21 @@
           "conditions": [
             {
               "type": {
-                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "torre",
-                "InOnScreen",
-                "0",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "torre",
-                "FireBullet",
-                "torre.PointX(\"disparo1\")",
-                "torre.PointY(\"disparo1\")",
-                "misil",
-                "player",
-                "100",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "torre",
-                "FireBullet",
-                "torre.PointX(\"disparo2\")",
-                "torre.PointY(\"disparo2\")",
-                "misil",
-                "player",
-                "100",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "misil",
-                "=",
-                "enemy_group.ZOrder()-1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "misil",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardObject"
-              },
-              "parameters": [
-                "misil",
-                "player",
-                "90",
+                "enemy_group",
+                "can_shoot",
+                "True",
                 ""
               ]
             },
-            {
-              "type": {
-                "value": "AddForceVers"
-              },
-              "parameters": [
-                "misil",
-                "player",
-                "3",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
             {
               "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_3",
+                "checkpoint_6",
                 "True",
                 ""
               ]
@@ -7981,6 +8560,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8256,6 +8836,279 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item4_collected",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-life.mp3",
+                "",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "ToString(Variable(salem_lifes)) + \"/7\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item4_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item5_collected",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item4_collected",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-life.mp3",
+                "",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "ToString(Variable(salem_lifes)) + \"/7\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item5_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "life",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item6_collected",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item5_collected",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "item4_collected",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-life.mp3",
+                "",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "life_text",
+                "Text",
+                "=",
+                "ToString(Variable(salem_lifes)) + \"/7\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "item6_collected",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
               },
               "parameters": [
@@ -8272,6 +9125,95 @@
               "parameters": [
                 "explosion_1",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "enemy_shoot",
+                    "player",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_is_hit",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "is_alive",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "enemy_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
               ]
             }
           ]
@@ -8698,6 +9640,1573 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "🗼 Spawnear torres",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "is_paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\"",
+                ">",
+                "RandomInRange(20, 30)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "torre",
+                "RandomInRange(820, 900)",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "👾 Boss Fight",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Loop \"pefecto\" de musica de fondo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "FadeSoundVolume"
+              },
+              "parameters": [
+                "",
+                "1",
+                "0",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/boss-fight.ogg",
+                "1",
+                "",
+                "volume/2",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SoundChannelPlayingOffset"
+              },
+              "parameters": [
+                "",
+                "1",
+                ">=",
+                "61.52"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "4.829"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Escena de entrada del jefe"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "basic_enemy_2b",
+                "-800",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "Scale",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::TweenPathMovement::Move"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "TweenPathMovement",
+                "\"path_15\"",
+                "1",
+                "5",
+                "\"linear\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"boss_fire_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "50"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"boss_fire_timer\"",
+                ">=",
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "=",
+                "900",
+                "=",
+                "150"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "Flippable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "180",
+                "22",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"boss_fire_timer\"",
+                ">=",
+                "22"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "FireBullet",
+                "basic_enemy_2b.PointX(\"disparo\")",
+                "basic_enemy_2b.PointY(\"disparo\")",
+                "enemy_shoot",
+                "180",
+                "250",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "basic_enemy_2b"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "can_be_damaged",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimiento del jefe"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "basic_enemy_2b.Y()",
+                "<",
+                "basic_enemy_2b.Variable(boss_minY)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_dir",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "basic_enemy_2b.Y()",
+                ">",
+                "basic_enemy_2b.Variable(boss_maxY)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_dir",
+                "=",
+                "-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"boss_fire_timer\"",
+                ">=",
+                "26"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "can_be_damaged",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "+",
+                "basic_enemy_2b.Variable(boss_dir) * basic_enemy_2b.Variable(boss_speed) * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "can_be_damaged",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"meteorite_spawn_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "can_be_damaged",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player_shoot",
+                "basic_enemy_2b",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DebugText3",
+                "Text",
+                "=",
+                "\"hp: \" + ToString(basic_enemy_2b.Variable(boss_hp))"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/bullet-impact.mp3",
+                "",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::FlashColor::Flash"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "FlashColor",
+                "0.1",
+                "\"243;226;7\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::HasJustFired"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "FireBullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/boss-gunshot.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Animación de destrucción"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"boss_fire_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "can_be_damaged",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "basic_enemy_2b"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "FireBullet",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"disparo\")",
+                "basic_enemy_2b.PointY(\"disparo\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "player_score",
+                "+",
+                "20000"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "score_text",
+                "Text",
+                "=",
+                "\"Score: \" + ToString(Variable(player_score))"
+              ]
+            },
+            {
+              "type": {
+                "value": "FadeSoundVolume"
+              },
+              "parameters": [
+                "",
+                "1",
+                "0",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy\")",
+                "basic_enemy_2b.PointY(\"Destroy\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy2\")",
+                "basic_enemy_2b.PointY(\"Destroy2\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy3\")",
+                "basic_enemy_2b.PointY(\"Destroy3\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy4\")",
+                "basic_enemy_2b.PointY(\"Destroy4\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy5\")",
+                "basic_enemy_2b.PointY(\"Destroy5\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Destroy\")",
+                "basic_enemy_2b.PointY(\"Destroy\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "basic_enemy_2b.PointX(\"Center\")",
+                "basic_enemy_2b.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "basic_enemy_2b.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "basic_enemy_2b.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "defeated_boss",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Finalizar nivel"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "defeated_boss",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(last_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "last_score",
+                "=",
+                "player_score"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "negro",
+                "0",
+                "0",
+                "\"fundido\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "negro",
+                "Resizable",
+                "800",
+                "600"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "negro",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "ReadyGo_text",
+                "-200",
+                "210",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Text",
+                "=",
+                "\"STAGE CLEARED\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Scale",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "ReadyGo_text",
+                "Tween",
+                "\"ready_zoom\"",
+                "1",
+                "\"easeOutCubic\"",
+                "1",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/stage-clear.mp3",
+                "1",
+                "volume",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "negro",
+                "Tween",
+                "\"muerte\"",
+                "255",
+                "\"linear\"",
+                "5.1",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Select_Level\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -8937,6 +11446,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",
