@@ -4224,9 +4224,9 @@
       "effects": [],
       "behaviors": [
         {
-          "extraBorder": 100,
           "name": "DestroyOutside",
           "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 100,
           "unseenGraceDistance": 100
         }
       ],

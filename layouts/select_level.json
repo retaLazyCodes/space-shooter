@@ -11,14 +11,14 @@
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 400,
+    "gridHeight": 250,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7412978919222374,
+    "zoomFactor": 0.717116487265658,
     "windowMask": false,
     "selectedLayer": "botones"
   },
@@ -35,7 +35,7 @@
       "name": "bglevel",
       "persistentUuid": "2836a364-18dc-4932-8c09-f2b2e10270ac",
       "width": 2561,
-      "x": -1697,
+      "x": -1749,
       "y": 0,
       "zOrder": 1,
       "numberProperties": [],
@@ -52,7 +52,7 @@
       "persistentUuid": "71076266-bcc0-45ab-a3c2-49970e5a0f18",
       "width": 150,
       "x": 111,
-      "y": 244,
+      "y": 243,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -68,7 +68,7 @@
       "persistentUuid": "a4eaffb7-3d38-4da7-8818-daf32f614c26",
       "width": 150,
       "x": 325,
-      "y": 244,
+      "y": 243,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,7 +84,7 @@
       "persistentUuid": "bbd24301-9749-4537-b790-26f6c5eae97e",
       "width": 150,
       "x": 539,
-      "y": 240,
+      "y": 239,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -100,8 +100,8 @@
       "name": "bric",
       "persistentUuid": "0743de61-9b78-4769-a138-7604ffc3a8c7",
       "width": 175,
-      "x": 96,
-      "y": 235,
+      "x": 98,
+      "y": 234,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -117,7 +117,7 @@
       "persistentUuid": "5419a1cf-4b91-4382-8821-4e297f745731",
       "width": 0,
       "x": 156,
-      "y": 358,
+      "y": 357,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -133,7 +133,7 @@
       "persistentUuid": "b73e29b8-8ec4-4c31-91c2-04682facda4f",
       "width": 0,
       "x": 386,
-      "y": 361,
+      "y": 360,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -149,7 +149,7 @@
       "persistentUuid": "9af5fafc-39dc-439d-9b4a-a84a67108468",
       "width": 0,
       "x": 595,
-      "y": 362,
+      "y": 361,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -165,7 +165,7 @@
       "persistentUuid": "bdd8d541-c41c-4923-8146-d19124302789",
       "width": 0,
       "x": 375,
-      "y": 478,
+      "y": 477,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -181,8 +181,8 @@
       "name": "EXPLICA",
       "persistentUuid": "d04105df-ce70-4d29-aca1-ea4351947086",
       "width": 646,
-      "x": 115,
-      "y": 79,
+      "x": 81,
+      "y": 89,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -197,8 +197,8 @@
       "name": "cursor",
       "persistentUuid": "d8f9c19c-ed40-4712-aac5-bd899c43fa1d",
       "width": 0,
-      "x": 265,
-      "y": 489,
+      "x": 277,
+      "y": 447,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -213,9 +213,106 @@
       "name": "MENU",
       "persistentUuid": "3d22453d-615f-4c8b-afc3-b1ab2c306228",
       "width": 0,
-      "x": 282,
-      "y": 518,
+      "x": 294,
+      "y": 475,
       "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "nivel_1",
+      "persistentUuid": "293446ff-9c65-44fa-8c6b-aac9e7eff3bc",
+      "width": 0,
+      "x": 129,
+      "y": 191,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "nivel_2",
+      "persistentUuid": "defb31a8-d807-4979-a9d3-f1a856c1fbb9",
+      "width": 0,
+      "x": 344,
+      "y": 191,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "batalla_final",
+      "persistentUuid": "ed12fc62-739b-494f-994f-098f17e545f0",
+      "width": 0,
+      "x": 511,
+      "y": 191,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "score_text",
+      "persistentUuid": "2fdadc96-3efe-4d93-bf9c-903633cbeed6",
+      "width": 0,
+      "x": 215,
+      "y": 37,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "life_text",
+      "persistentUuid": "df4efeb7-37cd-446a-a0fd-54e65af9a338",
+      "width": 0,
+      "x": 510,
+      "y": 27,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 53,
+      "keepRatio": true,
+      "layer": "botones",
+      "name": "static_life",
+      "persistentUuid": "a1c83647-4828-4202-99b2-abee1672b2cb",
+      "width": 53,
+      "x": 450,
+      "y": 16,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -425,7 +522,55 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "unblocked",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\NewSprite2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 364,
+                        "y": 0
+                      },
+                      {
+                        "x": 364,
+                        "y": 313
+                      },
+                      {
+                        "x": 0,
+                        "y": 313
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "blocked",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -435,7 +580,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\image\\NewSprite2.png",
+                  "image": "assets\\image\\NewSprite3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -786,7 +931,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nVENCERLO.",
+      "string": "MENU DE NIVEL",
       "font": "assets/image/main-menu/BoldPixels.otf",
       "textAlignment": "center",
       "characterSize": 28,
@@ -809,7 +954,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nVENCERLO.",
+        "text": "MENU DE NIVEL",
         "font": "assets/image/main-menu/BoldPixels.otf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -860,6 +1005,221 @@
         "lineHeight": 0,
         "color": "158;2;20"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "nivel_1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "NIVEL 1",
+      "font": "assets/image/main-menu/BoldPixels.otf",
+      "textAlignment": "center",
+      "characterSize": 28,
+      "color": {
+        "b": 20,
+        "g": 2,
+        "r": 158
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "209;209;209",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "117;116;116",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "NIVEL 1",
+        "font": "assets/image/main-menu/BoldPixels.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "158;2;20"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "nivel_2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "NIVEL 2",
+      "font": "assets/image/main-menu/BoldPixels.otf",
+      "textAlignment": "center",
+      "characterSize": 28,
+      "color": {
+        "b": 20,
+        "g": 2,
+        "r": 158
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "209;209;209",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "117;116;116",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "NIVEL 2",
+        "font": "assets/image/main-menu/BoldPixels.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "158;2;20"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "batalla_final",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "BATALLA FINAL",
+      "font": "assets/image/main-menu/BoldPixels.otf",
+      "textAlignment": "center",
+      "characterSize": 28,
+      "color": {
+        "b": 20,
+        "g": 2,
+        "r": 158
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "209;209;209",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "117;116;116",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "BATALLA FINAL",
+        "font": "assets/image/main-menu/BoldPixels.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "158;2;20"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "score_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Score: ",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Score: ",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "life_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "123",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 32,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "123",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 32,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -878,7 +1238,13 @@
         "objectName": "bg3"
       },
       {
+        "objectName": "life_text"
+      },
+      {
         "objectName": "bg4"
+      },
+      {
+        "objectName": "score_text"
       },
       {
         "objectName": "bric"
@@ -900,6 +1266,15 @@
       },
       {
         "objectName": "MENU"
+      },
+      {
+        "objectName": "nivel_1"
+      },
+      {
+        "objectName": "nivel_2"
+      },
+      {
+        "objectName": "batalla_final"
       }
     ]
   },
@@ -923,6 +1298,14 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "block4"
+          ]
+        },
         {
           "type": {
             "value": "Cache"
@@ -957,10 +1340,152 @@
         },
         {
           "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "EXPLICA",
+            "Text",
+            "=",
+            "\"DOGOH ESPERA CON ANSIAS LA BATALLA FINAL, \nRECOLECTA LAS 7 VIDAS NECESARIAS PARA \nVENCERLO.\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "batalla_final"
+          ]
+        },
+        {
+          "type": {
             "value": "Cache"
           },
           "parameters": [
             "cursor"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "life_text",
+            "Text",
+            "=",
+            "ToString(GlobalVariable(last_lifes)) + \"/7\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "score_text",
+            "Text",
+            "=",
+            "\"Score: \" + ToString(GlobalVariable(last_score))"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\sounds\\level_select_msci.mp3",
+                "1",
+                "no",
+                "volume",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "last_lifes",
+            "<",
+            "7"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "bg4",
+            "Animation",
+            "=",
+            "\"blocked\""
           ]
         }
       ]
@@ -995,6 +1520,30 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "batalla_final"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_2"
+          ]
+        },
         {
           "type": {
             "value": "MettreXY"
@@ -1041,6 +1590,30 @@
       "actions": [
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "batalla_final"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_2"
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -1067,16 +1640,6 @@
         },
         {
           "type": {
-            "value": "PosY"
-          },
-          "parameters": [
-            "bric",
-            "=",
-            "235"
-          ]
-        },
-        {
-          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
@@ -1089,6 +1652,30 @@
           },
           "parameters": [
             "bric"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "nivel_2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "batalla_final"
           ]
         },
         {
@@ -1112,16 +1699,6 @@
           "parameters": [
             "",
             "\"Up\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PosY"
-          },
-          "parameters": [
-            "bric",
-            "=",
-            "235"
           ]
         },
         {
@@ -1205,6 +1782,42 @@
       "conditions": [
         {
           "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "bric"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "bric",
+            "block",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "nivel_1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
@@ -1233,6 +1846,42 @@
           "parameters": [
             "",
             "\"Nivel_2\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "bric",
+            "block2",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "bric"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "nivel_2",
             ""
           ]
         }
@@ -1280,6 +1929,54 @@
           },
           "parameters": [
             "EXPLICA",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sounds\\risa.mp3",
+            "",
+            "30",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "bric",
+            "block3",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "bric"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "batalla_final",
             ""
           ]
         }
