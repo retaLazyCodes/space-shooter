@@ -1190,6 +1190,38 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves_1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data\\waves_1.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/flechas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\flechas.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\X.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/esc.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\esc.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1756,6 +1788,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorial_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorial"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
