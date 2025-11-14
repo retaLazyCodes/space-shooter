@@ -4787,7 +4787,7 @@
               "parameters": [
                 "salem_lifes",
                 "=",
-                "GlobalVariable(last_lifes)"
+                "GlobalVariable(level1_got_lifes)"
               ]
             },
             {
@@ -4809,7 +4809,62 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(GlobalVariable(last_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "level1_clear",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_1",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_2",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_3",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
               ]
             }
           ]
@@ -5464,7 +5519,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level1_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -5544,7 +5599,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level1_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -5624,7 +5679,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level1_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -8510,7 +8565,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8798,9 +8852,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level1_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level1_got_lifes)"
               ]
             },
             {
@@ -8811,7 +8875,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -8899,9 +8963,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level1_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level1_got_lifes)"
               ]
             },
             {
@@ -8912,7 +8986,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -9010,9 +9084,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level1_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level1_got_lifes)"
               ]
             },
             {
@@ -9023,7 +9107,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -9918,7 +10002,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾 Boss Fight",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11244,6 +11327,16 @@
                 "last_score",
                 "=",
                 "player_score"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "level1_clear",
+                "True",
+                "tr"
               ]
             },
             {

@@ -1383,13 +1383,23 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "last_lifes",
+            "=",
+            "level1_got_lifes+level2_got_lifes+1"
+          ]
+        },
+        {
+          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
             "life_text",
             "Text",
             "=",
-            "ToString(GlobalVariable(last_lifes)) + \"/7\""
+            "ToString(GlobalVariable(level1_got_lifes)+GlobalVariable(level2_got_lifes)+1) + \"/7\""
           ]
         },
         {

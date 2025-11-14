@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9547103308103165,
+    "zoomFactor": 0.893440235752459,
     "windowMask": false,
     "selectedLayer": "piso"
   },
@@ -101,7 +101,7 @@
     {
       "name": "salem_lifes",
       "type": "number",
-      "value": 1
+      "value": 0
     },
     {
       "name": "key_item_exists",
@@ -376,22 +376,6 @@
       "x": 591,
       "y": 538,
       "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "life",
-      "persistentUuid": "359b8080-0395-46dc-9d56-3aaa646326ce",
-      "width": 0,
-      "x": 550,
-      "y": 113,
-      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3997,7 +3981,13 @@
       "name": "torre",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "creo_atun",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -4270,6 +4260,127 @@
         "lineHeight": 0,
         "color": "218;24;24"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "torre2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 3,
+          "HasJustFired": false,
+          "RotateBullet": false,
+          "FiringArc": 90,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/towers/tower1.png",
+                  "points": [
+                    {
+                      "name": "disparo1",
+                      "x": 38.5,
+                      "y": 88.5
+                    },
+                    {
+                      "name": "disparo2",
+                      "x": 91.5,
+                      "y": 86.5
+                    },
+                    {
+                      "name": "disparo3",
+                      "x": 142.5,
+                      "y": 88
+                    },
+                    {
+                      "name": "disparo4",
+                      "x": 193.5,
+                      "y": 90
+                    },
+                    {
+                      "name": "item",
+                      "x": 225,
+                      "y": 216.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 76
+                      },
+                      {
+                        "x": 243,
+                        "y": 76
+                      },
+                      {
+                        "x": 243,
+                        "y": 300
+                      },
+                      {
+                        "x": 20,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4349,6 +4460,9 @@
       },
       {
         "objectName": "torre"
+      },
+      {
+        "objectName": "torre2"
       },
       {
         "objectName": "misil"
@@ -4449,7 +4563,7 @@
               "parameters": [
                 "salem_lifes",
                 "=",
-                "GlobalVariable(last_lifes)"
+                "GlobalVariable(level2_got_lifes)"
               ]
             },
             {
@@ -4471,7 +4585,72 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(GlobalVariable(last_lifes)) + \"/7\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "level2_clear",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_4",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_5",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_6",
+                "False",
+                "GlobalVariable(level2_got_lifes)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "False",
+                ""
               ]
             }
           ]
@@ -4523,15 +4702,6 @@
               "parameters": [
                 "",
                 "\"enemy_spawn_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"tower_spawn_timer\""
               ]
             }
           ]
@@ -4899,7 +5069,7 @@
                 "basic_enemy_3",
                 "FireBullet",
                 "=",
-                "0.6",
+                "0.8",
                 ""
               ]
             },
@@ -4969,7 +5139,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "14"
+                "9"
               ]
             }
           ]
@@ -5014,7 +5184,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "24"
+                "22"
               ]
             }
           ]
@@ -5064,7 +5234,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "1"
+                "10"
               ]
             },
             {
@@ -5117,7 +5287,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level2_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -5144,7 +5314,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "25"
+                "23"
               ]
             },
             {
@@ -5197,7 +5367,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level2_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -5277,7 +5447,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "last_lifes",
+                "level2_got_lifes",
                 "=",
                 "Variable(salem_lifes)"
               ]
@@ -5499,7 +5669,7 @@
               "parameters": [
                 "current_wave_index",
                 "=",
-                "1"
+                "10"
               ]
             },
             {
@@ -5626,6 +5796,56 @@
                 "background_border2",
                 "=",
                 "515"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower2_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tuna_spawn_timer\""
               ]
             }
           ]
@@ -6250,7 +6470,17 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
               },
               "parameters": [],
               "subInstructions": [
@@ -6259,31 +6489,51 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
+                    "checkpoint_4",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_5",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_6",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
                     "item4_collected",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "item5_collected",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "item6_collected",
-                    "False",
+                    "=",
                     ""
                   ]
                 }
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
               ]
             },
             {
@@ -6304,6 +6554,500 @@
                 "torre.PointX(\"item\") + 20",
                 "torre.PointY(\"item\")",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_4",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_5",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_6",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item4_collected",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item5_collected",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "life",
+                "torre.PointX(\"item\") + 20",
+                "torre.PointY(\"item\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_4",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_5",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "checkpoint_6",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item4_collected",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item5_collected",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "item6_collected",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "life",
+                "torre.PointX(\"item\") + 20",
+                "torre.PointY(\"item\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "life",
+                "<",
+                "-300"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "torre",
+                "<",
+                "-300"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "torre",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "torre2",
+                "<",
+                "-300"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "torre2",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "torre",
+                "creo_atun",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<",
+                "60"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "atun",
+                "torre.PointX(\"item\") + 30",
+                "torre.PointY(\"item\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "torre",
+                "creo_atun",
+                "True",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre2",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "torre",
+                "creo_atun",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "RandomInRange(0, 100)",
+                "<",
+                "90"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "atun",
+                "torre2.PointX(\"item\") + 20",
+                "torre2.PointY(\"item\") +5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "torre",
+                "creo_atun",
+                "True",
+                "1"
               ]
             }
           ]
@@ -6589,7 +7333,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7155,7 +7898,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8153,7 +8895,29 @@
                 "value": "AddForceAL"
               },
               "parameters": [
+                "torre2",
+                "180",
+                "100",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
                 "life",
+                "180",
+                "100",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "atun",
                 "180",
                 "100",
                 "0"
@@ -8198,6 +8962,65 @@
               },
               "parameters": [
                 "torre",
+                "FireBullet",
+                "torre.PointX(\"disparo2\")",
+                "torre.PointY(\"disparo2\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "misil",
+                "=",
+                "enemy_group.ZOrder()-1"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "torre2",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre2",
+                "FireBullet",
+                "torre.PointX(\"disparo1\")",
+                "torre.PointY(\"disparo1\")",
+                "misil",
+                "player",
+                "100",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "torre2",
                 "FireBullet",
                 "torre.PointX(\"disparo2\")",
                 "torre.PointY(\"disparo2\")",
@@ -8560,7 +9383,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "💥 Colisiones",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8884,9 +9706,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level2_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level2_got_lifes)"
               ]
             },
             {
@@ -8897,7 +9729,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/7\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -8907,6 +9739,24 @@
               "parameters": [
                 "item4_collected",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
                 ""
               ]
             }
@@ -8975,9 +9825,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level2_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level2_got_lifes)"
               ]
             },
             {
@@ -8988,7 +9848,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/7\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -8998,6 +9858,24 @@
               "parameters": [
                 "item5_collected",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
                 ""
               ]
             }
@@ -9076,9 +9954,19 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "salem_lifes",
+                "level2_got_lifes",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "salem_lifes",
+                "=",
+                "GlobalVariable(level2_got_lifes)"
               ]
             },
             {
@@ -9089,7 +9977,7 @@
                 "life_text",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/7\""
+                "ToString(Variable(salem_lifes)) + \"/3\""
               ]
             },
             {
@@ -9099,6 +9987,24 @@
               "parameters": [
                 "item6_collected",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "key_item_exists",
+                "False",
                 ""
               ]
             }
@@ -9564,6 +10470,163 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "misil",
+                "floor1",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "misil.PointX(\"Center\")",
+                "misil.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "misil.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "misil",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "misil",
+                "basic_enemy_2b",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "misil.PointX(\"Center\")",
+                "misil.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "misil.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "misil",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_2b",
+                "boss_hp",
+                "-",
+                "30"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::And"
               },
               "parameters": [],
@@ -9705,6 +10768,16 @@
                 ">",
                 "RandomInRange(20, 30)"
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_4",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -9730,6 +10803,98 @@
               ]
             }
           ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "is_paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower2_spawn_timer\"",
+                ">",
+                "RandomInRange(15, 25)"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_4",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "torre2",
+                "RandomInRange(900, 950)",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower2_spawn_timer\""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -9739,7 +10904,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "👾 Boss Fight",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10511,6 +11675,29 @@
                 "0",
                 "5"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "health",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "torre",
+                "FireBullet",
+                "=",
+                "20",
+                ""
+              ]
             }
           ]
         },
@@ -11065,6 +12252,16 @@
                 "last_score",
                 "=",
                 "player_score"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "level2_clear",
+                "True",
+                "tr"
               ]
             },
             {

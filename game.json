@@ -1224,6 +1224,22 @@
         "metadata": "",
         "name": "data/waves_2.json",
         "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/towers/tower2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/towers/tower1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2135,6 +2151,26 @@
     },
     {
       "name": "floor_visible",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "level1_got_lifes",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "level2_got_lifes",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "level1_clear",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "level2_clear",
       "type": "boolean",
       "value": false
     }
