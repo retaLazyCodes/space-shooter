@@ -4762,6 +4762,30 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText3"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -4813,6 +4837,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Reiniciar checkpoints si vuelve a jugar el nivel"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -5478,6 +5514,17 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -5558,6 +5605,17 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -5636,6 +5694,17 @@
               "parameters": [
                 "checkpoint_3",
                 "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
                 ""
               ]
             }
@@ -7264,7 +7333,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "❤️ Salud del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

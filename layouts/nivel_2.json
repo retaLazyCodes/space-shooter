@@ -4538,6 +4538,30 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DebugText3"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -4589,6 +4613,194 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TESTING"
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "current_wave_index",
+                "=",
+                "34"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_6",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "DebugText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "DebugText2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "DebugText3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "is_paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "floor_visible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\"",
+                ">",
+                "RandomInRange(20, 30)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "torre",
+                "RandomInRange(820, 900)",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tower_spawn_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Reiniciar checkpoints si vuelve a jugar el nivel"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4980,30 +5192,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "BooleanVariable"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "checkpoint_4",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "checkpoint_5",
-                    "True",
-                    ""
-                  ]
-                }
+              "parameters": [
+                "checkpoint_4",
+                "True",
+                ""
               ]
             }
           ],
@@ -5054,7 +5248,7 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "checkpoint_6",
+                "checkpoint_5",
                 "True",
                 ""
               ]
@@ -5066,7 +5260,7 @@
                 "value": "FireBullet::FireBullet::SetCooldownOp"
               },
               "parameters": [
-                "basic_enemy_3",
+                "basic_enemy_1",
                 "FireBullet",
                 "=",
                 "0.8",
@@ -5082,6 +5276,71 @@
                 "FireBullet",
                 "=",
                 "0.9",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "basic_enemy_3",
+                "FireBullet",
+                "=",
+                "0.7",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "checkpoint_6",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "basic_enemy_1",
+                "FireBullet",
+                "=",
+                "0.7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "basic_enemy_2",
+                "FireBullet",
+                "=",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "basic_enemy_3",
+                "FireBullet",
+                "=",
+                "0.6",
                 ""
               ]
             }
@@ -5246,6 +5505,17 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -5326,6 +5596,17 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -5404,6 +5685,17 @@
               "parameters": [
                 "checkpoint_6",
                 "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
                 ""
               ]
             }
@@ -6039,6 +6331,61 @@
                 "\"m800.08 481.18 1819.21 0.70866\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_16\"",
+                "\"m800 0c-200 80-200 160 0 240 200 80 200 160 0 240-200 80-200 160 0 240\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_17\"",
+                "\"m800 600c-250-100-250-200 0-300 250-100 250-200 0-300-250-100-250-200 0-300\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_18\"",
+                "\"m800 120c-250-120-400 120-100 220 300 100-200 220 100 320 300 100 50 220-300 240\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_19\"",
+                "\"m800 100c-300-80-500 140-150 240 350 100-300 240 150 340 450 100-200 260-300 300\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::CreatePathFromSvg"
+              },
+              "parameters": [
+                "",
+                "\"path_20\"",
+                "\"m800 0c-150 100-300 200-450 300-150 100-300 200-450 300\"",
+                ""
+              ]
             }
           ]
         },
@@ -6278,7 +6625,7 @@
                 "",
                 "assets/music/stg2_full.ogg",
                 "1",
-                "yes",
+                "no",
                 "volume/2",
                 "1"
               ]
@@ -6306,7 +6653,7 @@
                 "",
                 "1",
                 ">=",
-                "92.92"
+                "104.35"
               ]
             },
             {
@@ -6325,7 +6672,7 @@
                 "",
                 "1",
                 "=",
-                "8.6"
+                "8.37"
               ]
             }
           ]
@@ -9498,6 +9845,97 @@
                 "value": "CollisionNP"
               },
               "parameters": [
+                "misil",
+                "enemy_group",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player_shoot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/explosion.mp3",
+                "enemy_group.PointX(\"Center\")",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "explosion_1",
+                "enemy_group.PointX(\"Center\")",
+                "enemy_group.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "explosion_1",
+                "=",
+                "enemy_group.ZOrder()+1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "explosion_1",
+                "Scale",
+                "=",
+                "enemy_group.Width() / explosion_1.Width()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "enemy_group",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "misil",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
                 "player_shoot",
                 "misil",
                 "",
@@ -10547,9 +10985,20 @@
               },
               "parameters": [
                 "misil",
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "basic_enemy_3b",
+                "can_be_damaged",
+                "True",
                 ""
               ]
             }
@@ -10614,10 +11063,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "-",
-                "30"
+                "20"
               ]
             }
           ]
@@ -11095,9 +11544,9 @@
               },
               "parameters": [
                 "",
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "-800",
-                "100",
+                "-50",
                 ""
               ]
             },
@@ -11106,10 +11555,10 @@
                 "value": "ScalableCapability::ScalableBehavior::SetValue"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "Scale",
                 "=",
-                "4"
+                "3.5"
               ]
             },
             {
@@ -11117,7 +11566,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "Flippable",
                 "yes"
               ]
@@ -11127,11 +11576,11 @@
                 "value": "CurvedMovement::TweenPathMovement::Move"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "TweenPathMovement",
                 "\"path_15\"",
                 "1",
-                "5",
+                "3",
                 "\"linear\"",
                 ""
               ]
@@ -11167,7 +11616,7 @@
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "InOnScreen",
                 "0",
                 ""
@@ -11197,11 +11646,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "=",
                 "900",
                 "=",
-                "150"
+                "100"
               ]
             },
             {
@@ -11209,7 +11658,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "Flippable",
                 "no"
               ]
@@ -11219,7 +11668,7 @@
                 "value": "AddForceAL"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "180",
                 "22",
                 "1"
@@ -11238,7 +11687,7 @@
                 "",
                 "\"boss_fire_timer\"",
                 ">=",
-                "22"
+                "20"
               ]
             }
           ],
@@ -11248,10 +11697,10 @@
                 "value": "FireBullet::FireBullet::Fire"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "FireBullet",
-                "basic_enemy_2b.PointX(\"disparo\")",
-                "basic_enemy_2b.PointY(\"disparo\")",
+                "basic_enemy_3b.PointX(\"disparo\")",
+                "basic_enemy_3b.PointY(\"disparo\")",
                 "enemy_shoot",
                 "180",
                 "250",
@@ -11263,7 +11712,7 @@
                 "value": "Arreter"
               },
               "parameters": [
-                "basic_enemy_2b"
+                "basic_enemy_3b"
               ]
             },
             {
@@ -11271,7 +11720,7 @@
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "can_be_damaged",
                 "True",
                 ""
@@ -11299,9 +11748,9 @@
                 "value": "BuiltinCommonInstructions::CompareNumbers"
               },
               "parameters": [
-                "basic_enemy_2b.Y()",
+                "basic_enemy_3b.Y()",
                 "<",
-                "basic_enemy_2b.Variable(boss_minY)"
+                "basic_enemy_3b.Variable(boss_minY)"
               ]
             }
           ],
@@ -11311,7 +11760,7 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_dir",
                 "=",
                 "1"
@@ -11327,9 +11776,9 @@
                 "value": "BuiltinCommonInstructions::CompareNumbers"
               },
               "parameters": [
-                "basic_enemy_2b.Y()",
+                "basic_enemy_3b.Y()",
                 ">",
-                "basic_enemy_2b.Variable(boss_maxY)"
+                "basic_enemy_3b.Variable(boss_maxY)"
               ]
             }
           ],
@@ -11339,7 +11788,7 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_dir",
                 "=",
                 "-1"
@@ -11366,7 +11815,7 @@
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "can_be_damaged",
                 "True",
                 ""
@@ -11379,9 +11828,9 @@
                 "value": "MettreY"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "+",
-                "basic_enemy_2b.Variable(boss_dir) * basic_enemy_2b.Variable(boss_speed) * TimeDelta()"
+                "basic_enemy_3b.Variable(boss_dir) * basic_enemy_3b.Variable(boss_speed) * TimeDelta()"
               ]
             }
           ]
@@ -11394,7 +11843,7 @@
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "can_be_damaged",
                 "True",
                 ""
@@ -11421,7 +11870,7 @@
                 "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "can_be_damaged",
                 "True",
                 ""
@@ -11433,7 +11882,7 @@
               },
               "parameters": [
                 "player_shoot",
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "",
                 "",
                 ""
@@ -11455,7 +11904,7 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "-",
                 "1"
@@ -11489,7 +11938,7 @@
                 "value": "Flash::FlashColor::Flash"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "FlashColor",
                 "0.1",
                 "\"243;226;7\"",
@@ -11506,7 +11955,7 @@
                 "value": "FireBullet::FireBullet::HasJustFired"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "FireBullet",
                 ""
               ]
@@ -11547,7 +11996,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -11584,7 +12033,7 @@
                 "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "can_be_damaged",
                 "False",
                 ""
@@ -11595,7 +12044,7 @@
                 "value": "Arreter"
               },
               "parameters": [
-                "basic_enemy_2b"
+                "basic_enemy_3b"
               ]
             },
             {
@@ -11603,7 +12052,7 @@
                 "value": "FireBullet::FireBullet::SetCooldownOp"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "FireBullet",
                 "=",
                 "10",
@@ -11629,8 +12078,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"disparo\")",
-                "basic_enemy_2b.PointY(\"disparo\")",
+                "basic_enemy_3b.PointX(\"disparo\")",
+                "basic_enemy_3b.PointY(\"disparo\")",
                 ""
               ]
             },
@@ -11641,7 +12090,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             },
             {
@@ -11709,7 +12158,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -11750,8 +12199,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy\")",
-                "basic_enemy_2b.PointY(\"Destroy\")",
+                "basic_enemy_3b.PointX(\"Destroy\")",
+                "basic_enemy_3b.PointY(\"Destroy\")",
                 ""
               ]
             },
@@ -11762,7 +12211,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -11775,7 +12224,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -11816,8 +12265,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy2\")",
-                "basic_enemy_2b.PointY(\"Destroy2\")",
+                "basic_enemy_3b.PointX(\"Destroy2\")",
+                "basic_enemy_3b.PointY(\"Destroy2\")",
                 ""
               ]
             },
@@ -11828,7 +12277,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -11841,7 +12290,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -11882,8 +12331,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy3\")",
-                "basic_enemy_2b.PointY(\"Destroy3\")",
+                "basic_enemy_3b.PointX(\"Destroy3\")",
+                "basic_enemy_3b.PointY(\"Destroy3\")",
                 ""
               ]
             },
@@ -11894,7 +12343,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -11907,7 +12356,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -11948,8 +12397,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy4\")",
-                "basic_enemy_2b.PointY(\"Destroy4\")",
+                "basic_enemy_3b.PointX(\"Destroy4\")",
+                "basic_enemy_3b.PointY(\"Destroy4\")",
                 ""
               ]
             },
@@ -11960,7 +12409,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -11973,7 +12422,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -12014,8 +12463,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy5\")",
-                "basic_enemy_2b.PointY(\"Destroy5\")",
+                "basic_enemy_3b.PointX(\"Destroy5\")",
+                "basic_enemy_3b.PointY(\"Destroy5\")",
                 ""
               ]
             },
@@ -12026,7 +12475,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -12039,7 +12488,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -12080,8 +12529,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Destroy\")",
-                "basic_enemy_2b.PointY(\"Destroy\")",
+                "basic_enemy_3b.PointX(\"Destroy\")",
+                "basic_enemy_3b.PointY(\"Destroy\")",
                 ""
               ]
             },
@@ -12092,7 +12541,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             }
           ]
@@ -12105,7 +12554,7 @@
                 "value": "NumberObjectVariable"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 "boss_hp",
                 "<=",
                 "0"
@@ -12146,8 +12595,8 @@
               "parameters": [
                 "",
                 "explosion_1",
-                "basic_enemy_2b.PointX(\"Center\")",
-                "basic_enemy_2b.PointY(\"Center\")",
+                "basic_enemy_3b.PointX(\"Center\")",
+                "basic_enemy_3b.PointY(\"Center\")",
                 ""
               ]
             },
@@ -12158,7 +12607,7 @@
               "parameters": [
                 "explosion_1",
                 "=",
-                "basic_enemy_2b.ZOrder()+1"
+                "basic_enemy_3b.ZOrder()+1"
               ]
             },
             {
@@ -12169,7 +12618,7 @@
                 "explosion_1",
                 "Scale",
                 "=",
-                "basic_enemy_2b.Width() / explosion_1.Width()"
+                "basic_enemy_3b.Width() / explosion_1.Width()"
               ]
             },
             {
@@ -12177,7 +12626,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "basic_enemy_2b",
+                "basic_enemy_3b",
                 ""
               ]
             },

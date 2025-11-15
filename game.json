@@ -2042,6 +2042,224 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "basic_enemy_3b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "boss_hp",
+          "type": "number",
+          "value": 250
+        },
+        {
+          "name": "boss_dir",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "name": "boss_minY",
+          "type": "number",
+          "value": -20
+        },
+        {
+          "name": "boss_maxY",
+          "type": "number",
+          "value": 400
+        },
+        {
+          "name": "boss_speed",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "can_be_damaged",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 1.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 5,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/enemy_ship_3.png",
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 8,
+                      "y": 42
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 16.5,
+                      "y": 46.5
+                    },
+                    {
+                      "name": "Destroy2",
+                      "x": 24,
+                      "y": 24.5
+                    },
+                    {
+                      "name": "Destroy3",
+                      "x": 43,
+                      "y": 28
+                    },
+                    {
+                      "name": "Destroy4",
+                      "x": 48,
+                      "y": 37
+                    },
+                    {
+                      "name": "Destroy5",
+                      "x": 28,
+                      "y": 44
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 14
+                      },
+                      {
+                        "x": 57,
+                        "y": 18
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 46.5,
+                        "y": 47.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 51.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 35.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2064,6 +2282,9 @@
       },
       {
         "objectName": "basic_enemy_2b"
+      },
+      {
+        "objectName": "basic_enemy_3b"
       }
     ]
   },
