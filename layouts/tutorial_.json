@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6852373804496772,
+    "zoomFactor": 1.090143958709177,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -264,7 +264,7 @@
       "name": "score_text",
       "persistentUuid": "f7f26845-d7f0-4b55-9afb-2dc66ecdafc6",
       "width": 0,
-      "x": 140,
+      "x": 161,
       "y": 5,
       "zOrder": 13,
       "numberProperties": [],
@@ -398,23 +398,6 @@
       "x": 120,
       "y": 37,
       "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 24,
-      "keepRatio": true,
-      "layer": "",
-      "name": "life_text",
-      "persistentUuid": "8828d707-8cb3-4a2a-b588-7f8a39d59e58",
-      "width": 58,
-      "x": 160,
-      "y": 45,
-      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -579,9 +562,25 @@
       "opacity": 0,
       "persistentUuid": "137eef32-fd47-4cbf-b86a-77b79d40fcc3",
       "width": 0,
-      "x": 31,
-      "y": 207,
+      "x": 66,
+      "y": 215,
       "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "life_text2",
+      "persistentUuid": "d9049079-cbd3-491a-9d31-a938523d3389",
+      "width": 0,
+      "x": 168,
+      "y": 45,
+      "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3449,7 +3448,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Stage 1",
+      "string": "Tutorial",
       "font": "assets/fonts/Nulshock Bd.otf",
       "textAlignment": "left",
       "characterSize": 20,
@@ -3472,7 +3471,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Stage 1",
+        "text": "Tutorial",
         "font": "assets/fonts/Nulshock Bd.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -4958,49 +4957,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "life_text",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "",
-      "font": "assets/fonts/Nulshock Bd.otf",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "",
-        "font": "assets/fonts/Nulshock Bd.otf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "lineHeight": 0,
-        "color": "255;255;255"
-      }
-    },
-    {
-      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "DebugText3",
@@ -5653,10 +5609,10 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "MISION PASSED!!",
+      "string": "MISSION PASSED!!",
       "font": "assets/fonts/Nulshock Bd.otf",
       "textAlignment": "left",
-      "characterSize": 68,
+      "characterSize": 60,
       "color": {
         "b": 255,
         "g": 255,
@@ -5676,11 +5632,54 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "MISION PASSED!!",
+        "text": "MISSION PASSED!!",
         "font": "assets/fonts/Nulshock Bd.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 68,
+        "characterSize": 60,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "life_text2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
         "lineHeight": 0,
         "color": "255;255;255"
       }
@@ -5753,7 +5752,7 @@
         "objectName": "stage_text"
       },
       {
-        "objectName": "life_text"
+        "objectName": "life_text2"
       },
       {
         "objectName": "score_text"
@@ -5875,7 +5874,7 @@
               "parameters": [
                 "player_score",
                 "=",
-                "GlobalVariable(last_score)"
+                "0"
               ]
             },
             {
@@ -5885,7 +5884,7 @@
               "parameters": [
                 "salem_lifes",
                 "=",
-                "GlobalVariable(last_lifes)"
+                "0"
               ]
             },
             {
@@ -5904,10 +5903,10 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "life_text",
+                "life_text2",
                 "Text",
                 "=",
-                "ToString(GlobalVariable(last_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/1\""
               ]
             }
           ],
@@ -7853,26 +7852,6 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "last_score",
-                "=",
-                "Variable(player_score)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "key_item_exists",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -7885,7 +7864,7 @@
               },
               "parameters": [
                 "",
-                "\"Nivel_1\""
+                "\"Tutorial_\""
               ]
             }
           ]
@@ -7925,6 +7904,18 @@
               "parameters": [
                 "atun",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
               ]
             },
             {
@@ -8024,6 +8015,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
@@ -8109,6 +8112,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
@@ -8190,6 +8205,18 @@
               "parameters": [
                 "atun",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-heart.mp3",
+                "",
+                "volume/2",
+                "1"
               ]
             },
             {
@@ -8984,6 +9011,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/got-life.mp3",
+                "",
+                "volume",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -8997,10 +9036,10 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "life_text",
+                "life_text2",
                 "Text",
                 "=",
-                "ToString(Variable(salem_lifes)) + \"/4\""
+                "ToString(Variable(salem_lifes)) + \"/1\""
               ]
             },
             {
