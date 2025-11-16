@@ -1422,8 +1422,20 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "InOnScreen",
+      "type": "IsOnScreen::InOnScreen"
     },
     {
       "name": "Opacity",
@@ -1453,6 +1465,10 @@
     {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "TweenPathMovement",
+      "type": "CurvedMovement::TweenPathMovement"
     }
   ]
 }

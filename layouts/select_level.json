@@ -100,7 +100,7 @@
       "name": "bric",
       "persistentUuid": "0743de61-9b78-4769-a138-7604ffc3a8c7",
       "width": 175,
-      "x": 96,
+      "x": 98,
       "y": 234,
       "zOrder": 5,
       "numberProperties": [],
@@ -277,7 +277,7 @@
       "name": "score_text",
       "persistentUuid": "2fdadc96-3efe-4d93-bf9c-903633cbeed6",
       "width": 0,
-      "x": 211,
+      "x": 215,
       "y": 37,
       "zOrder": 17,
       "numberProperties": [],
@@ -293,7 +293,7 @@
       "name": "life_text",
       "persistentUuid": "df4efeb7-37cd-446a-a0fd-54e65af9a338",
       "width": 0,
-      "x": 474,
+      "x": 510,
       "y": 27,
       "zOrder": 18,
       "numberProperties": [],
@@ -310,7 +310,7 @@
       "name": "static_life",
       "persistentUuid": "a1c83647-4828-4202-99b2-abee1672b2cb",
       "width": 53,
-      "x": 375,
+      "x": 450,
       "y": 16,
       "zOrder": 19,
       "numberProperties": [],
@@ -1146,7 +1146,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Score: 0",
+      "string": "Score: ",
       "font": "assets/fonts/Nulshock Bd.otf",
       "textAlignment": "left",
       "characterSize": 20,
@@ -1169,7 +1169,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Score: 0",
+        "text": "Score: ",
         "font": "assets/fonts/Nulshock Bd.otf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -1383,13 +1383,23 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "last_lifes",
+            "=",
+            "level1_got_lifes+level2_got_lifes+1"
+          ]
+        },
+        {
+          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
             "life_text",
             "Text",
             "=",
-            "ToString(last_lifes) + \"/4\""
+            "ToString(GlobalVariable(level1_got_lifes)+GlobalVariable(level2_got_lifes)+1) + \"/7\""
           ]
         },
         {
@@ -1400,7 +1410,7 @@
             "score_text",
             "Text",
             "=",
-            "\"Score: \" + ToString(last_score)"
+            "\"Score: \" + ToString(GlobalVariable(last_score))"
           ]
         }
       ],
@@ -1577,7 +1587,7 @@
           "parameters": [
             "bric",
             ">",
-            "96"
+            "99"
           ]
         },
         {
@@ -2307,8 +2317,20 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "InOnScreen",
+      "type": "IsOnScreen::InOnScreen"
     },
     {
       "name": "Opacity",
@@ -2325,6 +2347,14 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "TweenPathMovement",
+      "type": "CurvedMovement::TweenPathMovement"
     }
   ]
 }
