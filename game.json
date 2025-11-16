@@ -1240,6 +1240,38 @@
         "name": "assets/image/towers/tower1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves_1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data\\waves_1.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/flechas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\flechas.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\X.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/esc.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\esc.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

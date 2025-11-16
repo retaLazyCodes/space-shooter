@@ -5244,6 +5244,42 @@
                       }
                     ]
                   ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\flechas.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 23
+                      },
+                      {
+                        "x": 125,
+                        "y": 23
+                      },
+                      {
+                        "x": 125,
+                        "y": 107
+                      },
+                      {
+                        "x": 3,
+                        "y": 107
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -5275,6 +5311,42 @@
               "looping": false,
               "timeBetweenFrames": 0.08,
               "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\X.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 118
+                      },
+                      {
+                        "x": 19,
+                        "y": 118
+                      }
+                    ]
+                  ]
+                },
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\image\\X.png",
@@ -5390,6 +5462,42 @@
               "looping": false,
               "timeBetweenFrames": 0.08,
               "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\image\\esc.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 118
+                      },
+                      {
+                        "x": 19,
+                        "y": 118
+                      }
+                    ]
+                  ]
+                },
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\image\\esc.png",
@@ -8237,11 +8345,9 @@
         },
         {
           "type": {
-            "value": "Scene"
+            "value": "PopScene"
           },
           "parameters": [
-            "",
-            "\"Menu_\"",
             ""
           ]
         }
@@ -8961,16 +9067,6 @@
                 "Text",
                 "=",
                 "ToString(Variable(salem_lifes)) + \"/4\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "key_item_exists",
-                "False",
-                ""
               ]
             },
             {
@@ -10071,6 +10167,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",
