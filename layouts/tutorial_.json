@@ -245,22 +245,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "DebugText",
-      "persistentUuid": "6da0170c-5902-401f-80be-90e606d63993",
-      "width": 0,
-      "x": 26,
-      "y": 525,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
       "name": "stage_text",
       "persistentUuid": "e51f43a0-816d-4f40-85a9-7cf1f33ef044",
       "width": 0,
@@ -387,22 +371,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "DebugText2",
-      "persistentUuid": "da560862-e7e8-43f5-8e85-438fd782a975",
-      "width": 0,
-      "x": 417,
-      "y": 485,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 38,
@@ -447,22 +415,6 @@
       "x": 160,
       "y": 45,
       "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "DebugText3",
-      "persistentUuid": "4074190f-4e04-4971-8ccf-d500f7adfea1",
-      "width": 0,
-      "x": 484,
-      "y": 38,
-      "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6462,45 +6414,6 @@
             "textR": 0
           },
           "comment": "Debug"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "DebugText",
-                "Text",
-                "=",
-                "\"Wave \" + ToString(Variable(current_wave_index) + 1)\n    + \" | Path: \" + VariableString(wave_json.waves[current_wave_index].path)\n    + \" | Count: \" + ToString(Variable(wave_json.waves[current_wave_index].count)) \n    + \" | WaveInProgress: \" + ToString(Variable(wave_in_progress)) \n + \" | TotalWaves: \" + ToString(VariableChildCount(wave_json.waves))"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "DebugText2",
-                "Text",
-                "=",
-                "\"Sound offset: \" + ToString(SoundChannelPlayingOffset(1))"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "DebugText2",
-                "Text",
-                "=",
-                "\"item1 \" + ToString(GlobalVariable(item1_collected))\n    + \" | item2: \" + \nToString(GlobalVariable(item2_collected))\n+ \" | item3: \" + \nToString(GlobalVariable(item3_collected))\n+ \" | key_item_exists: \" + ToString(Variable(key_item_exists))\n"
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -8059,6 +7972,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu_\"",
+                ""
+              ]
             }
           ]
         },
@@ -8318,7 +8241,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "3"
+            "1"
           ]
         },
         {
@@ -8345,10 +8268,21 @@
         },
         {
           "type": {
-            "value": "PopScene"
+            "value": "Scene"
           },
           "parameters": [
+            "",
+            "\"Menu_\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "1"
           ]
         }
       ]
