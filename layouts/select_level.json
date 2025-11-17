@@ -1253,7 +1253,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "assets/image/main-menu/NewSprite8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1562,7 +1562,7 @@
                 "",
                 "assets\\sounds\\level_select_msci.mp3",
                 "1",
-                "no",
+                "yes",
                 "volume",
                 "1"
               ]
