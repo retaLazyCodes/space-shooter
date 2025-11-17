@@ -1253,7 +1253,9 @@
         "file": "assets/image/flechas.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\image\\flechas.png"
+        "name": "assets\\image\\flechas.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
         "file": "assets/sounds/bullet-impact.mp3",
@@ -1314,7 +1316,9 @@
         "file": "assets/image/X.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\image\\X.png"
+        "name": "assets\\image\\X.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
         "file": "assets/NewSprite3.png",
@@ -1328,7 +1332,9 @@
         "file": "assets/image/esc.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\image\\esc.png"
+        "name": "assets\\image\\esc.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
         "file": "assets/image/background_level1.jpg",
