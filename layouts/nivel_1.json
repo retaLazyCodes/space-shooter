@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0901439587091748,
+    "zoomFactor": 0.7322293982224037,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -5091,6 +5091,15 @@
                 "",
                 "\"PAUSA\""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "|"
+              ]
             }
           ]
         },
@@ -6701,20 +6710,19 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "ModPlayingOffsetSoundChannel"
-              },
-              "parameters": [
-                "",
-                "1",
-                "=",
-                "msic_time"
-              ]
-            },
             {
               "type": {
                 "value": "PlaySoundCanal"
@@ -6726,6 +6734,17 @@
                 "no",
                 "volume/2",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "msic_time"
               ]
             }
           ]
@@ -6848,21 +6867,21 @@
           "actions": [
             {
               "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"PAUSA\""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
                 "msic_time",
                 "=",
-                "VariableChildCount(msic_time)"
+                "TimeFromStart()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"PAUSA\""
               ]
             },
             {

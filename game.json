@@ -1295,6 +1295,22 @@
         "name": "assets\\image\\atun-3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/background_level1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\background_level1.jpg",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
