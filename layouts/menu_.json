@@ -1677,6 +1677,72 @@
           },
           "parameters": [
             "cursor",
+            "slot2",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyFromTextJustPressed"
+          },
+          "parameters": [
+            "",
+            "\"Space\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "negro",
+            "Tween",
+            "\"fundido\"",
+            "500",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Tutorial_\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "cursor",
             "slot3",
             "",
             "",
