@@ -2063,6 +2063,86 @@
         "name": "assets/image/dogoh/fire_attack/pixil-frame-3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
