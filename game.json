@@ -1242,6 +1242,10 @@
         "userAdded": false
       },
       {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
         "disablePreload": false,
         "file": "data/waves_1.json",
         "kind": "json",
