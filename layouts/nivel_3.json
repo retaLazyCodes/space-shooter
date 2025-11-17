@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.34148909283607554,
+    "zoomFactor": 0.6628846899010775,
     "windowMask": false,
     "selectedLayer": "piso"
   },
@@ -108,23 +108,6 @@
       "x": -96,
       "y": 398,
       "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 576,
-      "keepRatio": true,
-      "layer": "background-layer",
-      "name": "background",
-      "persistentUuid": "a401c34a-09b0-4eef-ac4f-654435fc8495",
-      "width": 3283,
-      "x": 0,
-      "y": 0,
-      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []

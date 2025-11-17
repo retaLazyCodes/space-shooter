@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0545830695083218,
+    "zoomFactor": 0.7322293982224037,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -122,6 +122,11 @@
       "name": "defeated_boss",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "msic_time",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -338,22 +343,6 @@
       "x": 75,
       "y": 40,
       "zOrder": 16,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "pause_text",
-      "persistentUuid": "ac9876cd-1ef4-4a2b-8f03-bfbbb47b0f7f",
-      "width": 0,
-      "x": 300,
-      "y": 260,
-      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4625,6 +4614,257 @@
         "lineHeight": 0,
         "color": "218;24;24"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "contine",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Continuar",
+      "font": "assets\\fonts\\BoldPixels.otf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 20,
+        "g": 2,
+        "r": 158
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Continuar",
+        "font": "assets\\fonts\\BoldPixels.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "158;2;20"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "menu",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Volver al menu",
+      "font": "assets\\fonts\\BoldPixels.otf",
+      "textAlignment": "left",
+      "characterSize": 28,
+      "color": {
+        "b": 20,
+        "g": 2,
+        "r": 158
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Volver al menu",
+        "font": "assets\\fonts\\BoldPixels.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "158;2;20"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ii",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "I I",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "I I",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "slot1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/main-menu/NewSprite2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "slot2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/main-menu/NewSprite2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4679,6 +4919,12 @@
         "objectName": "DebugText3"
       },
       {
+        "objectName": "slot1"
+      },
+      {
+        "objectName": "slot2"
+      },
+      {
         "objectName": "negro"
       },
       {
@@ -4692,6 +4938,15 @@
       },
       {
         "objectName": "pause_text"
+      },
+      {
+        "objectName": "ii"
+      },
+      {
+        "objectName": "contine"
+      },
+      {
+        "objectName": "menu"
       },
       {
         "objectName": "ReadyGo_text"
@@ -4778,14 +5033,6 @@
             },
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "DebugText3"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -4834,6 +5081,24 @@
                 "Text",
                 "=",
                 "ToString(Variable(salem_lifes)) + \"/3\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"PAUSA\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "|"
               ]
             }
           ]
@@ -6370,12 +6635,6 @@
                 "True",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
@@ -6425,12 +6684,6 @@
                 ">=",
                 "92.92"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
@@ -6443,6 +6696,55 @@
                 "1",
                 "=",
                 "8.6"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustResumed"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/stg1_full.ogg",
+                "1",
+                "no",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "msic_time"
               ]
             }
           ]
@@ -6549,212 +6851,46 @@
                 "",
                 "\"Escape\""
               ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"PAUSA\"",
+                ">=",
+                ".4"
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "is_paused",
-                "Toggle",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
-              },
-              "parameters": [
-                "",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "pause_text",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseSoundCanal"
-              },
-              "parameters": [
-                "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseSoundCanal"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SoundPaused"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "ready_go_played",
+                "msic_time",
                 "=",
-                ""
+                "TimeFromStart()"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
+                "value": "ResetTimer"
               },
               "parameters": [
                 "",
-                "1"
+                "\"PAUSA\""
               ]
             },
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "pause_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
+                "value": "PushScene"
               },
               "parameters": [
                 "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "ready_go_played",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
-              },
-              "parameters": [
-                "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "pause_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "1"
+                "\"Pausa_\""
               ]
             }
           ]
@@ -7743,7 +7879,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-heart.mp3",
+                "assets\\sounds\\got-heart.mp3",
                 "",
                 "volume/2",
                 "1"
@@ -7816,7 +7952,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-heart.mp3",
+                "assets\\sounds\\got-heart.mp3",
                 "",
                 "volume/2",
                 "1"
@@ -7889,7 +8025,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-heart.mp3",
+                "assets\\sounds\\got-heart.mp3",
                 "",
                 "volume/2",
                 "1"
@@ -7962,7 +8098,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-heart.mp3",
+                "assets\\sounds\\got-heart.mp3",
                 "",
                 "volume/2",
                 "1"
@@ -8909,7 +9045,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-life.mp3",
+                "assets\\sounds\\got-life.mp3",
                 "",
                 "volume",
                 "1"
@@ -9020,7 +9156,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-life.mp3",
+                "assets\\sounds\\got-life.mp3",
                 "",
                 "volume",
                 "1"
@@ -9141,7 +9277,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/got-life.mp3",
+                "assets\\sounds\\got-life.mp3",
                 "",
                 "volume",
                 "1"
@@ -10644,7 +10780,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/bullet-impact.mp3",
+                "assets\\sounds\\bullet-impact.mp3",
                 "",
                 "volume",
                 "1"
@@ -10685,7 +10821,7 @@
               },
               "parameters": [
                 "",
-                "assets/sounds/boss-gunshot.mp3",
+                "assets\\sounds\\boss-gunshot.mp3",
                 "enemy_group.PointX(\"Center\")",
                 "volume/2",
                 "1"
@@ -11629,6 +11765,59 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "botones",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
