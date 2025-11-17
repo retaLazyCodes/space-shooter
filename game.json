@@ -1258,6 +1258,61 @@
         "userAdded": false
       },
       {
+        "file": "assets/sounds/bullet-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\bullet-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/boss-gunshot.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\boss-gunshot.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-life.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\got-life.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-heart.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\got-heart.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\atun-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/image/X.png",
         "kind": "image",
         "metadata": "",
@@ -1266,10 +1321,26 @@
         "userAdded": false
       },
       {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/image/esc.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\image\\esc.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/background_level1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\background_level1.jpg",
         "smoothed": false,
         "userAdded": false
       }
@@ -2464,6 +2535,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/select_level"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/pausa_"
     }
   ],
   "externalEvents": [],

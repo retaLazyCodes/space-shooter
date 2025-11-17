@@ -112,6 +112,11 @@
       "name": "defeated_boss",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "msic_time",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -4611,6 +4616,15 @@
                 "=",
                 "ToString(Variable(salem_lifes)) + \"/3\""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"PAUSA\""
+              ]
             }
           ]
         },
@@ -6678,6 +6692,55 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustResumed"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "musica",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/stg2_full.ogg",
+                "1",
+                "no",
+                "volume/2",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModPlayingOffsetSoundChannel"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "msic_time"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -7462,212 +7525,46 @@
                 "",
                 "\"Escape\""
               ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"PAUSA\"",
+                ">=",
+                ".4"
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "is_paused",
-                "Toggle",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
-              },
-              "parameters": [
-                "",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "pause_text",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseSoundCanal"
-              },
-              "parameters": [
-                "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseSoundCanal"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SoundPaused"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "ready_go_played",
+                "msic_time",
                 "=",
-                ""
+                "TimeFromStart()"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
+                "value": "ResetTimer"
               },
               "parameters": [
                 "",
-                "1"
+                "\"PAUSA\""
               ]
             },
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "pause_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
+                "value": "PushScene"
               },
               "parameters": [
                 "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "ready_go_played",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "is_paused",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeTimeScale"
-              },
-              "parameters": [
-                "",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "pause_text"
-              ]
-            },
-            {
-              "type": {
-                "value": "RePlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "1"
+                "\"Pausa_\""
               ]
             }
           ]
