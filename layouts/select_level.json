@@ -2412,6 +2412,15 @@
       "actions": [
         {
           "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
