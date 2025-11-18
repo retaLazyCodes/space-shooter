@@ -105,8 +105,8 @@
       "name": "player",
       "persistentUuid": "ce2e6e5b-616f-4938-a9bb-a9c61efc93ea",
       "width": 64,
-      "x": 11,
-      "y": 383,
+      "x": -116,
+      "y": 386,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -318,6 +318,7 @@
       "keepRatio": true,
       "layer": "piso",
       "name": "floor1",
+      "opacity": 3,
       "persistentUuid": "13113a7f-fe2e-4eba-a18d-bcac1d70fde5",
       "width": 1812,
       "x": -22,
@@ -422,8 +423,8 @@
       "name": "background_border",
       "persistentUuid": "c21427eb-ce41-496a-82d9-b7324bfff0cd",
       "width": 32,
-      "x": -52,
-      "y": -29,
+      "x": -57,
+      "y": -34,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -456,8 +457,8 @@
       "name": "background_border",
       "persistentUuid": "24593851-2d9e-4244-b6e3-916abbe60f51",
       "width": 32,
-      "x": -114,
-      "y": -31,
+      "x": -117,
+      "y": -28,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -546,6 +547,219 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_z",
+      "persistentUuid": "20f4a809-aa7f-4685-b6cd-ed51897135e2",
+      "width": 66,
+      "x": 350,
+      "y": 134,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_c",
+      "persistentUuid": "b13d572b-cb04-48cc-bb9c-c77785dcc8a3",
+      "width": 66,
+      "x": 350,
+      "y": 334,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_texto1",
+      "persistentUuid": "02877f9a-876d-462e-ae33-245d804e64c8",
+      "width": 0,
+      "x": 215,
+      "y": 154,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_texto2",
+      "persistentUuid": "8ef4314a-acb2-449e-bf0b-25d831b82612",
+      "width": 0,
+      "x": 205,
+      "y": 357,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 601,
+      "keepRatio": true,
+      "layer": "background-layer",
+      "name": "blanco",
+      "persistentUuid": "cd5080af-b093-42b3-922e-ffc15e70eab5",
+      "width": 844,
+      "x": -22,
+      "y": -21,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "salem_jump",
+      "persistentUuid": "1003e86d-b560-4084-af68-ae3c89457251",
+      "width": 0,
+      "x": 513,
+      "y": 114,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "salem_jump2",
+      "persistentUuid": "bb42f9d6-b24b-4ec5-a074-2a5f234a5877",
+      "width": 0,
+      "x": 440,
+      "y": 114,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_texto3",
+      "persistentUuid": "2f08dd95-15c4-4805-8c2f-8a7a9c76c16c",
+      "width": 0,
+      "x": 200,
+      "y": 249,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_z",
+      "persistentUuid": "30694a92-b4af-45ff-9a83-84b09add04e1",
+      "width": 66,
+      "x": 350,
+      "y": 234,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "salem_glide",
+      "persistentUuid": "2e5c39dc-f672-4162-90ad-39ca333fe583",
+      "width": 0,
+      "x": 450,
+      "y": 232,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "salem_impulse",
+      "persistentUuid": "f0fb0dcf-cdfc-4a6f-9cd3-814db382aaee",
+      "width": 0,
+      "x": 450,
+      "y": 336,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 36,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_texto4",
+      "persistentUuid": "2bffda90-c2c0-4c60-810c-19ef70c9fb0f",
+      "width": 189,
+      "x": 165,
+      "y": 277,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "piso",
+      "name": "key_texto5",
+      "persistentUuid": "6e000cfc-8dd5-4776-86a2-5193e85ffc23",
+      "width": 0,
+      "x": 291,
+      "y": 52,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -583,6 +797,11 @@
         },
         {
           "name": "player_is_impusing",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "can_shoot",
           "type": "boolean",
           "value": false
         }
@@ -6792,14 +7011,14 @@
       "updateIfNotVisible": false,
       "variables": [
         {
-          "name": "is_attacking",
-          "type": "boolean",
-          "value": false
-        },
-        {
           "name": "is_spawning",
           "type": "boolean",
           "value": true
+        },
+        {
+          "name": "is_attacking",
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "is_walking",
@@ -6819,12 +7038,12 @@
         {
           "name": "max_hp2",
           "type": "number",
-          "value": 90
+          "value": 70
         },
         {
           "name": "f2_hp",
           "type": "number",
-          "value": 90
+          "value": 70
         },
         {
           "name": "can_transform",
@@ -6898,6 +7117,8 @@
           "TintColor": "\"255;255;255\""
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -6910,9 +7131,7 @@
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
           "xGrabTolerance": 10,
@@ -17429,6 +17648,641 @@
         "lineHeight": 0,
         "color": "158;2;20"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "key_z",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/z.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 118
+                      },
+                      {
+                        "x": 19,
+                        "y": 118
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "key_c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/c.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 17
+                      },
+                      {
+                        "x": 112,
+                        "y": 118
+                      },
+                      {
+                        "x": 19,
+                        "y": 118
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "key_texto1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Saltar:",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Saltar:",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "key_texto2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Impulso:",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Impulso:",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "blanco",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/main-menu/pink.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "salem_jump",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-jump/pixil-frame-12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 5
+                      },
+                      {
+                        "x": 70,
+                        "y": 5
+                      },
+                      {
+                        "x": 70,
+                        "y": 72
+                      },
+                      {
+                        "x": 25,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "salem_jump2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-jump/pixil-frame-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 25
+                      },
+                      {
+                        "x": 72,
+                        "y": 25
+                      },
+                      {
+                        "x": 72,
+                        "y": 84
+                      },
+                      {
+                        "x": 25,
+                        "y": 84
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "key_texto3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Planear:",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Planear:",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "salem_glide",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-flydown1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 60,
+                        "y": 0
+                      },
+                      {
+                        "x": 60,
+                        "y": 63
+                      },
+                      {
+                        "x": 15,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "salem_impulse",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-vuelo-frente-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 0
+                      },
+                      {
+                        "x": 60,
+                        "y": 0
+                      },
+                      {
+                        "x": 60,
+                        "y": 64
+                      },
+                      {
+                        "x": 7,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "key_texto4",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "(mantener en el aire)",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 12,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "(mantener en el aire)",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 12,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "key_texto5",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Controles",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 25,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Controles",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 25,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -17439,6 +18293,12 @@
       },
       {
         "objectName": "dogoh"
+      },
+      {
+        "objectName": "key_z"
+      },
+      {
+        "objectName": "key_c"
       },
       {
         "objectName": "dogoh_weakspot_head"
@@ -17498,6 +18358,21 @@
         "objectName": "score_text"
       },
       {
+        "objectName": "key_texto1"
+      },
+      {
+        "objectName": "key_texto2"
+      },
+      {
+        "objectName": "key_texto3"
+      },
+      {
+        "objectName": "key_texto4"
+      },
+      {
+        "objectName": "key_texto5"
+      },
+      {
         "objectName": "dogo_text"
       },
       {
@@ -17513,7 +18388,22 @@
         "objectName": "bg3"
       },
       {
+        "objectName": "blanco"
+      },
+      {
         "objectName": "dogoh_hp_bar"
+      },
+      {
+        "objectName": "salem_glide"
+      },
+      {
+        "objectName": "salem_impulse"
+      },
+      {
+        "objectName": "salem_jump"
+      },
+      {
+        "objectName": "salem_jump2"
       }
     ]
   },
@@ -17604,6 +18494,59 @@
                 "=",
                 "\"Score: \" + ToString(Variable(player_score))"
               ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "heart_group"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "stage_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "dogo_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "dogoh_hp_bar"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "player",
+                "Opacity",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -17644,16 +18587,7 @@
               },
               "parameters": [
                 "",
-                "\"dogoh_shoot_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"dogoh_walk_timer\""
+                "\"entrance_scene_timer\""
               ]
             }
           ]
@@ -18026,6 +18960,71 @@
                 "\"126;211;33\"",
                 "\"65;117;5\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetGradient"
+              },
+              "parameters": [
+                "key_texto1",
+                "\"LINEAR_VERTICAL\"",
+                "\"65;117;5\"",
+                "\"0;0;0\"",
+                "\"126;211;33\"",
+                "\"65;117;5\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetGradient"
+              },
+              "parameters": [
+                "key_texto2",
+                "\"LINEAR_VERTICAL\"",
+                "\"65;117;5\"",
+                "\"0;0;0\"",
+                "\"126;211;33\"",
+                "\"65;117;5\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetGradient"
+              },
+              "parameters": [
+                "key_texto3",
+                "\"LINEAR_VERTICAL\"",
+                "\"65;117;5\"",
+                "\"0;0;0\"",
+                "\"126;211;33\"",
+                "\"65;117;5\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetGradient"
+              },
+              "parameters": [
+                "key_texto4",
+                "\"LINEAR_VERTICAL\"",
+                "\"65;117;5\"",
+                "\"0;0;0\"",
+                "\"126;211;33\"",
+                "\"65;117;5\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetGradient"
+              },
+              "parameters": [
+                "key_texto5",
+                "\"LINEAR_VERTICAL\"",
+                "\"65;117;5\"",
+                "\"0;0;0\"",
+                "\"126;211;33\"",
+                "\"65;117;5\""
+              ]
             }
           ]
         },
@@ -18118,17 +19117,363 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "blanco",
+                "Opacity",
+                "<=",
+                "5"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "Delete"
               },
               "parameters": [
-                "enemy_shoot_2",
-                "Scale",
-                "=",
-                "0.5"
+                "salem_glide",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "salem_jump",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "salem_jump2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "salem_impulse",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_texto1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_texto2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_texto3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_texto4",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_texto5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_z",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "key_c",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "heart_group",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "stage_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "dogo_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "dogoh_hp_bar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "blanco",
+                "\"background-layer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"entrance_scene_timer\"",
+                ">=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "blanco",
+                "Opacity",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "blanco",
+                "Opacity",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "salem_glide",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "salem_jump",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "salem_jump2",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "salem_impulse",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_z",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_c",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_texto1",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_texto2",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_texto3",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_texto4",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "key_texto5",
+                "Opacity",
+                "-",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"entrance_scene_timer\"",
+                ">=",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "floor1",
+                "Opacity",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "player",
+                "Opacity",
+                "+",
+                "1"
               ]
             }
           ]
@@ -18336,7 +19681,7 @@
                 "",
                 "\"tuna_spawn_timer\"",
                 ">=",
-                "20"
+                "25"
               ]
             }
           ],
@@ -18580,6 +19925,17 @@
                     "player",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "can_shoot",
+                    "True",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -18659,6 +20015,17 @@
                   "parameters": [
                     "player",
                     "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "can_shoot",
+                    "True",
+                    ""
                   ]
                 }
               ],
@@ -19011,6 +20378,12 @@
                     "player",
                     "PlatformerObject"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -20511,6 +21884,7 @@
           "comment": "Escena de entrada"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -20519,6 +21893,17 @@
               },
               "parameters": [
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
+                "True",
+                "0"
               ]
             }
           ],
@@ -20584,6 +21969,254 @@
                 "dogoh_hp_bar",
                 "=",
                 "dogoh.max_hp",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
+                "True",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"entrance_scene_timer\"",
+                ">=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "hp",
+                "=",
+                "dogoh.max_hp"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "dogoh",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "dogoh",
+                "Animation",
+                "=",
+                "\"walk\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "dogoh",
+                "=",
+                "230"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "dogoh",
+                "180",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "dogoh",
+                "Scale",
+                "=",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+              },
+              "parameters": [
+                "dogoh_hp_bar",
+                "=",
+                "dogoh.max_hp",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "player",
+                "PlatformerObject",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dogoh_shoot_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dogoh_walk_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"tuna_spawn_timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "can_shoot",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "dogoh",
+                "<=",
+                "560"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "transformed",
+                "False",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
+                "True",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "dogoh"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "dogoh",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "dogoh",
+                "=",
+                "240"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "can_be_damaged",
+                "True",
                 ""
               ]
             }
@@ -20671,102 +22304,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "dogoh",
-                "<=",
-                "560"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "dogoh",
-                "hp",
-                "=",
-                "dogoh.max_hp"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "dogoh",
-                "transformed",
-                "False",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "dogoh",
-                "is_spawning",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "dogoh"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "dogoh",
-                "Animation",
-                "=",
-                "\"idle\""
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "dogoh",
-                "=",
-                "240"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "dogoh",
-                "can_be_damaged",
-                "True",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -20820,6 +22357,17 @@
               "parameters": [
                 "dogoh",
                 "can_transform",
+                "False",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
                 "False",
                 "0"
               ]
@@ -20988,6 +22536,17 @@
               "parameters": [
                 "dogoh",
                 "can_transform",
+                "False",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
                 "False",
                 "0"
               ]
@@ -21182,6 +22741,17 @@
                 "False",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
+                "False",
+                "0"
+              ]
             }
           ],
           "actions": [
@@ -21348,6 +22918,17 @@
               "parameters": [
                 "dogoh",
                 "can_transform",
+                "False",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "dogoh",
+                "is_spawning",
                 "False",
                 "0"
               ]
@@ -21731,15 +23312,6 @@
               "parameters": [
                 "",
                 "\"dogoh_jump_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"tuna_spawn_timer\""
               ]
             }
           ]
@@ -22548,7 +24120,7 @@
                 "",
                 "\"dogoh_shoot_timer\"",
                 ">=",
-                "4.5"
+                "5"
               ]
             },
             {
@@ -22738,7 +24310,7 @@
                 "",
                 "\"dogoh_shoot_timer\"",
                 ">=",
-                "4.5"
+                "5"
               ]
             },
             {
@@ -23324,7 +24896,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Punto debil de dogoh"
+          "comment": "Punto debil de dogoh (CABEZA)"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",

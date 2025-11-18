@@ -3022,6 +3022,30 @@
         "metadata": "",
         "name": "assets/fonts/BoldPixels.otf",
         "userAdded": false
+      },
+      {
+        "file": "assets/image/z.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/z.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/c.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/c.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/pink.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/pink.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3335,7 +3359,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        }
+      ],
       "animations": [
         {
           "name": "",
