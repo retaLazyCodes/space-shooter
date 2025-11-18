@@ -3046,6 +3046,14 @@
         "name": "assets/image/main-menu/pink.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/thanks.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/thanks.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4223,6 +4231,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/history_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/appreciations"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
