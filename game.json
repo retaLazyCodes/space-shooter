@@ -2695,6 +2695,333 @@
         "name": "assets/image/dogoh/f2_jump/pixil-frame-20.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_000.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_009.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_012.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_013.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_014.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_015.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_016.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_017.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_018.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_019.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_020.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_021.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_022.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_023.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_024.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_025.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_026.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_027.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_028.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_029.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_030.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_031.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_031.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_032.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_032.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_033.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_033.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_034.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_034.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_035.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_035.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Copper Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copper Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/1310fa26ab130bebfe59cdfa310836bfed3ca8d190cfed17a7dd3bdfe0a2a87f_Copper Bar Border.png",
+          "name": "Copper Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/fonts/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/BoldPixels.otf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
