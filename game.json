@@ -3054,6 +3054,96 @@
         "name": "assets/image/main-menu/thanks.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/music/dogoh-fight.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/dogoh-fight.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/risa.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/risa.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/pisadas.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/pisadas.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/fireball.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/fireball.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/monster-howl-85304.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/monster-howl-85304.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/powerful-ground-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/powerful-ground-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/pisadas-2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/pisadas-2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/dramatic-death-collapse.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/dramatic-death-collapse.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/body-fall.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/body-fall.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
