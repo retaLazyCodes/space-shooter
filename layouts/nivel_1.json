@@ -5820,7 +5820,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -5911,7 +5911,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -6002,7 +6002,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -6911,7 +6911,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "⌨️ Controles del jugador",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8943,6 +8942,57 @@
                 "value": "CollisionNP"
               },
               "parameters": [
+                "player",
+                "basic_enemy_2b",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "basic_enemy_2b",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
                 "player_shoot",
                 "meteorito",
                 "",
@@ -9848,6 +9898,78 @@
                 ""
               ]
             },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "basic_enemy_2b",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"

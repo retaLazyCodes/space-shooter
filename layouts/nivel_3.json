@@ -7038,12 +7038,12 @@
         {
           "name": "max_hp2",
           "type": "number",
-          "value": 70
+          "value": 100
         },
         {
           "name": "f2_hp",
           "type": "number",
-          "value": 70
+          "value": 100
         },
         {
           "name": "can_transform",
@@ -9754,7 +9754,7 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.12,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -23579,6 +23579,17 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "dogoh",
+                "Animation",
+                "=",
+                "\"transform\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -23591,21 +23602,10 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "dogoh",
-                "Animation",
-                "=",
-                "\"transform\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "1.5"
+                "3"
               ]
             },
             {
@@ -23727,6 +23727,17 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "dogoh",
+                "Animation",
+                "=",
+                "\"transform\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -23739,21 +23750,10 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "dogoh",
-                "Animation",
-                "=",
-                "\"transform\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "1.5"
+                "3"
               ]
             },
             {
@@ -23841,7 +23841,7 @@
                 "dogoh",
                 "Scale",
                 "<=",
-                "2.5"
+                "2.8"
               ]
             }
           ],
@@ -23855,6 +23855,35 @@
                 "Scale",
                 "+",
                 "0.01"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "dogoh",
+                "Animation",
+                "=",
+                "\"f2_base\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "dogoh",
+                "Scale",
+                "=",
+                "2.5"
               ]
             }
           ]
@@ -24415,7 +24444,7 @@
                 "",
                 "\"dogoh_shoot_timer\"",
                 ">=",
-                "5"
+                "4"
               ]
             },
             {
@@ -24605,7 +24634,7 @@
                 "",
                 "\"dogoh_shoot_timer\"",
                 ">=",
-                "5"
+                "4"
               ]
             },
             {

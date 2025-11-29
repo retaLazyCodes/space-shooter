@@ -5552,7 +5552,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -5643,7 +5643,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -5734,7 +5734,7 @@
                 "assets/sounds/checkpoint.mp3",
                 "2",
                 "no",
-                "volume+200",
+                "volume",
                 "1"
               ]
             },
@@ -9997,6 +9997,57 @@
               },
               "parameters": [
                 "player",
+                "basic_enemy_3b",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_respawning",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "basic_enemy_3b",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
                 "life",
                 "",
                 "",
@@ -10641,6 +10692,78 @@
                 ""
               ]
             },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"recibir_daño\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"damage_timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "basic_enemy_3b",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "is_alive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "player_is_hit",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"

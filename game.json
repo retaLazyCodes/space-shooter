@@ -3144,6 +3144,80 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/music/boss-fight.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/boss-fight.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-life.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/got-life.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/bullet-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/bullet-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/boss-gunshot.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/boss-gunshot.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-heart.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/got-heart.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Line light joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Line light joystick border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1da99d3c0a498c8b22ca295dfb33d5f121d13ac6241f68fb81dd730955db5e1f_Line light joystick border.png",
+          "name": "Line light joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Line light joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Line light joystick thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/6e451170154c7ae31c25495ad2d2ac48ba8c8d62e93e90bfcfe3c7e509c9ce66_Line light joystick thumb.png",
+          "name": "Line light joystick thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -4169,6 +4243,88 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "112c69f62e03fa6df7716cc6b8f174c17857fbf71c8d3fffd16fa8fdbfa49bf1",
+      "name": "LineLightJoystick",
+      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Border": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Line light joystick border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Thumb": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Line light joystick thumb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4194,6 +4350,9 @@
       },
       {
         "objectName": "basic_enemy_3b"
+      },
+      {
+        "objectName": "LineLightJoystick"
       }
     ]
   },
@@ -4384,6 +4543,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
     }
   ],
   "externalLayouts": []
