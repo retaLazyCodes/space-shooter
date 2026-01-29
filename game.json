@@ -1,7 +1,7 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Menu_",
   "gdVersion": {
-    "build": 242,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -16,14 +16,14 @@
     "pixelsRounding": true,
     "projectUuid": "732012a3-845c-49b5-995d-21ac96705fac",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "shootem-up-demo",
     "description": "",
     "author": "",
     "windowWidth": 800,
-    "windowHeight": 600,
+    "windowHeight": 576,
     "latestCompilationDirectory": "/home/brann/Escritorio/game",
     "maxFPS": 60,
     "minFPS": 20,
@@ -60,7 +60,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "bgMen.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
@@ -91,310 +91,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "file": "assets/image/pixil-frame-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/Lucid_Origin_Create_a_seamless_tileable_pixel_art_background_o_2.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Lucid_Origin_Create_a_seamless_tileable_pixel_art_background_o_2.jpg",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-drawing-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-drawing-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-enemigo4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-enemigo4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-spritesheet.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-spritesheet.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "disparo-salem-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "disparo-salem-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "enemy_ship_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "enemy_ship_3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixilart-sprite.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixilart-sprite.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "bajar3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bajar3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame7.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame8.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame9.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame10.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame11.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "../sprites/pixil/pixilart-frames (1)/pixil-frame-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "../sprites/pixil/pixilart-frames (1)/pixil-frame-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame12.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame13.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame14.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame15.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "pixil-frame16.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixil-frame16.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/image/background.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/image/background.jpg",
-        "smoothed": false,
-        "userAdded": false
-      },
       {
         "file": "assets/image/enemy_ship_3.png",
         "kind": "image",
@@ -522,20 +218,4296 @@
         "name": "assets/image/background_level1.jpg",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/explosion-1-g/Sprites/frame7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/explosion-1-g/Sprites/frame7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/border.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-vuelo-frente-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-vuelo-frente-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-idle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-idle3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyup4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyup4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyup5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyup5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/curvedmovement.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/curvedmovement.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/firebullet.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/firebullet.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "eventsFunctionsExtensions/isonscreen.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "eventsFunctionsExtensions/isonscreen.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "game.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "game.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "layouts/nivel_1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "layouts/nivel_1.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data/waves.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-flyback-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-flyback-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Silkscreen-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/salembgremove.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/salembgremove.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/image/main-menu/NewSprite8.png\",\"extension\":\".png\"}",
+        "name": "assets/image/main-menu/NewSprite8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-derecha.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-derecha.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/piedra-izq.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/piedra-izq.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/image/main-menu/BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/BGExtend.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\BGExtend.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/bgMen2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\bgMen2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/unwer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\unwer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/Nulshock Bd.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/Nulshock Bd.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/heart2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-fly-death/salem-fly-death-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-fly-death/salem-fly-death-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/loser-222456.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/loser-222456.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/laser-gun.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/laser-gun.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/explosion.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/explosion.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/death.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/death.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/hurt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/hurt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/volume-slider/Transparent.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/998e0aec3ae57e2bafb3d52e26ab64b10153d411f90c62198effb90b18ecd603_Transparent.png",
+          "name": "Transparent.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/b20061f94d8b7288702975d6bd15d1a750a6b5ba429c22cb695b19210d0da8b9_Square Green Slider Border.png",
+          "name": "Square Green Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/553dd6c98bc6b7c3539f936e1c0815fef2796c9aa3468ae90d288bdb5931076b_Square Green Slider Fill Bar.png",
+          "name": "Square Green Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/image/volume-slider/Square Green Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Green Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/7f9d3fcd723e6cd77452d818e3cba9775f63acdbf98378e7276cc95bf1213e86_Square Green Slider Thumb.png",
+          "name": "Square Green Slider Thumb.png"
+        }
+      },
+      {
+        "file": "assets/sounds/checkpoint.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/checkpoint.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/background_lvl2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/background_lvl2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-life-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-life-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/stg1_full.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/stg1_full.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/ready-go.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/ready-go.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bgLVL2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\bgLVL2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/piso64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\piso64.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/pisoHigth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\pisoHigth.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/floors/piso-01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\floors\\piso-01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/fondo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\fondo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/stg2_full.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/stg2_full.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/meteorito/meteorito-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/meteorito/meteorito-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bg3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "bg3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/bric.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\bric.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\main-menu\\NewSprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\towers\\tower2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\bg3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\NewSprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/atun-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/atun-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/atun-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/atun-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\NewSprite3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/risa.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\risa.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/level_select_msci.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\level_select_msci.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/stage-clear.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/stage-clear.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/misil.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/misil.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/misil-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/misil-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves_2.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data/waves_2.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/towers/tower2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/towers/tower1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/towers/tower1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "data/waves_1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "data\\waves_1.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/flechas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\flechas.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/bullet-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\bullet-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/boss-gunshot.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\boss-gunshot.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-life.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\got-life.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-heart.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sounds\\got-heart.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/atun-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\atun-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\X.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/esc.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\esc.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/background_level1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\image\\background_level1.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-21.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-22.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-23.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-floor-death/pixil-frame-24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-floor-death/pixil-frame-24.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-21.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-jump/pixil-frame-22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-jump/pixil-frame-22.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/salem-walk/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/salem-walk/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/base.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/idle/pixil-frame-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/idle/pixil-frame-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_000.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_013.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_014.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_017.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_018.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_020.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_022.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_024.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_026.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_027.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_029.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_031.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_031.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_032.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_032.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_034.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_034.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/walk/frame_035.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/walk/frame_035.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/fire_attack/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/fire_attack/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/fire_attack/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/fire_attack/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/fire_attack/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/fire_attack/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/fire_attack/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/fire_attack/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola de fuego/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola de fuego/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/bola-de-fuego/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/bola-de-fuego/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_000.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_009.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_012.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_013.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_014.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_015.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_016.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_017.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_018.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_019.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_020.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_021.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_022.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_023.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_024.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_025.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_026.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_027.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_028.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_029.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_030.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_031.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_031.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_032.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_032.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_033.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_033.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_034.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_034.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/transform/frame_035.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/transform/frame_035.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_base.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_attack/pixil-frame-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_attack/pixil-frame-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/f2_jump/pixil-frame-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/f2_jump/pixil-frame-20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/NewSprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/NewSprite.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_000.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_009.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_012.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_013.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_014.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_015.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_016.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_017.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_018.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_019.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_020.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_021.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_022.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_023.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_024.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_025.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_026.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_027.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_028.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_029.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_030.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_031.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_031.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_032.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_032.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_033.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_033.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_034.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_034.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/dogoh/death/frame_035.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/dogoh/death/frame_035.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Copper Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copper Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/1310fa26ab130bebfe59cdfa310836bfed3ca8d190cfed17a7dd3bdfe0a2a87f_Copper Bar Border.png",
+          "name": "Copper Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/fonts/BoldPixels.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/BoldPixels.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/z.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/z.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/c.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/c.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/pink.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/pink.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/image/main-menu/thanks.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/image/main-menu/thanks.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/dogoh-fight.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/dogoh-fight.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/risa.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/risa.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/pisadas.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/pisadas.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/fireball.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/fireball.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/monster-howl-85304.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/monster-howl-85304.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/powerful-ground-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/powerful-ground-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/pisadas-2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/pisadas-2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/dramatic-death-collapse.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/dramatic-death-collapse.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/body-fall.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/body-fall.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/boss-fight.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/boss-fight.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-life.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/got-life.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/bullet-impact.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/bullet-impact.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/boss-gunshot.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/boss-gunshot.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/got-heart.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/got-heart.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Line light joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Line light joystick border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1da99d3c0a498c8b22ca295dfb33d5f121d13ac6241f68fb81dd730955db5e1f_Line light joystick border.png",
+          "name": "Line light joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Line light joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Line light joystick thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/6e451170154c7ae31c25495ad2d2ac48ba8c8d62e93e90bfcfe3c7e509c9ce66_Line light joystick thumb.png",
+          "name": "Line light joystick thumb.png"
+        }
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "life",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "static_life",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/salem-life-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 1
+                      },
+                      {
+                        "x": 31,
+                        "y": 31
+                      },
+                      {
+                        "x": 2,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "atun",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/atun-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 43
+                      },
+                      {
+                        "x": 14,
+                        "y": 43
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/atun-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 43
+                      },
+                      {
+                        "x": 14,
+                        "y": 43
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/atun-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 43
+                      },
+                      {
+                        "x": 14,
+                        "y": 43
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/atun-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 21
+                      },
+                      {
+                        "x": 50,
+                        "y": 43
+                      },
+                      {
+                        "x": 14,
+                        "y": 43
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "white",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/main-menu/NewSprite4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "life_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "assets/fonts/Nulshock Bd.otf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "assets/fonts/Nulshock Bd.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "basic_enemy_2b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "boss_hp",
+          "type": "number",
+          "value": 250
+        },
+        {
+          "name": "boss_dir",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "name": "boss_minY",
+          "type": "number",
+          "value": -20
+        },
+        {
+          "name": "boss_maxY",
+          "type": "number",
+          "value": 400
+        },
+        {
+          "name": "boss_speed",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "can_be_damaged",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 1.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 5,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/enemy-ship2.png",
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 8,
+                      "y": 42
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 21,
+                      "y": 44
+                    },
+                    {
+                      "name": "Destroy2",
+                      "x": 24,
+                      "y": 24.5
+                    },
+                    {
+                      "name": "Destroy3",
+                      "x": 43,
+                      "y": 28
+                    },
+                    {
+                      "name": "Destroy4",
+                      "x": 48.5,
+                      "y": 36
+                    },
+                    {
+                      "name": "Destroy5",
+                      "x": 39,
+                      "y": 42.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 27,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 14
+                      },
+                      {
+                        "x": 57,
+                        "y": 18
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 51
+                      },
+                      {
+                        "x": 46.5,
+                        "y": 52
+                      },
+                      {
+                        "x": 31,
+                        "y": 51.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 4.5,
+                        "y": 35
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "basic_enemy_3b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "can_shoot",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "boss_hp",
+          "type": "number",
+          "value": 250
+        },
+        {
+          "name": "boss_dir",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "name": "boss_minY",
+          "type": "number",
+          "value": -20
+        },
+        {
+          "name": "boss_maxY",
+          "type": "number",
+          "value": 400
+        },
+        {
+          "name": "boss_speed",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "can_be_damaged",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 1.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 5,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
+        {
+          "name": "TweenPathMovement",
+          "type": "CurvedMovement::TweenPathMovement",
+          "Flippable": "Flippable",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "FlipXToGoBack": false,
+          "FlipYToGoBack": false,
+          "SpeedScale": 1,
+          "PathOriginX": 1.00000000000091,
+          "PathOriginY": 1.00000000000091,
+          "Target": 1.00000000000091,
+          "Origin": 1.00000000000091,
+          "PathName": "",
+          "Duration": 1.00000000000091,
+          "Easing": "",
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldGoBack": false,
+          "ShouldLoop": false,
+          "RepetitionDoneCount": 2.0247e-320,
+          "IsGoingBack": false,
+          "PauseDurationBeforeGoingBack": 0,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/image/enemy_ship_3.png",
+                  "points": [
+                    {
+                      "name": "Destroy",
+                      "x": 8,
+                      "y": 42
+                    },
+                    {
+                      "name": "disparo",
+                      "x": 16.5,
+                      "y": 46.5
+                    },
+                    {
+                      "name": "Destroy2",
+                      "x": 24,
+                      "y": 24.5
+                    },
+                    {
+                      "name": "Destroy3",
+                      "x": 43,
+                      "y": 28
+                    },
+                    {
+                      "name": "Destroy4",
+                      "x": 48,
+                      "y": 37
+                    },
+                    {
+                      "name": "Destroy5",
+                      "x": 28,
+                      "y": 44
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 38.5,
+                        "y": 14
+                      },
+                      {
+                        "x": 57,
+                        "y": 18
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 46.5,
+                        "y": 47.5
+                      },
+                      {
+                        "x": 28,
+                        "y": 51.5
+                      },
+                      {
+                        "x": 7,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 35.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "112c69f62e03fa6df7716cc6b8f174c17857fbf71c8d3fffd16fa8fdbfa49bf1",
+      "name": "LineLightJoystick",
+      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Border": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Line light joystick border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Thumb": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Line light joystick thumb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "life"
+      },
+      {
+        "objectName": "static_life"
+      },
+      {
+        "objectName": "atun"
+      },
+      {
+        "objectName": "white"
+      },
+      {
+        "objectName": "life_text"
+      },
+      {
+        "objectName": "basic_enemy_2b"
+      },
+      {
+        "objectName": "basic_enemy_3b"
+      },
+      {
+        "objectName": "LineLightJoystick"
+      }
+    ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "musica",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "volume",
+      "type": "number",
+      "value": 60
+    },
+    {
+      "name": "last_score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "last_lifes",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "checkpoint_1",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_2",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_3",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_4",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_5",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "checkpoint_6",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item1_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item2_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item3_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item4_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item5_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "item6_collected",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "floor_visible",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "level1_got_lifes",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "level2_got_lifes",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "level1_clear",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "level2_clear",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/config_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/history_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/appreciations"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/nivel_1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorial_"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/nivel_2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/nivel_3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/select_level"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/pausa_"
     }
   ],
   "externalEvents": [],
@@ -543,6 +4515,38 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/curvedmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/jsonresourceloader"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
     }
   ],
   "externalLayouts": []
