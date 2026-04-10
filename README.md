@@ -1,4 +1,4 @@
-# Space Shooter
+# Space Shooter 🚀
 
 El proyecto consiste en un juego **shoot 'em up 2D** donde controlás a **Salem**, un valiente gato guerrero que lucha por liberar su planeta.
 
@@ -20,7 +20,21 @@ Refugiado en la Tierra, Salem ha recuperado fuerzas y ahora está listo para reg
 
 ---
 
-## 🚀 Estado
+## ▶️ Jugar ahora
 
-Juego en desarrollo con **GDevelop**.  
-Versión inicial lista para pruebas.
+👉 https://retalazycodes.itch.io/space-shooter-test
+
+Podés jugarlo directamente desde el navegador, sin necesidad de descargar nada.
+
+---
+
+## 🧩 Tecnologías
+
+- GDevelop
+
+---
+
+## ✅ Estado
+
+🎉 **Juego finalizado**  
+Versión completa disponible para jugar.
